@@ -1,0 +1,59 @@
+{
+	"label": "Arquetipos",
+	"entries": {
+		"Cyberwitch": {
+			"name": "La Ciberbruja"
+		},
+		"Dragon Warrior": {
+			"name": "El Guerrero del Dragón"
+		},
+		"Eccentric Inventor": {
+			"name": "La Inventora Excéntrica"
+		},
+		"Edeinos Optant": {
+			"name": "El Optante Edeino"
+		},
+		"Electric Samurai": {
+			"name": "La Samurái Eléctrica"
+		},
+		"Elven Warden": {
+			"name": "La Guardiana Élfica"
+		},
+		"Hardboiled Detective": {
+			"name": "El Detective Curtido"
+		},
+		"Masked Crusader": {
+			"name": "El Cruzado Enmascarado"
+		},
+		"Monster Hunter": {
+			"name": "El Cazador de Monstruos"
+		},
+		"Primitive Hunter": {
+			"name": "La Cazadora Primitiva"
+		},
+		"Realm Runner": {
+			"name": "El Trotarreinos"
+		},
+		"Relic Raider": {
+			"name": "La Buscadora de Reliquias"
+		},
+		"Renegade Priest": {
+			"name": "El Sacerdote Renegado"
+		},
+		"Resistance Fighter": {
+			"name": "La Luchadora de la Resistencia"
+		},
+		"Sabre-Tooth Cat": {
+			"name": "Dientes de Sable"
+		},
+		"Scrapper": {
+			"name": "El Chatarrero"
+		},
+		"Unstoppable Cop": {
+			"name": "La Policía Imparable"
+		},
+		"White Wolf": {
+			"name": "Lobo Blanco"
+		}
+	}
+}
