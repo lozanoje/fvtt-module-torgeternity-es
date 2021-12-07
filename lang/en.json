@@ -303,8 +303,11 @@
             "targetOptions": "Target Options",
             "concealment": "Concealment",
             "coverBonus": "Cover Bonus",
-            "interactionAttacks": "Interaction Attacks"
-
+            "number": "Number",
+            "interactionAttacks": "Interaction Attacks",
+            "new": "New",
+            "keep": "Keep",
+            "end": "End"
         },
         "itemSheetDescriptions": {
             "perk": "Perk",
@@ -433,6 +436,37 @@
             "normal": "Normal",
             "large": "Large",
             "veryLarge": "Very Large"
+        },
+
+        "dialogPrompts": {
+            "playerPassTitle": "Pass to Player",
+            "playerPassLabel": "Pass",
+            "playerPassInstructions": "Select Player to Receive Card",
+            "playerPassTo": "Pass To",
+            "drawDestiny": "Draw Destiny",
+            "drawCosm": "Draw Cosm",
+            "selectCosmDeck": "Select Cosm Deck",
+            "cosmDialogTitle": "Draw Cosm Card",
+            "cosmDeckDialogLabel": "Draw",
+            "cardPooled": "In Pool?"
+        },
+
+        "cosmDecks": {
+            "coreEarth": "Core Earth Cosm Deck",
+            "aysle": "Aysle Cosm Deck",
+            "cyberpapacy": "Cyberpapacy Cosm Deck",
+            "livingLand": "Living Land Cosm Deck",
+            "nileEmpire": "Nile Empire Cosm Deck",
+            "orrorsh": "Orrorsh Cosm Deck",
+            "panPacifica": "Pan Pacifica Cosm Deck",
+            "tharkold": "Tharkold Cosm Deck"         
+        },
+
+        "cardTypes": {
+            "destiny": "Destiny",
+            "drama": "Drama",
+            "cosm": "Cosm"
         }
+        
     }
 }

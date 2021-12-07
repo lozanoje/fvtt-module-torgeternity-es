@@ -8,7 +8,15 @@ Hooks.once('init', () => {
 			dir: 'compendium'
 		});
 		
-		document.getElementById("logo").src="/modules/torgeternity-babele-es/img/fvtt-anvil-torg-es.png";
+		//----logo image
+    var logo = document.getElementById("logo");
+    logo.style.position = "absolute";
+    logo.setAttribute("src", "/modules/torgeternity-babele-es/images/fvtt-anvil-torg-es.webp");
+    //----open links when click on logo
+    logo.title = "external links"
+    logo.addEventListener("click", function() {
+        externalLinks.render(true)
+    })
 		
 	}
 });

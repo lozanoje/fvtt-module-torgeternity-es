@@ -307,7 +307,11 @@
             "targetOptions": "Opciones del objetivo",
             "concealment": "Ocultación",
             "coverBonus": "Bono de cobertura",
-            "interactionAttacks": "Ataques de interacción"
+            "number": "Número",
+            "interactionAttacks": "Ataques de interacción",
+            "new": "Nueva",
+            "keep": "Misma",
+            "end": "Fin"
         },
         "itemSheetDescriptions": {
             "perk": "Dones",
@@ -435,6 +439,36 @@
             "normal": "Medio",
             "large": "Grande",
             "veryLarge": "Muy grande"
+        },
+
+        "dialogPrompts": {
+            "playerPassTitle": "Pasar a jugador",
+            "playerPassLabel": "Pasar",
+            "playerPassInstructions": "Seleccione el jugador que recibirá la carta",
+            "playerPassTo": "Pasar a",
+            "drawDestiny": "Repartir Destino",
+            "drawCosm": "Repartir Cosmos",
+            "selectCosmDeck": "Seleccionar Mazo de Cosmos",
+            "cosmDialogTitle": "Repartir Carta de Cosmos",
+            "cosmDeckDialogLabel": "Repartir",
+            "cardPooled": "Reserva"
+        },
+
+        "cosmDecks": {
+            "coreEarth": "Mazo de Cosmos de la Tierra Base",
+            "aysle": "Mazo de Cosmos de Aysle",
+            "cyberpapacy": "Mazo de Cosmos del Ciberpapado",
+            "livingLand": "Mazo de Cosmos de La Tierra Viviente",
+            "nileEmpire": "Mazo de Cosmos de El Imperio del Nilo",
+            "orrorsh": "Mazo de Cosmos de Orrorsh",
+            "panPacifica": "Mazo de Cosmos de Pan-Pacifica",
+            "tharkold": "Mazo de Cosmos de Tharkold"         
+        },
+
+        "cardTypes": {
+            "destiny": "Destino",
+            "drama": "Drama",
+            "cosm": "Cosmos"
         }
     }
 }
