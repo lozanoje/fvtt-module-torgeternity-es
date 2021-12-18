@@ -311,7 +311,8 @@
             "interactionAttacks": "Ataques de interacción",
             "new": "Nueva",
             "keep": "Misma",
-            "end": "Fin"
+            "end": "Fin",
+            "return": "Volver"
         },
         "itemSheetDescriptions": {
             "perk": "Dones",
