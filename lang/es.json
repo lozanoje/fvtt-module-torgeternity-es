@@ -452,7 +452,9 @@
             "selectCosmDeck": "Seleccionar Mazo de Cosmos",
             "cosmDialogTitle": "Repartir Carta de Cosmos",
             "cosmDeckDialogLabel": "Repartir",
-            "cardPooled": "Reserva"
+            "cardPooled": "Reserva",
+            "plays": "Juega",
+            "discards": "Descarta"
         },
 
         "cosmDecks": {
