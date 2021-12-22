@@ -44,7 +44,7 @@
 
 ## Versiones
 
-version 1.00.1 :
+version 2.1.0 :
 
-* Updated to gmmatt/torgeternity 1.0.0
+* Updated to gmmatt/torgeternity 2.1.0
 * First working version.
