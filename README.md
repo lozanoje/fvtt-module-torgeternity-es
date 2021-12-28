@@ -1,4 +1,4 @@
-# La Llamada de Cthulhu 7a para FoundryVTT
+# Torg Eternity para FoundryVTT
 
 ## Description - Descripción  
 
