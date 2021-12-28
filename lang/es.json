@@ -312,7 +312,10 @@
             "new": "Nueva",
             "keep": "Misma",
             "end": "Fin",
-            "return": "Devolver"
+            "return": "Devolver",
+            "notes": "Notas",
+            "cosm": "Cosmos",
+            "secondaryCosm": "Cosmos secundario"
         },
         "itemSheetDescriptions": {
             "perk": "Dones",
@@ -326,13 +329,13 @@
             "firearm": "Arma de fuego",
             "implant": "Implante",
             "heavyWeapon": "Arma pesada",
-			"explosive": "Explosivos",
+			      "explosive": "Explosivos",
             "vehicle": "Vehículo",
             "spell": "Conjuro",
             "miracle": "Milagro",
             "psionicpower": "Poder psiónico",
             "specialability": "Habilidad especial",
-			"other": "Equipo general",
+			      "other": "Equipo general",
             "customAttack": "Ataque personalizado"
         },
         "attackTypes": {
@@ -355,7 +358,7 @@
         },
         "damageTypes": {
             "flat": "Fijo",
-			"strengthPlus": "Fuerza +",
+			      "strengthPlus": "Fuerza +",
             "charismaPlus": "Carisma +",
             "dexterityPlus": "Destreza +",
             "mindPlus": "Mente +",
@@ -373,10 +376,10 @@
             "dwarf": "Enano",
             "edeinos": "Edeino",
             "elf": "Elfo",
-			"aspirants": "Aspirantes",
+			      "aspirants": "Aspirantes",
             "theRace": "La Raza",
             "other": "Otra"
-		},
+	      },
         "stymiedStates": {
             "none": "No impedido",
             "stymied": "Impedido",
@@ -403,10 +406,15 @@
             "waiting": "A la espera",
             "darkness": "Oscuridad",
             "targetSize": "Tamaño del objetivo",
-            "targetVulnerability": "Vulnerabilidad del objetivo"
+            "targetVulnerability": "Vulnerabilidad del objetivo",
+            "dead": "Muerto",
+            "prone": "Derribado",
+            "incapacitated": "Incapacitado",
+            "unconscious": "Inconsciente",
+            "blind": "Cegado"
         },
 		
-		"yesNo": {
+	      "yesNo": {
             "true": "Sí",
             "false": "No"
         },
@@ -472,6 +480,51 @@
             "destiny": "Destino",
             "drama": "Drama",
             "cosm": "Cosmos"
+        },
+
+        "scenes": {
+            "reality": "Realidad",
+            "realityHint": "Seleccione la realizad de la zona en la que transcurre la escena",
+            "HeaderDetailsHint": "Configura los detalles básicos de esta escena y los permisos que controlan su visibilidad",
+            "HeaderGridHint": "Configura las dimensiones de la rejilla que se utiliza para medir el movimiento de los iconos en esta escena",
+            "HeaderVisionHint": "Configura la visión, la iluminación y la niebla de la guerra que se aplican a esta escena",
+            "HeaderAmbienceHint": "Configura integraciones adicionales entre esta escena y las entradas del diario, las listas de reproducción de audio o los efectos climáticos"
+        },
+
+        "tokens": {
+            "noDSR": "No RDH",
+            "step": "Paso",
+            "a": " A",
+            "b": " B",
+            "c": " C",
+            "d": " D"
+        },
+
+        "deckImporter": {
+            "title": "Importador de cartas",
+            "cardsDefinition": "Definición del mazo",
+            "facespath": "Directorio de anversos",
+            "facespathHint": "Directorio donde están almacenadas las imágenes que se usarán como anversos",
+            "backspath": "Directorio de reversos",
+            "backspathHint": "Directorio donde están almacenadas las imágenes que se usarán como reversos. Si en el directorio solo hay una imagen, se urará para todas las cartas, si hay tantas imágenes como en el directorio de caras, se asignarán en el mismo orden en el que apareen en ambos directorios. Si hay menos imágenes, se reciclarán (al llegar al final, se comenzará por la primera de nuevo). Si hay más, se descartarán las sobrantes",
+            "deckname": "Nombre del mazo",
+            "decknameHint": "El nombre del mazo en el que se importarán las cartas. Debe haber sido creado anteriormente",
+            "nameback": "Nombre del reverso",
+            "namebackHint": "Texto que se usa para dar nombre al reverso de la carta. Generalmente no se usa para nada",
+						"deckback": "Reverso del mazo",
+						"deckbackHint": "Imagen que se usará como reverso del mazo (sobrescribirá la actual)",
+						"namebackexample": "Reverso de la carta",
+            "apply": "Importar",
+            "cancel": "Cancelar",
+						"cardtype": "Tipo de carta",
+						"cardtypeHint": "Tipo de cartas del mazo",
+						"TypeBase": "Base"
         }
+    },
+
+    "CARD":{
+        "TypeCosm": "Cosmos",
+        "TypeDestiny": "Destino",
+        "TypeDrama": "Drama"
     }
 }

@@ -2,7 +2,7 @@
   "name": "torgeternity-babele-es",
   "title": "Torg Eternity Babele Spanish",
   "description": "Traducción de la implementación de Torg Eternity de gmmatt/torgeternity al español mediante babele -  Torg Eternity (gmmatt/torgeternity) spanish translation using Babele",
-  "version": "2.10.1",
+  "version": "2.20.2",
   "minimumCoreVersion" : "9",
   "compatibleCoreVersion":"9",
   "author": "José E. Lozano (@Viriato139ac#0342)",
@@ -40,6 +40,24 @@
       "path": "packs/tarjetas-de-amenaza.db",
       "system": "torgeternity",
       "package": "torgeternity-babele-es",
+      "private": false
+    },
+		{
+      "label": "Macros",
+      "type": "Macro",
+      "name": "macros",
+      "path": "packs/macros.db",
+      "system": "torgeternity",
+      "package": "world",
+      "private": false
+    },
+    {
+      "label": "Mazos de amenaza",
+      "type": "Cards",
+      "name": "mazos-de-amenaza",
+      "path": "packs/mazos-de-amenaza.db",
+      "system": "torgeternity",
+      "package": "world",
       "private": false
     }
   ],
