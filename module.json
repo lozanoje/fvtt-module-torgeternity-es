@@ -2,11 +2,11 @@
   "name": "torgeternity-babele-es",
   "title": "Torg Eternity Babele Spanish",
   "description": "Traducción de la implementación de Torg Eternity de gmmatt/torgeternity al español mediante babele -  Torg Eternity (gmmatt/torgeternity) spanish translation using Babele",
-  "version": "2.20.3",
+  "version": "2.33.1",
   "minimumCoreVersion" : "9",
   "compatibleCoreVersion":"9",
   "author": "José E. Lozano (@Viriato139ac#0342)",
-  "esmodules": ["babele-register.js"],
+  "esmodules": ["torgeternity-register.js"],
   "scripts": [],
   "styles": [
     "./css/cosm-cards.css"
@@ -20,7 +20,7 @@
     {
       "name": "torgeternity",
       "type": "system",
-      "version": "2.1.0"
+      "version": "2.3.3"
     }
   ],
   "packs": [
@@ -74,8 +74,7 @@
     }
   ],
   "system": "torgeternity",
-  "systemVersion": "2.2.0",
+  "systemVersion": "2.3.3",
   "url": "https://github.com/lozanoje/torgeternity-babele-es",
-  "manifest": "https://raw.githubusercontent.com/lozanoje/torgeternity-babele-es/master/module.json",
-  "download": "https://github.com/lozanoje/torgeternity-babele-es/archive/master.zip"
+  "manifest": "https://raw.githubusercontent.com/lozanoje/torgeternity-babele-es/master/module.json"
 }

@@ -120,7 +120,8 @@
             "powers": "Powers",
             "restrictions": "Restrictions",
             "minStrength": "Min Str",
-            "ap": "AP"
+            "ap": "AP",
+            "chatNote": "Chat Note"
         },
         "stats":{
             "wounds": "Wounds",
@@ -152,7 +153,8 @@
             "description": "Description",
             "good": "Good",
             "outstanding": "Outstanding",
-            "attack": "Attack"
+            "attack": "Attack",
+            "ap": "AP"
         },
         "cosms": {
             "none": "(None)",
@@ -187,7 +189,15 @@
             "savagery":"Savagery",
             "social": "Social",
             "spellcraft": "Spellcraft",
-            "racial": "Racial"
+            "racial": "Racial",
+            "hacker": "Hacker",
+            "human": "Human",
+            "abomination": "Abomination",
+            "aspirant": "Aspirant",
+            "depravity": "Depravity",
+            "theRace": "The Race",
+            "corruption": "Corruption",
+            "hope": "Hope"
         },
         "sheetLabels": {
             "stormknight":"Stormknight",
@@ -311,7 +321,16 @@
             "return": "Return",
             "notes": "Notes",
             "cosm": "Cosm",
-            "secondaryCosm": "Secondary Cosm"
+            "secondaryCosm": "Secondary Cosm",
+            "skillValue": "Skill Value",
+            "baseAttribute": "Base Attribute",
+            "customSkills": "Custom Skills",
+            "skillAdds": "Adds",
+            "fatigue": "Fatigue",
+            "limitations": "Limitations",
+            "availableEnhancements": "Available Enhancements",
+            "taken": "Taken",
+            "titleDescription": "Title/Description"
         },
         "itemSheetDescriptions": {
             "perk": "Perk",
@@ -332,7 +351,8 @@
             "psionicpower": "Psionic Power",
             "specialability": "Special Ability",
             "other": "General Gear",
-            "customAttack": "Custom Attack"
+            "customAttack": "Custom Attack",
+            "customSkill": "Custom Skill"
         },
         "attackTypes": {
             "unarmedCombat": "Unarmed Combat",
@@ -435,7 +455,8 @@
             "modifiers": "Modifiers",
             "attack": "Attack",
             "baseDamage": "Base Damage",
-			"value": "Value"
+			"value": "Value",
+            "notes": "Notes"
         },
 
         "sizes": {
@@ -497,27 +518,6 @@
             "c": " C",
             "d": " D"
 
-        },
-
-        "deckImporter": {
-            "title": "Deck importer",
-            "cardsDefinition": "Deck definition",
-            "facespath": "Face images directory",
-            "facespathHint": "Path where the images for faces are stored",
-            "backspath": "Back images directory",
-            "backspathHint": "Path where back images are stored. The images are cycled to the length of the faces images. If you specify a directory where there is only one image, the image is used for al faces, if there are as many as faces, backs will match each face in the same order",
-            "deckname": "Deck name",
-            "decknameHint": "Name of the deck to insert the cards. Must be created in advance",
-            "nameback": "Back card name",
-            "namebackHint": "Text that is used for back of the card. It is not generally used",
-						"deckback": "Deck's back image",
-						"deckbackHint": "Back image of the deck (it will change current back image of the deck)",
-						"namebackexample": "Back card",
-            "apply": "Import",
-            "cancel": "Cancel",
-						"cardtype": "Card type",
-						"cardtypeHint": "Type of the cards in the deck",
-						"TypeBase": "Base"
         }
 
     },

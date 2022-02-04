@@ -98,7 +98,7 @@
         "gear":{
             "description":"Descripción",
             "techlevel": "Nivel tec.",
-			"tl": "NT",
+            "tl": "NT",
             "price": "Precio",
             "value": "Valor",
             "damageType": "Tipo de daño",
@@ -117,14 +117,15 @@
             "wounds": "Heridas",
             "toughness": "Resistencia",
             "possibilities": "Posibilidad",
-			"poss": "Pos.",
+            "poss": "Pos.",
             "tappingDifficulty": "Golpe dificultad",
-			"tappingDifficultyAbbr": "Golp",
+            "tappingDifficultyAbbr": "Golp",
             "purpose": "Propósito",
             "powers": "Poderes",
             "restrictions": "Restricciones",
-			"minStrength": "FUE min",
-			"ap": "PA"
+            "minStrength": "FUE min",
+            "ap": "PA",
+            "chatNote": "Nota en el chat"
         },
         "stats":{
             "wounds": "Heridas",
@@ -156,7 +157,8 @@
             "description": "Descripción",
             "good": "Buen resultado",
             "outstanding": "Resultado espectacular",
-			"attack": "Ataca"
+            "attack": "Ataca",
+            "ap": "PA"
         },
         "cosms": {
             "none": "(Ninguno)",
@@ -191,7 +193,15 @@
             "savagery":"Barbarie",
             "social": "Social",
             "spellcraft": "Conjuros",
-            "racial": "Racial"
+            "racial": "Racial",
+            "hacker": "Hacker",
+            "human": "Humano",
+            "abomination": "Abominación",
+            "aspirant": "Aspirante",
+            "depravity": "Depravado",
+            "theRace": "La Raza",
+            "corruption": "Corrupción",
+            "hope": "Esperanza"
         },
         "sheetLabels": {
             "stormknight":"CaballeroTormenta",
@@ -315,7 +325,16 @@
             "return": "Devolver",
             "notes": "Notas",
             "cosm": "Cosmos",
-            "secondaryCosm": "Cosmos secundario"
+            "secondaryCosm": "Cosmos secundario",
+            "skillValue": "Valor habilidad",
+            "baseAttribute": "Atributo base",
+            "customSkills": "Habilidades personalizadas",
+            "skillAdds": "Añade",
+            "fatigue": "Fatiga",
+            "limitations": "Limitaciones",
+            "availableEnhancements": "Mejoras disponibles",
+            "taken": "En posesión",
+            "titleDescription": "Título/descripción"
         },
         "itemSheetDescriptions": {
             "perk": "Dones",
@@ -336,7 +355,8 @@
             "psionicpower": "Poder psiónico",
             "specialability": "Habilidad especial",
 			      "other": "Equipo general",
-            "customAttack": "Ataque personalizado"
+            "customAttack": "Ataque personalizado",
+            "customSkill": "Habilidad personalizado"
         },
         "attackTypes": {
             "unarmedCombat": "Combate sin armas",
@@ -439,7 +459,8 @@
             "modifiers": "Modificadores",
             "attack": "Ataca",
             "baseDamage": "Daño base",
-            "value": "Valor"
+            "value": "Valor",
+            "notes": "Notas"
         },
         "sizes": {
             "tiny": "Diminuto",
