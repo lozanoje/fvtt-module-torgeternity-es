@@ -76,5 +76,6 @@
   "system": "torgeternity",
   "systemVersion": "2.3.3",
   "url": "https://github.com/lozanoje/torgeternity-babele-es",
-  "manifest": "https://raw.githubusercontent.com/lozanoje/torgeternity-babele-es/master/module.json"
+  "manifest": "https://raw.githubusercontent.com/lozanoje/torgeternity-babele-es/master/module.json",
+  "download": "https://github.com/lozanoje/torgeternity-babele-es/archive/master.zip"
 }
