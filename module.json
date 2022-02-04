@@ -16,11 +16,6 @@
       "name": "babele",
       "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
       "version": "1.20"
-    },
-    {
-      "name": "torgeternity",
-      "type": "system",
-      "version": "2.3.3"
     }
   ],
   "packs": [
