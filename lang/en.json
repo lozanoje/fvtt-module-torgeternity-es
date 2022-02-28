@@ -1,5 +1,5 @@
 {
-    "torgeternity":{
+    "torgeternity": {
         "attributes": {
             "charisma": "Charisma",
             "dexterity": "Dexterity",
@@ -91,8 +91,8 @@
             "waterVehicles": "water vehicles",
             "willpower": "willpower"
         },
-        "gear":{
-            "description":"Description",
+        "gear": {
+            "description": "Description",
             "techlevel": "Tech Level",
             "tl": "TL",
             "price": "Price",
@@ -123,20 +123,20 @@
             "ap": "AP",
             "chatNote": "Chat Note"
         },
-        "stats":{
+        "stats": {
             "wounds": "Wounds",
             "shock": "Shock",
             "possibilities": "Possibilities",
             "description": "Description"
         },
-        "perks":{
+        "perks": {
             "category": "Category",
             "cosm": "Cosm",
             "prerequisites": "Prerequisites",
             "timestaken": "Times Taken",
             "description": "Description"
         },
-        "enhancements":{
+        "enhancements": {
             "perk": "Related Perk",
             "description": "Description",
             "enhances": "Enhances"
@@ -166,7 +166,10 @@
             "tharkold": "Tharkold",
             "panPacifica": "Pan Pacifica",
             "orrorsh": "Orrorsh",
-            "other": "Other"
+            "other": "Other",
+            "pure": "pure",
+            "mixed": "mixed",
+            "dominant": "dominant"
         },
         "perkTypes": {
             "cyberware": "Cyberware",
@@ -186,7 +189,7 @@
             "psionics": "Psionics",
             "pulpPowers": "Pulp Powers",
             "reality": "Reality",
-            "savagery":"Savagery",
+            "savagery": "Savagery",
             "social": "Social",
             "spellcraft": "Spellcraft",
             "racial": "Racial",
@@ -200,7 +203,7 @@
             "hope": "Hope"
         },
         "sheetLabels": {
-            "stormknight":"Stormknight",
+            "stormknight": "Stormknight",
             "stats": "Stats",
             "perks": "Perks",
             "perksAbilities": "Perks/Abilities",
@@ -228,7 +231,7 @@
             "specialAbility": "Special Abilities",
             "threat": "Threat",
             "skills": "Skills",
-            "favored":"Favored",
+            "favored": "Favored",
             "possibilitypotential": "Possibilities (Potential)",
             "size": "Size",
             "possibilities": "Possibilities",
@@ -330,7 +333,15 @@
             "limitations": "Limitations",
             "availableEnhancements": "Available Enhancements",
             "taken": "Taken",
-            "titleDescription": "Title/Description"
+            "titleDescription": "Title/Description",
+            "pool": "pool",
+            "skillRollHint": "Shift-click for enhanced skill test",
+            "toggleSkillDisplay": "Click to toggle Skills display"
+
+        },
+        "combat": {
+            "nextKeep": "Next Round (Keep Current Card)",
+            "nextNew": "Next Round (New Card)"
         },
         "itemSheetDescriptions": {
             "perk": "Perk",
@@ -361,7 +372,7 @@
             "fireCombat": "Fire Combat",
             "energyWeapons": "Energy Weapons",
             "heavyWeapons": "Heavy Weapons"
-         },
+        },
         "powerSkills": {
             "alteration": "Alteration",
             "apportation": "Apportation",
@@ -429,10 +440,18 @@
             "unconscious": "Unconscious",
             "blind": "Blind"
         },
-
         "yesNo": {
             "true": "Yes",
             "false": "No"
+        },
+        "submit": {
+            "true": "Yes",
+            "false": "No",
+            "cancel": "Cancel",
+            "apply": "Apply",
+            "OK": "OK",
+            "dontShow": "Don't show again"
+
         },
         "chatText": {
             "possibility": "Possibility",
@@ -455,8 +474,46 @@
             "modifiers": "Modifiers",
             "attack": "Attack",
             "baseDamage": "Base Damage",
-			"value": "Value",
-            "notes": "Notes"
+            "value": "Value",
+            "notes": "Notes",
+            "check": {
+                "needTarget": "Cannot attempt enhanced attack test without a target. Select a target and try again.",
+                "cantUseUntrained": " cannot be used unless it is learned (at least 1 skill add).",
+                "cantUseSkillRecquired": " cannot be used without at least 1 add in the required skill.",
+                "modifier": {
+                    "wounds": "Wounds",
+                    "stymied": "Stymied (-2 )",
+                    "veryStymied": "Very Stymied (-4)",
+                    "darkness": "Darkness ",
+                    "running": "Running (-2) ",
+                    "multiAttack": "Multi-attack ",
+                    "multiAction": "Multi-action ",
+                    "multiTarget": "Multi-target ",
+                    "targetSize": "Target Size",
+                    "targetVulnerable": "Target Vulnerable (+2)",
+                    "targetVeryVulnerable": "Target very Vulnerable (+4)",
+                    "calledShot": "Called Shot",
+                    "shortBurst": "Short Burst(+2)",
+                    "longBurst": "Long Burst(+4)",
+                    "heavyBurst": "Heavy Burst(+6)",
+                    "allOutAttack": "All out Attack",
+                    "aimedShot": "Aimed Shot (+4)",
+                    "blindFire": "Blind Fire (-6)",
+                    "targetConcealment": "Target Concealment"
+                },
+                "result": {
+                    "actionTotal": "Action Total",
+                    "failure": "Failure",
+                    "outstandingSuccess": "Outstanding Success",
+                    "goodSuccess": "Good Success",
+                    "standartSuccess": "Standart Success",
+                    "mishape": "Mishape",
+                    "damage": "Damage",
+                    "toughness": "Toughness",
+                    "noDamage": "No Damage",
+                    "attackMissed": "Attack Missed"
+                }
+            }
         },
 
         "sizes": {
@@ -469,6 +526,7 @@
         },
 
         "dialogPrompts": {
+            "showToPlayers": "show card to all players",
             "playerPassTitle": "Pass to Player",
             "playerPassLabel": "Pass",
             "playerPassInstructions": "Select Player to Receive Card",
@@ -480,7 +538,45 @@
             "cosmDeckDialogLabel": "Draw",
             "cardPooled": "In Pool?",
             "plays": "Plays",
-            "discards": "Discards"
+            "discards": "Discards",
+            "openHand": "Open Hand",
+            "lifelike": "Enhanced Display",
+            "return": "Returns all cards to their deck(s). Does NOT automatically reshuffle the deck(s)."
+        },
+        "dialogWindow": {
+            "hideForeignCompendium": {
+                "title": "Hide foreign languages Compendiums ?",
+                "content": "This system includes both English and German language compendiums. Do you want to hide foreign language compendiums ?"
+            },
+            "externalLinks": {
+                "title": "Links",
+                "content": "<p>Need help? Want to report a bug? Here are a few usefull links.</p>",
+                "reference": "<p>Reference</p>",
+                "bug": "<p>Bug?</p>",
+                "publisher": "<p>Publisher</p>"
+            },
+            "itemDeletion": {
+                "title": "Confirm Deletion",
+                "content": "Are you sure you want to delete this? It will be permanently removed from the sheet."
+
+            }
+        },
+        "iconeTitles": {
+            "openParty": "Open the party sheet",
+            "resetPossibilities": "Reset Stormknight possibilities",
+            "delete": "Delete",
+            "edit": "Edit",
+            "sendToChat": "Send to Chat",
+            "toggle": "Toggle",
+            "attackRoll": "Attack Roll",
+            "spellRoll": "Spell roll",
+            "miracleRoll": "Miracle roll",
+            "psionicRoll": "Psionic power roll",
+            "bonusRoll": "Bonus roll"
+        },
+        "possibilitiesReset": {
+            "name": "Reset Stormknight possibilities",
+            "hint": "How many possibilities should the StormKnights get ?"
         },
 
         "cosmDecks": {
@@ -491,22 +587,23 @@
             "nileEmpire": "Nile Empire Cosm Deck",
             "orrorsh": "Orrorsh Cosm Deck",
             "panPacifica": "Pan Pacifica Cosm Deck",
-            "tharkold": "Tharkold Cosm Deck"         
+            "tharkold": "Tharkold Cosm Deck"
         },
 
         "cardTypes": {
             "destiny": "Destiny",
             "drama": "Drama",
-            "cosm": "Cosm"
+            "cosm": "Cosm",
+            "hand": "Hand"
         },
 
         "scenes": {
             "reality": "Reality",
-            "realityHint": "Configure the reality of the scene zone",
-			"HeaderDetailsHint": "Configure the basic details for this scene and permissions which control its visibility.",
-			"HeaderGridHint": "Configure the grid dimensions which are used to measure token movement in this scene.",
-			"HeaderVisionHint": "Configure the vision, lighting, and fog of war settings which apply to this Scene.",
-			"HeaderAmbienceHint": "Configure additional integrations between this scene and Journal Entries, Audio Playlists, or Weather Effects."
+            "realityHint": "Configure Reality",
+            "HeaderDetailsHint": "Configure Details",
+            "HeaderGridHint": "Configure Grid Dimensions.",
+            "HeaderVisionHint": "Configure Vision and Lighting Options.",
+            "HeaderAmbienceHint": "Configure Other Enviornmental Options."
         },
 
         "tokens": {
@@ -519,7 +616,7 @@
             "d": " D"
 
         },
-        "poolToggle":{
+        "poolToggle": {
             "inPool": "Card in pool",
             "toogle": "Toggle pooled"
         },
@@ -529,8 +626,46 @@
             "broadcast": "Show this card to everyone",
             "discard": "Discard this card"
         },
+        "settingMenu": {
+            "welcome": {
+                "name": "Display the Welcome Message",
+                "hint": "If checked, the welcome message will pop up after your world loads."
+            },
+            "setupCards": {
+                "name": "Setup the Cards Directory",
+                "hint": "If checked, the system will re-set the decks and discard piles in the Card Stacks tab. You will need to refresh your browser before the changes are made."
+            },
+            "pauseMedia": {
+                "name": "Pause Image Media",
+                "hint": "Choose the image that is displayed when the game is paused."
+            },
+            "animatedChat": {
+                "name": "Chat Card Animation",
+                "hint": "If checked, enable chat card animations. Changing this setting will reload the app"
+            },
+            "gmScreen": {
+                "name": "Select the GM Screen You Want to Use",
+                "hint": "You can select a GM screen from any active module. If you select a module that is not installed, the GM screen function may not work properly. NOTE: you need to refresh your browser (F5) after switching screens."
+            },
+            "hideForeignCompendium": {
+                "name": "Hide foreign Compendiums",
+                "hint": "Select to hide all compendium in foreign language"
 
-        "deckImporter": {
+            }
+        }
+    },
+
+
+    "CARD": {
+        "TypeCosm": "Cosm",
+        "TypeDestiny": "Destiny",
+        "TypeDrama": "Drama",
+        "discard": "Discard",
+        "display": "Show this card to players"
+    },
+		
+	"scripts":{
+        "deckCreator": {
             "title": "Deck importer",
             "cardsDefinition": "Deck definition",
             "facespath": "Face images directory",
@@ -541,23 +676,25 @@
             "decknameHint": "Name of the deck to insert the cards. Must be created in advance",
             "nameback": "Back card name",
             "namebackHint": "Text that is used for back of the card. It is not generally used",
-						"deckback": "Deck's back image",
-						"deckbackHint": "Back image of the deck (it will change current back image of the deck)",
-						"namebackexample": "Back card",
+            "deckback": "Deck's back image",
+            "deckbackHint": "Back image of the deck (it will change current back image of the deck)",
+            "namebackexample": "Back card",
             "apply": "Import",
             "cancel": "Cancel",
-						"cardtype": "Card type",
-						"cardtypeHint": "Type of the cards in the deck",
-						"TypeBase": "Base"
+            "cardtype": "Card type",
+            "cardtypeHint": "Type of the cards in the deck",
+            "TypeBase": "Base"
+        },
+        "teDecks": {
+            "labelTitle": "Torg Eternity Decks",
+            "windowTitle": "Decks' configuration",
+            "onlyChange": "Only change Cosm Deck, leave player hands",
+            "instructions1": "<b>What it does</b>: Replace the system decks by your custom decks and creates hands for your stormknights with the same permissions of the original actors",
+            "instructions2": "<b>Instructions</b>: <b>1</b>: Create your custom destiny, drama and cosm decks in your world (you can use my deckImport macro to import images from a directory directly into a deck), <b>2</b>: Execute the macro and select custom decks, <b>3</b>: Click on Go!",
+            "instructions3": "<b>Notes</b>: This will reset all hands and piles and overwrite the system default decks in the world, if you want them back, just create a new world, the original decks will be recreated, you can then export to a json file and import into this world",
+            "labelGo": "Go!",
+            "labelCancel": "Cancel"						
         }
-
-    },
-
-
-    "CARD":{
-        "TypeCosm": "Cosm",
-        "TypeDestiny": "Destiny",
-        "TypeDrama": "Drama"
     }
 
 }

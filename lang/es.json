@@ -4,7 +4,7 @@
             "LANGUAGE": "Español",
             "MAINTAINERS": "rwanoux, Namergon, @ForjaSalvaje#2419, @Viriato139ac#0342"
         },
-				"attributes": {
+		"attributes": {
             "charisma": "Carisma",
             "dexterity": "Destreza",
             "mind": "Mente",
@@ -170,7 +170,10 @@
             "tharkold": "Tharkold",
             "panPacifica": "Pan Pacifica",
             "orrorsh": "Orrorsh",
-            "other": "Otro"
+            "other": "Otro",
+            "pure": "puro",
+            "mixed": "mixto",
+            "dominant": "dominante"
         },
         "perkTypes": {
             "cyberware": "Ciberimplante",
@@ -334,7 +337,14 @@
             "limitations": "Limitaciones",
             "availableEnhancements": "Mejoras disponibles",
             "taken": "En posesión",
-            "titleDescription": "Título/descripción"
+            "titleDescription": "Título/descripción",
+            "pool": "reserva",
+            "skillRollHint": "Mayús-clic para realizar una prueba mejorada de habilidad",
+            "toggleSkillDisplay": "Haga clic para conmutar el mostrar habilidades"
+        },
+        "combat": {
+            "nextKeep": "Siguiente asalto (misma carta)",
+            "nextNew": "Siguiente asalto (nueva carta)"
         },
         "itemSheetDescriptions": {
             "perk": "Dones",
@@ -348,7 +358,7 @@
             "firearm": "Arma de fuego",
             "implant": "Implante",
             "heavyWeapon": "Arma pesada",
-			      "explosive": "Explosivos",
+			"explosive": "Explosivos",
             "vehicle": "Vehículo",
             "spell": "Conjuro",
             "miracle": "Milagro",
@@ -433,10 +443,17 @@
             "unconscious": "Inconsciente",
             "blind": "Cegado"
         },
-		
-	      "yesNo": {
+		"yesNo": {
             "true": "Sí",
             "false": "No"
+        },
+        "submit": {
+            "true": "Sí",
+            "false": "No",
+            "cancel": "Cancelar",
+            "apply": "Aplicar",
+            "OK": "Ok",
+            "dontShow": "No mostrar de nuevo"
         },
         "chatText": {
             "possibility": "Posibilidad",
@@ -460,7 +477,45 @@
             "attack": "Ataca",
             "baseDamage": "Daño base",
             "value": "Valor",
-            "notes": "Notas"
+            "notes": "Notas",
+            "check": {
+                "needTarget": "No se puede realizar la prueba mejorada de ataque. Seleccione un objetivo e inténtelo de nuevo",
+                "cantUseUntrained": " no puede utilizarse si no ha sido aprendida (al menos 1 adición)",
+                "cantUseSkillRecquired": " no puede utilizarse sin al menos una adición en la habilidad requerida",
+                "modifier": {
+                    "wounds": "Heridas",
+                    "stymied": "Impedido (-2 )",
+                    "veryStymied": "Muy impedido (-4)",
+                    "darkness": "Oscuridad ",
+                    "running": "Corriendo (-2) ",
+                    "multiAttack": "Ataques múltiples",
+                    "multiAction": "Acciones múltiples",
+                    "multiTarget": "Blancos múltiples",
+                    "targetSize": "Tamaño del objetivo",
+                    "targetVulnerable": "Objetivo vulnerable (+2)",
+                    "targetVeryVulnerable": "Objetivo muy vulnerable (+4)",
+                    "calledShot": "Tiro preciso",
+                    "shortBurst": "Ráfaga corta (+2)",
+                    "longBurst": "Ráfaga larga (+4)",
+                    "heavyBurst": "Ráfaga continua (+6)",
+                    "allOutAttack": "Ataque total",
+                    "aimedShot": "Apuntar (+4)",
+                    "blindFire": "Fuego a ciegas (-6)",
+                    "targetConcealment": "Cobertura"
+                },
+                "result": {
+                    "actionTotal": "Total de la acción",
+                    "failure": "Fallo",
+                    "outstandingSuccess": "Éxito espectacular",
+                    "goodSuccess": "Éxito bueno",
+                    "standartSuccess": "Éxito estándar",
+                    "mishape": "Percance",
+                    "damage": "Daño",
+                    "toughness": "Resistencia",
+                    "noDamage": "Ileso",
+                    "attackMissed": "El ataque falló"
+                }
+            }
         },
         "sizes": {
             "tiny": "Diminuto",
@@ -470,8 +525,8 @@
             "large": "Grande",
             "veryLarge": "Muy grande"
         },
-
         "dialogPrompts": {
+			"showToPlayers": "mostrar carta a jugadores",
             "playerPassTitle": "Pasar a jugador",
             "playerPassLabel": "Pasar",
             "playerPassInstructions": "Seleccione el jugador que recibirá la carta",
@@ -483,7 +538,45 @@
             "cosmDeckDialogLabel": "Repartir",
             "cardPooled": "Reserva",
             "plays": "Juega",
-            "discards": "Descarta"
+            "discards": "Descarta",
+            "openHand": "Mano pública",
+            "lifelike": "Modo de visualización avanzado",
+            "return": "Devuelve las cartas a sus respectivos mazos. No baraja automáticamente los mazos"
+        },
+        "dialogWindow": {
+            "hideForeignCompendium": {
+                "title": "¿Ocultar compendios en idiomas distintos del sistema?",
+                "content": "Este sistema incluye compendios en inglés y alemán. ¿Desea ocultar los compendios de idiomas distintos al del sistema?"
+            },
+            "externalLinks": {
+                "title": "Enlaces",
+                "content": "<p>¿Necesita ayuda? ¿Quiere notificar un error? Aquí puede encontrar enlaces que le resultarán útiles</p>",
+                "reference": "<p>Referencia</p>",
+                "bug": "<p>¿Error?</p>",
+                "publisher": "<p>Editor</p>"
+            },
+            "itemDeletion": {
+                "title": "Confirmar borrado",
+                "content": "¿Está seguro de que desea borrar? Se eliminará permanentemente de la ficha"
+
+            }
+        },
+        "iconeTitles": {
+            "openParty": "Abrir hoja de grupo",
+            "resetPossibilities": "Reiniciar posibilidades de los caballeros de la tormenta",
+            "delete": "Borrar",
+            "edit": "Editar",
+            "sendToChat": "Enviar al chat",
+            "toggle": "Conmutar",
+            "attackRoll": "Tirada de ataque",
+            "spellRoll": "Tirada de hechizo",
+            "miracleRoll": "Tirada de milagro",
+            "psionicRoll": "Tirada de poder psiónico",
+            "bonusRoll": "***Bonus roll"
+        },
+        "possibilitiesReset": {
+            "name": "Reiniciar posibilidades de los caballeros de la tormenta",
+            "hint": "¿Cuántas posibilidades se repartirán a cada caballero de la tormenta?"
         },
 
         "cosmDecks": {
@@ -500,7 +593,8 @@
         "cardTypes": {
             "destiny": "Destino",
             "drama": "Drama",
-            "cosm": "Cosmos"
+            "cosm": "Cosmos",
+            "hand": "Mano"
         },
 
         "scenes": {
@@ -530,8 +624,46 @@
             "broadcast": "Mostrar a todos",
             "discard": "Descartar"
         },
+        "settingMenu": {
+            "welcome": {
+                "name": "Mostrar mensaje de bienvenida",
+                "hint": "Si se desea mostrar el mensaje de bienvenida al cargar el mundo"
+            },
+            "setupCards": {
+                "name": "Configurar directorio de cartas",
+                "hint": "Si se habilita, el sistema reinicializará las barajas y las pilas de descarte de la pestaña de cartas. Necesitará recargar el navegador para que los cambios tengan efecto"
+            },
+            "pauseMedia": {
+                "name": "Imagen de pausa",
+                "hint": "Escoja qué imagen mostrar cuando se pausa el juego"
+            },
+            "animatedChat": {
+                "name": "Animación de las cartas del chat",
+                "hint": "Si se desean activar las animaciones de las cartas en el chat. Si se cambia este ajuste, se recargará la aplicación"
+            },
+            "gmScreen": {
+                "name": "Pantalla del DJ",
+                "hint": "Puede seleccionar una pantalla de cualquier módulo activo. Si selecciona un módulo no instalado, puede que no funcione correctamente esta característica. NOTA: necesitará recargar el navegador (F5) tras cambiar de pantalla"
+            },
+            "hideForeignCompendium": {
+                "name": "Ocultar compendios en otros idiomas",
+                "hint": "Si desea ocultar los compendios en idiomas distintos del que se usa en el sistema"
 
-        "deckImporter": {
+            }
+        }
+
+    },
+
+    "CARD":{
+        "TypeCosm": "Cosmos",
+        "TypeDestiny": "Destino",
+        "TypeDrama": "Drama",
+        "discard": "Descartar",
+        "display": "Mostrar a los jugadores"
+    },
+		
+	"scripts":{
+        "deckCreator": {
             "title": "Importador de cartas",
             "cardsDefinition": "Definición del mazo",
             "facespath": "Directorio de anversos",
@@ -542,20 +674,24 @@
             "decknameHint": "El nombre del mazo en el que se importarán las cartas. Debe haber sido creado anteriormente",
             "nameback": "Nombre del reverso",
             "namebackHint": "Texto que se usa para dar nombre al reverso de la carta. Generalmente no se usa para nada",
-						"deckback": "Reverso del mazo",
-						"deckbackHint": "Imagen que se usará como reverso del mazo (sobrescribirá la actual)",
-						"namebackexample": "Reverso de la carta",
+            "deckback": "Reverso del mazo",
+            "deckbackHint": "Imagen que se usará como reverso del mazo (sobrescribirá la actual)",
+            "namebackexample": "Reverso de la carta",
             "apply": "Importar",
             "cancel": "Cancelar",
-						"cardtype": "Tipo de carta",
-						"cardtypeHint": "Tipo de cartas del mazo",
-						"TypeBase": "Base"
+            "cardtype": "Tipo de carta",
+            "cardtypeHint": "Tipo de cartas del mazo",
+            "TypeBase": "Base"
+        },
+        "teDecks": {
+            "labelTitle": "Mazos para Torg Eternity",
+            "windowTitle": "configuración de los mazos",
+            "onlyChange": "Cambiar solo mazo de cosmos, dejar las manos de los jugadores",
+            "instructions1": "<b>¿Qué hace?</b>: Reemplaza los mazos de sistema con mazos personalizados que existan en el mundo y crea las manos de los caballeros de la tormenta con los mismos permisos que los actores a los que se corresponden",
+            "instructions2": "<b>Instrucciones</b>: <b>1</b>: Cree sus propios mazos de destino, drama y cosmos en el mundo actual (puede usar la macro deckCreator para importar imágenes directamente a mazos, <b>2</b>: Ejecute esta macro y seleccione los mazos que ha creado, <b>3</b>: Haga clic en ¡Vamos!",
+            "instructions3": "<b>Notas</b>: El proceso reiniciará todas las manos y pilas y sobrescribirá los mazos por defecto del sistema en este mundo, si quiere restaurarlos, cree un mundo nuevo, los mazos originales volverán acrearse. Entonces podrá exportarlos y volverlos a importar en este mundo",
+            "labelGo": "¡Vamos!",
+            "labelCancel": "Cancelar"		
         }
-    },
-
-    "CARD":{
-        "TypeCosm": "Cosmos",
-        "TypeDestiny": "Destino",
-        "TypeDrama": "Drama"
     }
 }
