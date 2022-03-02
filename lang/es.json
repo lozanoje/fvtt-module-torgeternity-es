@@ -482,6 +482,7 @@
                 "needTarget": "No se puede realizar la prueba mejorada de ataque. Seleccione un objetivo e inténtelo de nuevo",
                 "cantUseUntrained": " no puede utilizarse si no ha sido aprendida (al menos 1 adición)",
                 "cantUseSkillRecquired": " no puede utilizarse sin al menos una adición en la habilidad requerida",
+				"cantAttemptInteraction": "No se puede realizar un ataque de interacción sin seleccionar un objetivo. Seleccione uno e inténtelo de nuevo",
                 "modifier": {
                     "wounds": "Heridas",
                     "stymied": "Impedido (-2 )",
@@ -513,7 +514,8 @@
                     "damage": "Daño",
                     "toughness": "Resistencia",
                     "noDamage": "Ileso",
-                    "attackMissed": "El ataque falló"
+                    "attackMissed": "El ataque falló",
+					"testUnsuccessful": "La prueba falló"
                 }
             }
         },
