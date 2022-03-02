@@ -41,9 +41,9 @@
 * La traducción es obra de *José E. Lozano* (Viriato139ac), sobre la versión original de *rwanoux*, *Namergon* y @ForjaSalvaje#2419.
 * Se ha usado como plantilla la traducción de *Dungeon World* de *patoarayas*.
 * *Babele* es un módulo de *Simone Ricciardi*.
-* Las cartas de destino, drama y cosmo son propiedad de [Ediciones Epicismo](https://edicionesepicismo.com/) y han sido incluidas en este módulo con el consentimiento expreso de la editorial.
+* Las cartas de destino, drama y cosmos son propiedad de [Ediciones Epicismo](https://edicionesepicismo.com/) y han sido incluidas en este módulo con el consentimiento expreso de la editorial.
 * Hay dos versiones de las tarjetas de amenaza, la primera ha sido creada por @Viriato139ac#0342 y la segunda es trabajo de @Teotimus#5844.
-* Las tarjetas resumen de cosmos (*table tents*), han sido creados por @Viriato139ac#0342.
+* Las tarjetas resumen de cosmos (*table tents*), han sido creadas por @Viriato139ac#0342.
 
 ## Versiones
 
