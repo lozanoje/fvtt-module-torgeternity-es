@@ -47,6 +47,10 @@
 
 ## Versiones
 
+version 2.3.5 :
+
+* Updated to gmmatt/torgeternity 2.3.5
+
 version 2.1.0 :
 
 * Updated to gmmatt/torgeternity 2.1.0
