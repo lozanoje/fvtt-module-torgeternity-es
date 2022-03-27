@@ -338,9 +338,12 @@
             "availableEnhancements": "Mejoras disponibles",
             "taken": "En posesión",
             "titleDescription": "Título/descripción",
-            "pool": "reserva",
+            "pool": "Reserva",
             "skillRollHint": "Mayús-clic para realizar una prueba mejorada de habilidad",
-            "toggleSkillDisplay": "Haga clic para conmutar el mostrar habilidades"
+            "toggleSkillDisplay": "Haga clic para conmutar el mostrar habilidades",
+            "combatSkills": "Combate",
+            "interactionSkills": "Interacción",
+            "otherSkills": "Otro"
         },
         "combat": {
             "nextKeep": "Siguiente asalto (misma carta)",
@@ -517,7 +520,12 @@
                     "attackMissed": "El ataque falló",
 					"testUnsuccessful": "La prueba falló"
                 }
-            }
+            },
+            "playsCard": "Juega",
+            "discardsCard": "Descarta",
+            "drawsCard": "Extrae de",
+            "passesCard1": "Da",
+            "passesCard2": "a"
         },
         "sizes": {
             "tiny": "Diminuto",
@@ -528,7 +536,7 @@
             "veryLarge": "Muy grande"
         },
         "dialogPrompts": {
-			"showToPlayers": "mostrar carta a jugadores",
+			"showToPlayers": "mostrar a jugadores",
             "playerPassTitle": "Pasar a jugador",
             "playerPassLabel": "Pasar",
             "playerPassInstructions": "Seleccione el jugador que recibirá la carta",
@@ -539,8 +547,8 @@
             "cosmDialogTitle": "Extraer carta de Cosmos",
             "cosmDeckDialogLabel": "Extraer",
             "cardPooled": "Reserva",
-            "plays": "Juega",
-            "discards": "Descarta",
+            "playCard": "Jugar",
+            "discardCard": "Descartar",
             "openHand": "Mano pública",
             "lifelike": "Modo de visualización avanzado",
             "return": "Devuelve las cartas a sus respectivos mazos. No baraja automáticamente los mazos"
@@ -560,7 +568,6 @@
             "itemDeletion": {
                 "title": "Confirmar borrado",
                 "content": "¿Está seguro de que desea borrar? Se eliminará permanentemente de la ficha"
-
             }
         },
         "iconeTitles": {
@@ -596,7 +603,9 @@
             "destiny": "Destino",
             "drama": "Drama",
             "cosm": "Cosmos",
-            "hand": "Mano"
+            "hand": "Mano",
+            "discardPile": "Pila de descartes",
+            "activeDrama": "Carta de drama activa"
         },
 
         "scenes": {
@@ -651,9 +660,33 @@
                 "name": "Ocultar compendios en otros idiomas",
                 "hint": "Si desea ocultar los compendios en idiomas distintos del que se usa en el sistema"
 
-            }
-        }
+            },
 
+            "deckSetting": {
+                "name": "Configuración de mazos de cartas por defecto",
+                "label": "Configuración de mazos de cartas por defecto",
+                "hint": "Ajuste los nombres qde los mazos y los decartas que usará"
+            },
+            "defaultUserHand": {
+                "name": "Nombre de las manos de los usuarios por defecto",
+                "hint": "Nombre de la mano para este jugador"
+            }
+        },
+        "notifications": {
+            "macroTypeWarning": "Solo puede crear botones macro en objetos que posee o en atributos/habilidades",
+            "openIssue": "Se abrirá una ventana del navegador en una nueva página para notificar un error",
+            "openUlisses": "Se abrirá una nueva pestaña para acceder al sitio web de Ulisses",
+            "openDiscord": "Se abrirá una ventana del navegador en una nueva página para acceder a nuestro servidor de discord",
+            "noItemNamed": "El actor controlado no tiene ningún objeto llamado ",
+            "noSkillNamed": "El actor controlado no tiene ninguna habilidad llamada ",
+            "noAttrNamed": "El actor controlado no tiene ningún atributo llamado ",
+            "notImplemented": "Aún no implementado",
+            "defaultAction": "Acción por defecto, por ejemplo, equipo",
+            "noHands": "¡No existe ninguna mano!",
+            "dramaDeckEmpty": "El mazo de drama está vacío. Reinicie el mazo para continuar",
+            "onlyReservedCard": "Por favor, juege una carta en la reserva cuando esté en una escena dramática",
+            "noActiveEffectInOwnedItem": "Aún no es posible configurar efectos activos en un objeto que posea. Será añadido en posteriores actualizaciones"
+        }
     },
 
     "CARD":{
