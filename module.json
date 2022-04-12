@@ -1,23 +1,17 @@
 {
-  "name": "torgeternity-babele-es",
+  "name": "fvtt-module-torgeternity-es",
   "title": "Torg Eternity Babele Spanish",
   "description": "Traducción de la implementación de Torg Eternity de gmmatt/torgeternity al español mediante babele -  Torg Eternity (gmmatt/torgeternity) spanish translation using Babele",
-  "version": "2.36.1",
-  "minimumCoreVersion" : "9",
-  "compatibleCoreVersion":"9",
+  "version": "2.36.2",
+  "minimumCoreVersion" : "9.238",
+  "compatibleCoreVersion":"9.266",
   "author": "José E. Lozano (@Viriato139ac#0342)",
-  "esmodules": ["torgeternity-register.js"],
+  "esmodules": ["torgeternity-es-register.js"],
   "scripts": [],
   "styles": [
     "./css/cosm-cards.css"
   ],
-  "dependencies": [
-    {
-      "name": "babele",
-      "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
-      "version": "1.20"
-    }
-  ],
+  "dependencies": [],
   "packs": [
     {
       "label": "Mazos de cartas",
@@ -25,7 +19,7 @@
       "name": "mazos-de-cartas",
       "path": "packs/mazos-de-cartas.db",
       "system": "torgeternity",
-      "package": "torgeternity-babele-es",
+      "package": "fvtt-module-torgeternity-es",
       "private": false
     },
 		{
@@ -34,7 +28,7 @@
       "name": "tarjetas-de-amenaza",
       "path": "packs/tarjetas-de-amenaza.db",
       "system": "torgeternity",
-      "package": "torgeternity-babele-es",
+      "package": "fvtt-module-torgeternity-es",
       "private": false
     },
 		{
@@ -69,8 +63,8 @@
     }
   ],
   "system": "torgeternity",
-  "systemVersion": "2.3.5",
-  "url": "https://github.com/lozanoje/torgeternity-babele-es",
-  "manifest": "https://raw.githubusercontent.com/lozanoje/torgeternity-babele-es/master/module.json",
-  "download": "https://github.com/lozanoje/torgeternity-babele-es/archive/master.zip"
+  "systemVersion": "2.3.6",
+  "url": "https://github.com/lozanoje/fvtt-module-torgeternity-es",
+  "manifest": "https://raw.githubusercontent.com/lozanoje/fvtt-module-torgeternity-es/master/module.json",
+  "download": "https://github.com/lozanoje/fvtt-module-torgeternity-es/archive/master.zip"
 }

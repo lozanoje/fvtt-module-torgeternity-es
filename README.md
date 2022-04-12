@@ -10,24 +10,20 @@
 
 * Install/Update _Torg Eternity_ system, by gmmatt, from Foundry's system manager.
 [Module Url](https://github.com/gmmatt/torgeternity)
-* Install/Update _Babele_ module from Foundry's module manager.
-[Module Url](https://foundryvtt.com/packages/babele/)
 * (Optional) Install/Update _Translation: Spanish [Core]_ module from Foundry's module manager:
 [Module Url](https://foundryvtt.com/packages/FoundryVTT-ES/)
 * Install/Update _Translation: Spanish (Torg Eternity)_ module from Foundry's module manager:
-[Module Url](https://foundryvtt.com/packages/torgeternity-babele-es/)
-* Inside the Game World, at _Configuration/Manage Modules_ activate Babele y both translations.
+[Module Url](https://foundryvtt.com/packages/fvtt-module-torgeternity-es/)
+* Inside the Game World, at _Configuration/Manage Modules_ activate both translations.
 * At _Configuration/Setup_ change language to Spanish.
 ----
 * Instale/Actualice el sistema _Torg Eternity_, de gmmatt, desde el gestor de sistemas de Foundry.
 [Module Url](https://github.com/gmmatt/torgeternity)
-* Instale/Actualice el módulo _Babele_ desde el gestor de módulos de Foundry.
-[Module Url](https://foundryvtt.com/packages/babele/)
 * (Opcional) Instale/Actualice el módulo _Translation: Spanish [Core]_ desde el gestor de módulos de Foundry:
 [Module Url](https://foundryvtt.com/packages/FoundryVTT-ES/)
 * Instale/Actualice el módulo _Translation: Spanish (Torg Eternity)_ desde el gestor de módulos de Foundry:
-[Module Url](https://foundryvtt.com/packages/torgeternity-babele-es/)
-* Entre en el Mundo de Juego, _Configuración/Administrar Módulos_ active Babele y las dos traducciones.
+[Module Url](https://foundryvtt.com/packages/fvtt-module-torgeternity-es/)
+* Entre en el Mundo de Juego, _Configuración/Administrar Módulos_ active las dos traducciones.
 * En _Configuración/Configurar Ajustes_ cambie el idioma a Spanish.
 
 ## Notificación de errores - Feedback  
@@ -40,7 +36,6 @@
 
 * La traducción es obra de *José E. Lozano* (Viriato139ac), sobre la versión original de *rwanoux*, *Namergon* y @ForjaSalvaje#2419.
 * Se ha usado como plantilla la traducción de *Dungeon World* de *patoarayas*.
-* *Babele* es un módulo de *Simone Ricciardi*.
 * Las cartas de destino, drama y cosmos son propiedad de [Ediciones Epicismo](https://edicionesepicismo.com/) y han sido incluidas en este módulo con el consentimiento expreso de la editorial.
 * Hay dos versiones de las tarjetas de amenaza, la primera ha sido creada por @Viriato139ac#0342 y la segunda es trabajo de @Teotimus#5844.
 * Las tarjetas resumen de cosmos (*table tents*), han sido creadas por @Viriato139ac#0342.
