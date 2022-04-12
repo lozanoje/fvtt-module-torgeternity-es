@@ -1,8 +1,8 @@
 {
   "name": "fvtt-module-torgeternity-es",
-  "title": "Torg Eternity Babele Spanish",
-  "description": "Traducción de la implementación de Torg Eternity de gmmatt/torgeternity al español mediante babele -  Torg Eternity (gmmatt/torgeternity) spanish translation using Babele",
-  "version": "2.36.2",
+  "title": "Torg Eternity - Español/Spanish",
+  "description": "Traducción del sistema Torg Eternity (gmmatt/torgeternity) al español -  Torg Eternity spanish translation",
+  "version": "2.36.3",
   "minimumCoreVersion" : "9.238",
   "compatibleCoreVersion":"9.266",
   "author": "José E. Lozano (@Viriato139ac#0342)",
