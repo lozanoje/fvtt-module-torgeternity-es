@@ -2,7 +2,7 @@
   "name": "fvtt-module-torgeternity-es",
   "title": "Torg Eternity - Español/Spanish",
   "description": "Traducción del sistema Torg Eternity (gmmatt/torgeternity) al español -  Torg Eternity spanish translation",
-  "version": "2.37.1",
+  "version": "2.39.1",
   "minimumCoreVersion" : "9.238",
   "compatibleCoreVersion":"9.268",
   "author": "José E. Lozano (@Viriato139ac#0342)",
@@ -63,7 +63,7 @@
     }
   ],
   "system": "torgeternity",
-  "systemVersion": "2.3.7",
+  "systemVersion": "2.3.9",
   "url": "https://github.com/lozanoje/fvtt-module-torgeternity-es",
   "manifest": "https://raw.githubusercontent.com/lozanoje/fvtt-module-torgeternity-es/master/module.json",
   "download": "https://github.com/lozanoje/fvtt-module-torgeternity-es/archive/master.zip"

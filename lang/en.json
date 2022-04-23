@@ -707,6 +707,39 @@
         "TypeDrama": "Drama",
         "discard": "Discard",
         "display": "Show this card to players"
+    },
+		
+	"scripts":{
+        "deckCreator": {
+            "title": "Deck importer",
+            "cardsDefinition": "Deck definition",
+            "facespath": "Face images directory",
+            "facespathHint": "Path where the images for faces are stored",
+            "backspath": "Back images directory",
+            "backspathHint": "Path where back images are stored. The images are cycled to the length of the faces images. If you specify a directory where there is only one image, the image is used for al faces, if there are as many as faces, backs will match each face in the same order",
+            "deckname": "Deck name",
+            "decknameHint": "Name of the deck to insert the cards. Must be created in advance",
+            "nameback": "Back card name",
+            "namebackHint": "Text that is used for back of the card. It is not generally used",
+            "deckback": "Deck's back image",
+            "deckbackHint": "Back image of the deck (it will change current back image of the deck)",
+            "namebackexample": "Back card",
+            "apply": "Import",
+            "cancel": "Cancel",
+            "cardtype": "Card type",
+            "cardtypeHint": "Type of the cards in the deck",
+            "TypeBase": "Base"
+        },
+        "teDecks": {
+            "labelTitle": "Torg Eternity Decks",
+            "windowTitle": "Decks' configuration",
+            "onlyChange": "Only change Cosm Deck, leave player hands",
+            "instructions1": "<b>What it does</b>: Replace the system decks by your custom decks and creates hands for your stormknights with the same permissions of the original actors",
+            "instructions2": "<b>Instructions</b>: <b>1</b>: Create your custom destiny, drama and cosm decks in your world (you can use my deckImport macro to import images from a directory directly into a deck), <b>2</b>: Execute the macro and select custom decks, <b>3</b>: Click on Go!",
+            "instructions3": "<b>Notes</b>: This will reset all hands and piles and overwrite the system default decks in the world, if you want them back, just create a new world, the original decks will be recreated, you can then export to a json file and import into this world",
+            "labelGo": "Go!",
+            "labelCancel": "Cancel"						
+        }
     }
 
 }
