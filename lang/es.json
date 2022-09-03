@@ -148,9 +148,10 @@
         "powers": {
             "axiom": "Axioma",
             "skill": "Habilidad",
-            "skilllevel": "Valor min. habilidad",
+            "skilllevel": "Valor min.",
             "castingtime": "Tiempo Lanz.",
             "dn": "ND",
+            "modifier": "Modificador",
             "range": "Alcance",
             "duration": "Duración",
             "damage": "Daño (si aplica)",
@@ -158,7 +159,54 @@
             "good": "Buen resultado",
             "outstanding": "Resultado espectacular",
             "attack": "Ataca",
-            "ap": "PA"
+            "ap": "PA",
+            "dnType": "Tipo ND",
+            "applySize": "Aplicar tamaño",
+            "applyArmor": "Armadura"
+        },
+        "dnTypes": {
+            "veryEasy": "Muy fácil (6)",
+            "easy": "Fácil (8)",
+            "standard": "Estándar (10)",
+            "challenging": "Desafiante (12)",
+            "hard": "Difícil (14)",
+            "veryHard": "Muy difícil (16)",
+            "heroic": "Heroica (18)",
+            "nearImpossible": "Casi imposible (20)",
+            "targetDodge": "Objetivo esquivar o destreza",
+            "targetMeleeWeapons": "Objetivo armas CaC o destreza",
+            "targetUnarmedCombat": "Objetivo combate sin armas o destreza",
+            "targetIntimidation": "Objetivo intimidación o espíritu",
+            "targetManeuver": "Objetivo maniobrar o destreza",
+            "targetTaunt": "Objetivo provocar o carisma",
+            "targetTrick": "Objetivo engañar o mente",
+            "targetWillpower": "Objetivo fuerza de voluntad o espíritu",
+            "targetFaith": "Objetivo fe o espíritu",
+            "targetCharisma": "Objetivo carisma",
+            "targetDexterity": "Objetivo destreza",
+            "targetMind": "Objetivo mente",
+            "targetSpirit": "Objetivo espíritu",
+            "targetStrength": "Objetivo fuerza",
+            "targetAlteration": "Objetivo alteración",
+            "targetConjuration": "Objetivo conjuración",
+            "targetDivination": "Objetivo adivinación",
+            "targetKinesis": "Objetivo kinesis",
+            "targetPrecognition": "Objetivo precognición",
+            "targetStealth": "Objetivo sigilo o destreza",
+            "targetWillpowerMind": "Objetivo fuerza de voluntad o mente",
+            "targetLandVehicles": "Objetivo vehículos terrestres o destreza",
+            "targetAirVehicles": "Objetivo vehículos aéreos o destreza",
+            "targetWaterVehicles": "Objetivo vehículos acuáticos o destreza"
+        },
+        "dnTypesBasic": {
+            "veryEasy": "Muy fácil (6)",
+            "easy": "Fácil (8)",
+            "standard": "Estándar (10)",
+            "challenging": "Desafiante (12)",
+            "hard": "Difícil (14)",
+            "veryHard": "Muy difícil (16)",
+            "heroic": "Heroica (18)",
+            "nearImpossible": "Casi imposible (20)"
         },
         "cosms": {
             "none": "(Ninguno)",
@@ -168,7 +216,7 @@
             "aysle": "Aysle",
             "cyberpapacy": "Ciberpapado",
             "tharkold": "Tharkold",
-            "panPacifica": "Pan Pacifica",
+            "panPacifica": "Pan-Pacifica",
             "orrorsh": "Orrorsh",
             "other": "Otro",
             "pure": "puro",
@@ -183,7 +231,7 @@
             "electricSamurai": "Samurai Eléctrico",
             "elf": "Elfo",
             "faith": "Fe",
-            "kiPowers": "Poder Ki",
+            "kiPowers": "Vitalidad",
             "leadership": "Liderazgo",
             "light": "Luz",
             "occult": "Ocultismo",
@@ -204,7 +252,10 @@
             "depravity": "Depravado",
             "theRace": "La Raza",
             "corruption": "Corrupción",
-            "hope": "Esperanza"
+            "hope": "Esperanza",
+            "cursed": "Maldito",
+            "biotech": "Biotecnología",
+            "powerSuit": "Traje de energía"
         },
         "sheetLabels": {
             "editableTooltip": "expanda la hoja de amenaza para mostrar los campos editables",
@@ -268,7 +319,7 @@
             "clearance": "Nivel de autorización",
             "race": "Raza",
             "weapons": "Armas",
-            "attacks": "Ataques",
+            "attacks": "Ataques y poderes",
             "armorAndShields": "Armadura y escudo",
             "other": "Otro",
             "spell": "Conjuro",
@@ -345,11 +396,14 @@
             "toggleSkillDisplay": "Haga clic para conmutar el mostrar habilidades",
             "combatSkills": "Combate",
             "interactionSkills": "Interacción",
-            "otherSkills": "Otro"
+            "otherSkills": "Otro",
+            "targetDefense": "Defensa del objetivo",
+            "defensesTip": "Haca clic para tirar/deshabilitar defensas activas"
         },
         "combat": {
             "nextKeep": "Siguiente asalto (misma carta)",
-            "nextNew": "Siguiente asalto (nueva carta)"
+            "nextNew": "Siguiente asalto (nueva carta)",
+            "dramaBack": "modules/fvtt-module-torgeternity-es/images/cards/drama-back.jpg"
         },
         "itemSheetDescriptions": {
             "perk": "Dones",
@@ -369,7 +423,8 @@
             "miracle": "Milagro",
             "psionicpower": "Poder psiónico",
             "specialability": "Habilidad especial",
-			      "other": "Equipo general",
+            "specialabilityRollable": "Tabla de habilidades especiales",
+			"other": "Equipo general",
             "customAttack": "Ataque personalizado",
             "customSkill": "Habilidad personalizado"
         },
@@ -462,6 +517,7 @@
         },
         "chatText": {
             "possibility": "Posibilidad",
+            "test": "Prueba",
             "hero": "Héroe",
             "heroCard": "Carta Héroe",
             "drama": "Drama",
@@ -486,7 +542,7 @@
             "check": {
                 "testUnsuccessfull": "La interacción no ha tenido éxito",
                 "needTarget": "Seleccione un objetivo para realizar la prueba mejorada de ataque",
-                "InteractionNeedTarget": "Seleccione un objetivo para realizar un ataque de interacción",
+                "interactionNeedTarget": "Seleccione un objetivo para realizar un ataque de interacción",
                 "cantUseUntrained": " no puede utilizarse si no ha sido aprendida (al menos 1 adición)",
                 "cantUseSkillRecquired": " no puede utilizarse sin al menos una adición en la habilidad requerida",
                 "modifier": {
@@ -508,7 +564,8 @@
                     "allOutAttack": "Ataque total",
                     "aimedShot": "Apuntar (+4)",
                     "blindFire": "Fuego a ciegas (-6)",
-                    "targetConcealment": "Cobertura"
+                    "targetConcealment": "Cobertura",
+                    "powerModifier": "Modificador por poder"
                 },
                 "result": {
                     "result": "resultado",
@@ -523,7 +580,8 @@
                     "damage": "Daño",
                     "toughness": "Resistencia",
                     "noDamage": "Ileso",
-                    "attackMissed": "El ataque falló"
+                    "attackMissed": "El ataque falló",
+                    "resetDefense": "No se encuentra en defensa activa"
                 }
             },
             "playsCard": "Juega",
@@ -586,7 +644,8 @@
             "spellRoll": "Tirada de hechizo",
             "miracleRoll": "Tirada de milagro",
             "psionicRoll": "Tirada de poder psiónico",
-            "bonusRoll": "***Bonus roll"
+            "bonusRoll": "Tirada bono",
+            "toggleEquip": "Conmutar equipado"
         },
         "possibilitiesReset": {
             "name": "Reiniciar posibilidades de los caballeros de la tormenta",
@@ -610,6 +669,9 @@
             "cosm": "Cosmos",
             "hand": "Mano",
             "discardPile": "Pila de descartes",
+            "cosmDiscard": "Pila de descartes de cosmos",
+            "dramaDiscard": "Pila de descartes de drama",
+            "destinyDiscard": "Pila de descartes de destino",
             "activeDrama": "Carta de drama activa"
         },
 
@@ -685,6 +747,10 @@
                 "hint": "Si está activado y se ha seleccionado un objetivo válido, tanto el shock como las heridas se aplicarán automáticamente"
             }
         },
+        "skillDialogs": {
+            "disfavored": "Desfavorecida",
+            "disfavoredTip": "Marque si esta prueba es desfavorecida. El dado no explotará con un 10 o un 20"
+        },
         "notifications": {
             "macroTypeWarning": "Solo puede crear botones macro en objetos que posee o en atributos/habilidades",
             "openIssue": "Se abrirá una ventana del navegador en una nueva página para notificar un error",
@@ -706,6 +772,13 @@
             "toggle": "Conmutar pantalla de GM ",
             "noScreen": "No hay disponible ninguna pantalla de GM",
             "noScreenMessage": "No ha seleccionado ninguna pantalla de GM. Las pantallas están disponibles en los módulos siguientes: "
+        },
+        "partySheet": {
+            "noCharacter": "Este usuario no tiene permisos de propietario de ningún actor"
+        },
+        "packs": {
+            "basicRules": "torgeternity.basic-rules",
+            "decks": "torgeternity.core-card-set"
         }
     },
 

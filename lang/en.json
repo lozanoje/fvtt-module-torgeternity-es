@@ -144,9 +144,10 @@
         "powers": {
             "axiom": "Axiom",
             "skill": "Skill",
-            "skilllevel": "Min. Skill Value",
+            "skilllevel": "Min. Value",
             "castingtime": "Casting Time",
             "dn": "DN",
+            "modifier": "Modifier",
             "range": "Range",
             "duration": "Duration",
             "damage": "Damage",
@@ -154,7 +155,54 @@
             "good": "Good",
             "outstanding": "Outstanding",
             "attack": "Attack",
-            "ap": "AP"
+            "ap": "AP",
+            "dnType": "DN Type",
+            "applySize": "Apply Size",
+            "applyArmor": "Armor"
+        },
+        "dnTypes": {
+            "veryEasy": "Very Easy (6)",
+            "easy": "Easy (8)",
+            "standard": "Standard (10)",
+            "challenging": "Challenging (12)",
+            "hard": "Hard (14)",
+            "veryHard": "Very Hard (16)",
+            "heroic": "Heroic (18)",
+            "nearImpossible": "Near Impossible (20)",
+            "targetDodge": "Target dodge or Dexterity",
+            "targetMeleeWeapons": "Target melee weapons or Dexterity",
+            "targetUnarmedCombat": "Target unarmed combat or Dexterity",
+            "targetIntimidation": "Target intimidation or Spirit",
+            "targetManeuver": "Target maneuver or Dexterity",
+            "targetTaunt": "Target taunt or Charisma",
+            "targetTrick": "Target trick or Mind",
+            "targetWillpower": "Target willpower or Spirit",
+            "targetFaith": "Target faith or Spirit",
+            "targetCharisma": "Target Charisma",
+            "targetDexterity": "Target Dexterity",
+            "targetMind": "Target Mind",
+            "targetSpirit": "Target Spirit",
+            "targetStrength": "Target Strength",
+            "targetAlteration": "Target Alteration",
+            "targetConjuration": "Target Conjuration",
+            "targetDivination": "Target Divination",
+            "targetKinesis": "Target Kinesis",
+            "targetPrecognition": "Target Precognition",
+            "targetStealth": "Target stealth or Dexterity",
+            "targetWillpowerMind": "Target willpower or Mind",
+            "targetLandVehicles": "Target land vehicles or Dexterity",
+            "targetAirVehicles": "Target air vehicles or Dexterity",
+            "targetWaterVehicles": "Targer water vehicles or Dexterity"
+        },
+        "dnTypesBasic": {
+            "veryEasy": "Very Easy (6)",
+            "easy": "Easy (8)",
+            "standard": "Standard (10)",
+            "challenging": "Challenging (12)",
+            "hard": "Hard (14)",
+            "veryHard": "Very Hard (16)",
+            "heroic": "Heroic (18)",
+            "nearImpossible": "Near Impossible (20)"
         },
         "cosms": {
             "none": "(None)",
@@ -164,7 +212,7 @@
             "aysle": "Aysle",
             "cyberpapacy": "Cyberpapacy",
             "tharkold": "Tharkold",
-            "panPacifica": "Pan Pacifica",
+            "panPacifica": "Pan-Pacifica",
             "orrorsh": "Orrorsh",
             "other": "Other",
             "pure": "pure",
@@ -179,7 +227,7 @@
             "electricSamurai": "Electric Samurai",
             "elf": "Elf",
             "faith": "Faith",
-            "kiPowers": "Ki Powers",
+            "kiPowers": "Vitality",
             "leadership": "Leadership",
             "light": "Light",
             "occult": "Occult",
@@ -200,7 +248,10 @@
             "depravity": "Depravity",
             "theRace": "The Race",
             "corruption": "Corruption",
-            "hope": "Hope"
+            "hope": "Hope",
+            "cursed": "Cursed",
+            "biotech": "Biotech",
+            "powerSuit": "Power Suit"
         },
         "sheetLabels": {
             "editableTooltip": "expand the threat sheet to display editable fields",
@@ -264,7 +315,7 @@
             "clearance": "Clearance",
             "race": "Race",
             "weapons": "Weapons",
-            "attacks": "Attacks",
+            "attacks": "Attacks and Powers",
             "armorAndShields": "Armor and Shields",
             "other": "Other",
             "spell": "Spell",
@@ -341,11 +392,14 @@
             "toggleSkillDisplay": "Click to toggle Skills display",
             "combatSkills": "Combat",
             "interactionSkills": "Interaction",
-            "otherSkills": "Other"
+            "otherSkills": "Other",
+            "targetDefense": "Target Defense",
+            "defensesTip": "Click to roll for/disable active defenses"
         },
         "combat": {
             "nextKeep": "Next Round (Keep Current Card)",
-            "nextNew": "Next Round (New Card)"
+            "nextNew": "Next Round (New Card)",
+            "dramaBack": "systems/torgeternity/images/cards/drama-back.webp"
         },
         "itemSheetDescriptions": {
             "perk": "Perk",
@@ -365,6 +419,7 @@
             "miracle": "Miracle",
             "psionicpower": "Psionic Power",
             "specialability": "Special Ability",
+            "specialabilityRollable": "Special Ability Rollable",
             "other": "General Gear",
             "customAttack": "Custom Attack",
             "customSkill": "Custom Skill"
@@ -458,6 +513,7 @@
         },
         "chatText": {
             "possibility": "Possibility",
+            "test": "Test",
             "hero": "Hero",
             "heroCard": "Hero Card",
             "drama": "Drama",
@@ -482,7 +538,7 @@
             "check": {
                 "testUnsuccessfull": "Test unsuccessfull",
                 "needTarget": "Cannot attempt enhanced attack test without a target. Select a target and try again.",
-                "InteractionNeedTarget": "Cannot attempt interaction attack test without a target. Select a target and try again.",
+                "interactionNeedTarget": "Cannot attempt interaction attack test without a target. Select a target and try again.",
                 "cantUseUntrained": " cannot be used unless it is learned (at least 1 skill add).",
                 "cantUseSkillRecquired": " cannot be used without at least 1 add in the required skill.",
                 "modifier": {
@@ -504,7 +560,8 @@
                     "allOutAttack": "All out Attack",
                     "aimedShot": "Aimed Shot (+4)",
                     "blindFire": "Blind Fire (-6)",
-                    "targetConcealment": "Target Concealment"
+                    "targetConcealment": "Target Concealment",
+                    "powerModifier": "Modifier from Power"
                 },
                 "result": {
                     "result": "result",
@@ -519,7 +576,8 @@
                     "damage": "Damage",
                     "toughness": "Toughness",
                     "noDamage": "No Damage",
-                    "attackMissed": "Attack Missed"
+                    "attackMissed": "Attack Missed",
+                    "resetDefense": "No longer actively defending."
                 }
             },
             "playsCard": "Plays",
@@ -582,7 +640,8 @@
             "spellRoll": "Spell Roll",
             "miracleRoll": "Miracle Roll",
             "psionicRoll": "Psionic Power Roll",
-            "bonusRoll": "Bonus Roll"
+            "bonusRoll": "Bonus Roll",
+            "toggleEquip": "Toggle Equip"
         },
         "possibilitiesReset": {
             "name": "Reset Storm Knight Possibilities",
@@ -595,7 +654,7 @@
             "livingLand": "Living Land Cosm Deck",
             "nileEmpire": "Nile Empire Cosm Deck",
             "orrorsh": "Orrorsh Cosm Deck",
-            "panPacifica": "Pan Pacifica Cosm Deck",
+            "panPacifica": "Pan-Pacifica Cosm Deck",
             "tharkold": "Tharkold Cosm Deck"
         },
         "cardTypes": {
@@ -604,9 +663,10 @@
             "cosm": "Cosm",
             "hand": "Hand",
             "discardPile": "Discard Pile",
+            "cosmDiscard": "Cosm Discard Pile",
+            "dramaDiscard": "Drama Discard Pile",
+            "destinyDiscard": "Destiny Discard Pile",
             "activeDrama": "Active Drama Card"
-
-
         },
         "scenes": {
             "reality": "Reality",
@@ -658,7 +718,6 @@
                 "name": "Hide foreign Compendiums",
                 "hint": "Select to hide all compendium in foreign language"
             },
-
             "deckSetting": {
                 "name": "Default card deck configuration",
                 "label": "Default card deck configuration",
@@ -675,8 +734,11 @@
             "autoDamages": {
                 "name": "Apply damages automatically",
                 "hint": "If checked, shocks and wounds would be automatically apply if player has a valid target token."
-
             }
+        },
+        "skillDialogs": {
+            "disfavored": "Disfavored",
+            "disfavoredTip": "Check if this test is disfavored. The die roll will not explode on a 10 or 20."
         },
         "notifications": {
             "macroTypeWarning": "You can only create macro buttons for owned Items and Attributes/Skills",
@@ -699,6 +761,13 @@
             "toggle": "Toggle the GM screen",
             "noScreen": "No gm screen available",
             "noScreenMessage": "you don't have selected any gm screen. The gm screens are provided by the modules that you can find here: "
+        },
+        "partySheet": {
+            "noCharacter": "This user doesn't own any actor"
+        },
+        "packs": {
+            "basicRules": "torgeternity.basic-rules",
+            "decks": "torgeternity.core-card-set"
         }
     },
     "CARD": {
@@ -729,17 +798,6 @@
             "cardtype": "Card type",
             "cardtypeHint": "Type of the cards in the deck",
             "TypeBase": "Base"
-        },
-        "teDecks": {
-            "labelTitle": "Torg Eternity Decks",
-            "windowTitle": "Decks' configuration",
-            "onlyChange": "Only change Cosm Deck, leave player hands",
-            "instructions1": "<b>What it does</b>: Replace the system decks by your custom decks and creates hands for your stormknights with the same permissions of the original actors",
-            "instructions2": "<b>Instructions</b>: <b>1</b>: Create your custom destiny, drama and cosm decks in your world (you can use my deckImport macro to import images from a directory directly into a deck), <b>2</b>: Execute the macro and select custom decks, <b>3</b>: Click on Go!",
-            "instructions3": "<b>Notes</b>: This will reset all hands and piles and overwrite the system default decks in the world, if you want them back, just create a new world, the original decks will be recreated, you can then export to a json file and import into this world",
-            "labelGo": "Go!",
-            "labelCancel": "Cancel"						
         }
     }
-
 }
