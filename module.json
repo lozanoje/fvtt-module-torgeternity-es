@@ -2,7 +2,7 @@
   "name": "fvtt-module-torgeternity-es",
   "title": "Torg Eternity - Español/Spanish",
   "description": "Traducción del sistema Torg Eternity (gmmatt/torgeternity) al español -  Torg Eternity spanish translation",
-  "version": "2.60.1",
+  "version": "2.60.2",
   "minimumCoreVersion" : "9.238",
   "compatibleCoreVersion":"9.280",
   "author": "José E. Lozano (@Viriato139ac#0342)",

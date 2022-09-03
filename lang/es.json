@@ -810,16 +810,6 @@
             "cardtype": "Tipo de carta",
             "cardtypeHint": "Tipo de cartas del mazo",
             "TypeBase": "Base"
-        },
-        "teDecks": {
-            "labelTitle": "Mazos para Torg Eternity",
-            "windowTitle": "Configuración de los mazos",
-            "onlyChange": "Cambiar solo mazo de cosmos, dejar las manos de los jugadores",
-            "instructions1": "<b>¿Qué hace?</b>: Reemplaza los mazos de sistema con mazos personalizados que existan en el mundo y crea las manos de los caballeros de la tormenta con los mismos permisos que los actores a los que se corresponden",
-            "instructions2": "<b>Instrucciones</b>: <b>1</b>: Cree sus propios mazos de destino, drama y cosmos en el mundo actual (puede usar la macro deckCreator para importar imágenes directamente a mazos, <b>2</b>: Ejecute esta macro y seleccione los mazos que ha creado, <b>3</b>: Haga clic en ¡Vamos!",
-            "instructions3": "<b>Notas</b>: El proceso reiniciará todas las manos y pilas y sobrescribirá los mazos por defecto del sistema en este mundo, si quiere restaurarlos, cree un mundo nuevo, los mazos originales volverán acrearse. Entonces podrá exportarlos y volverlos a importar en este mundo",
-            "labelGo": "¡Vamos!",
-            "labelCancel": "Cancelar"		
         }
     }
 }
