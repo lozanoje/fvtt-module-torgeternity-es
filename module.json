@@ -1,19 +1,47 @@
 {
-  "name": "fvtt-module-torgeternity-es",
   "title": "Torg Eternity - Español/Spanish",
   "description": "Traducción del sistema Torg Eternity (gmmatt/torgeternity) al español -  Torg Eternity spanish translation",
-  "version": "2.60.2",
-  "minimumCoreVersion" : "9.238",
-  "compatibleCoreVersion":"9.280",
-  "author": "José E. Lozano (@Viriato139ac#0342)",
-  "esmodules": ["torgeternity-es-register.js"],
-  "scripts": [],
+  "version": "2.63.1",
+  "languages": [{
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json",
+      "flags": {}
+    }, {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
   "styles": [
     "./css/cosm-cards.css"
   ],
-  "dependencies": [],
-  "packs": [
-    {
+  "url": "https://github.com/lozanoje/fvtt-module-torgeternity-es",
+  "manifest": "https://raw.githubusercontent.com/lozanoje/fvtt-module-torgeternity-es/master/module.json",
+  "download": "https://github.com/lozanoje/fvtt-module-torgeternity-es/archive/master.zip",
+  "id": "fvtt-module-torgeternity-es",
+  "authors": [{
+      "name": "@Viriato139ac#0342",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "torgeternity-es-register.js"
+  ],
+  "relationships": {
+    "systems": [{
+        "id": "torgeternity",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": 10,
+    "verified": "10.285"
+  },
+  "packs": [{
       "label": "Mazos de cartas",
       "type": "Cards",
       "name": "mazos-de-cartas",
@@ -21,8 +49,7 @@
       "system": "torgeternity",
       "package": "fvtt-module-torgeternity-es",
       "private": false
-    },
-		{
+    }, {
       "label": "Tarjetas de amenaza",
       "type": "JournalEntry",
       "name": "tarjetas-de-amenaza",
@@ -30,8 +57,7 @@
       "system": "torgeternity",
       "package": "fvtt-module-torgeternity-es",
       "private": false
-    },
-		{
+    }, {
       "label": "Macros",
       "type": "Macro",
       "name": "macros",
@@ -39,8 +65,7 @@
       "system": "torgeternity",
       "package": "world",
       "private": false
-    },
-    {
+    }, {
       "label": "Mazos de amenaza",
       "type": "Cards",
       "name": "mazos-de-amenaza",
@@ -49,22 +74,5 @@
       "package": "world",
       "private": false
     }
-  ],
-  "languages": [
-    {
-      "lang": "es",
-      "name": "Español",
-      "path": "lang/es.json"
-    },
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
-    }
-  ],
-  "system": "torgeternity",
-  "systemVersion": "2.6.0",
-  "url": "https://github.com/lozanoje/fvtt-module-torgeternity-es",
-  "manifest": "https://raw.githubusercontent.com/lozanoje/fvtt-module-torgeternity-es/master/module.json",
-  "download": "https://github.com/lozanoje/fvtt-module-torgeternity-es/archive/master.zip"
+  ]
 }
