@@ -777,7 +777,7 @@
         "discard": "Discard",
         "display": "Show this card to players"
     },
-		
+
 	"scripts":{
         "deckCreator": {
             "title": "Deck importer",
