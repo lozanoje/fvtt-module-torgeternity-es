@@ -33,7 +33,7 @@
     "systems": [{
         "id": "torgeternity",
         "type": "system",
-        "compatibility": {}
+        "compatibility": "2.6.3"
       }
     ]
   },
