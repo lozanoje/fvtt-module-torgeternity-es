@@ -1,7 +1,7 @@
 {
   "title": "Torg Eternity - Español/Spanish",
   "description": "Traducción del sistema Torg Eternity (gmmatt/torgeternity) al español -  Torg Eternity spanish translation",
-  "version": "2.69.1",
+  "version": "2.71.1",
   "languages": [{
       "lang": "es",
       "name": "Español",
@@ -33,13 +33,13 @@
     "systems": [{
         "id": "torgeternity",
         "type": "system",
-        "compatibility": "2.6.9"
+        "compatibility": "2.7.1"
       }
     ]
   },
   "compatibility": {
     "minimum": 10,
-    "verified": "10.285"
+    "verified": "10.288"
   },
   "packs": [{
       "label": "Mazos de cartas",
