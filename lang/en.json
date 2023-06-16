@@ -108,10 +108,11 @@
             "ammo": "Ammo",
             "attackWith": "Attack With",
             "topspeed": "Top Speed",
-            "passengers": "Pass",
-            "mr": "MR",
-            "wounds": "Wnds",
-            "toughness": "Tough",
+            "passengers": "Passengers",
+            "mr": "Maneuver",
+            "wounds": "Wounds",
+            "toughness": "Toughness",
+            "armor": "Armor",
             "possibilities": "Possibilities",
             "poss": "Poss",
             "tappingDifficulty": "Tapping Difficulty",
@@ -121,13 +122,18 @@
             "restrictions": "Restrictions",
             "minStrength": "Min Str",
             "ap": "AP",
-            "chatNote": "Chat Note"
+            "chatNote": "Chat Note",
+            "gunner": "Gunner",
+            "skill": "Skill",
+            "short-description": "Short Description"
         },
         "stats": {
             "wounds": "Wounds",
             "shock": "Shock",
             "possibilities": "Possibilities",
-            "description": "Description"
+            "description": "Description",
+            "speedModifier": "Vehicle Speed Modifier",
+            "maneuverModifier": "Vehicle Maneuver Modifier"
         },
         "perks": {
             "category": "Category",
@@ -192,7 +198,9 @@
             "targetWillpowerMind": "Target willpower or Mind",
             "targetLandVehicles": "Target land vehicles or Dexterity",
             "targetAirVehicles": "Target air vehicles or Dexterity",
-            "targetWaterVehicles": "Target water vehicles or Dexterity"
+            "targetWaterVehicles": "Target water vehicles or Dexterity",
+            "highestSpeed": "Fastest Participant in Combat Tracker",
+            "targetVehicleDefense": "Target Vehicle Defense"
         },
         "dnTypesBasic": {
             "veryEasy": "Very Easy (6)",
@@ -394,7 +402,22 @@
             "interactionSkills": "Interaction",
             "otherSkills": "Other",
             "targetDefense": "Target Defense",
-            "defensesTip": "Click to roll for/disable active defenses"
+            "defensesTip": "Click to roll for/disable active defenses",
+            "name": "Name",
+            "type": "Type",
+            "operator": "Operator",
+            "skill": "Skill",
+            "defense": "Defense",
+            "chase": "Chase",
+            "stunt": "Stunt",
+            "collision": "Collision",
+            "baseRoll": "Roll",
+            "gunner": "Gunner",
+            "range": "Range",
+            "damageAP": "Dmg (AP)",
+            "addOns": "Add-Ons"
+            
+
         },
         "combat": {
             "nextKeep": "Next Round (Keep Current Card)",
@@ -422,7 +445,8 @@
             "specialabilityRollable": "Special Ability Rollable",
             "other": "General Gear",
             "customAttack": "Custom Attack",
-            "customSkill": "Custom Skill"
+            "customSkill": "Custom Skill",
+            "vehicleAddOn": "Vehicle Add-On"
         },
         "attackTypes": {
             "unarmedCombat": "Unarmed Combat",
@@ -525,6 +549,9 @@
             "actionTotal": "Action Total",
             "skillTestLabel": "Skill Value",
             "attributeTestLabel": "Attribute",
+            "chase": "Chase Test",
+            "stunt": "Stunt Test",
+            "vehicleBase": "Vehicle Operation Test",
             "dieTotal": "Die Total",
             "unskilled": "Unskilled",
             "possibleDisconnect": "Possible Disconnect",
@@ -536,6 +563,7 @@
             "value": "Value",
             "notes": "Notes",
             "check": {
+                "noTracker": "Cannot use chase button unless there is an active combat in the combat tracker.",
                 "testUnsuccessfull": "Test unsuccessfull",
                 "needTarget": "Cannot attempt enhanced attack test without a target. Select a target and try again.",
                 "interactionNeedTarget": "Cannot attempt interaction attack test without a target. Select a target and try again.",
@@ -733,7 +761,11 @@
             },
             "autoDamages": {
                 "name": "Apply damages automatically",
-                "hint": "If checked, shocks and wounds would be automatically apply if player has a valid target token."
+                "hint": "If checked, shocks and wounds would be automatically apply if player has a valid target token. WARNING: This feature only works correctly with initial damage rolls. It will not correctly record subsequent bonus die rolls. Use with caution."
+            },
+            "playerHandBottom": {
+                "name": "Player Hand Bottom Display",
+                "hint": "Player hands open at the bottom right of the screen, and cards will appear above the player hand window. Requires screen refresh (F5) to take effect."
             }
         },
         "skillDialogs": {
@@ -768,6 +800,23 @@
         "packs": {
             "basicRules": "torgeternity.basic-rules",
             "decks": "torgeternity.core-card-set"
+        },
+        "speeds": {
+            "fast": "Fast",
+            "veryFast": "Very Fast",
+            "ultraFast": "Ultra Fast"
+        },
+        "vehicleTypes": {
+            "land": "Land",
+            "water": "Water",
+            "air": "Air"
+        },
+
+        "magnitudes": {
+            "ones": "-",              
+            "thousands": "K",
+            "millions": "M",
+            "billions": "B"
         }
     },
     "CARD": {

@@ -113,9 +113,10 @@
             "attackWith": "Ataca con",
             "topspeed": "Vel. máxima",
             "passengers": "Pasajeros",
-            "mr": "VM",
+            "mr": "Maniobra",
             "wounds": "Heridas",
             "toughness": "Resistencia",
+            "armor": "Armadura",
             "possibilities": "Posibilidad",
             "poss": "Pos.",
             "tappingDifficulty": "Golpe dificultad",
@@ -125,13 +126,18 @@
             "restrictions": "Restricciones",
             "minStrength": "FUE min",
             "ap": "PA",
-            "chatNote": "Nota en el chat"
+            "chatNote": "Nota en el chat",
+            "gunner": "Artillero",
+            "skill": "Habilidad",
+            "short-description": "Descripción corta"
         },
         "stats":{
             "wounds": "Heridas",
             "shock": "Shock",
             "possibilities": "Posibilidad",
-			"description": "Descripción"
+			"description": "Descripción",
+            "speedModifier": "Mod. velocidad del vehículo",
+            "maneuverModifier": "Mod. maniobra del vehículo"
         },
         "perks":{
             "category": "Categoria",
@@ -196,7 +202,9 @@
             "targetWillpowerMind": "Objetivo fuerza de voluntad o mente",
             "targetLandVehicles": "Objetivo vehículos terrestres o destreza",
             "targetAirVehicles": "Objetivo vehículos aéreos o destreza",
-            "targetWaterVehicles": "Objetivo vehículos acuáticos o destreza"
+            "targetWaterVehicles": "Objetivo vehículos acuáticos o destreza",
+            "highestSpeed": "Participante más rápido en el asistente de combate",
+            "targetVehicleDefense": "Defensa del vehículo objetivo"
         },
         "dnTypesBasic": {
             "veryEasy": "Muy fácil (6)",
@@ -398,7 +406,22 @@
             "interactionSkills": "Interacción",
             "otherSkills": "Otro",
             "targetDefense": "Defensa del objetivo",
-            "defensesTip": "Haca clic para tirar/deshabilitar defensas activas"
+            "defensesTip": "Haca clic para tirar/deshabilitar defensas activas",
+            "name": "Nombre",
+            "type": "Tipo",
+            "operator": "Operador",
+            "skill": "Habilidad",
+            "defense": "Defensa",
+            "chase": "Persecución",
+            "stunt": "Truco",
+            "collision": "Colisión",
+            "baseRoll": "Tirar",
+            "gunner": "Artillero",
+            "range": "Alcance",
+            "damageAP": "Daño (PA)",
+            "addOns": "Añadidos"
+            
+
         },
         "combat": {
             "nextKeep": "Siguiente asalto (misma carta)",
@@ -426,7 +449,8 @@
             "specialabilityRollable": "Tabla de habilidades especiales",
 			"other": "Equipo general",
             "customAttack": "Ataque personalizado",
-            "customSkill": "Habilidad personalizado"
+            "customSkill": "Habilidad personalizado",
+            "vehicleAddOn": "Añadididos del vehículo"
         },
         "attackTypes": {
             "unarmedCombat": "Combate sin armas",
@@ -529,6 +553,9 @@
             "actionTotal": "Total de acción",
             "skillTestLabel": "Valor de habilidad",
             "attributeTestLabel": "Atributo",
+            "chase": "Prueba persecución",
+            "stunt": "Prueba trucos",
+            "vehicleBase": "Prueba manejo vehículo",
             "dieTotal": "Total dado",
             "unskilled": "Sin entrenar",
             "possibleDisconnect": "Posible desconexión",
@@ -540,6 +567,7 @@
             "value": "Valor",
             "notes": "Notas",
             "check": {
+                "noTracker": "No se puede usar el botón de persecuciones si no hay un combate activo",
                 "testUnsuccessfull": "La interacción no ha tenido éxito",
                 "needTarget": "Seleccione un objetivo para realizar la prueba mejorada de ataque",
                 "interactionNeedTarget": "Seleccione un objetivo para realizar un ataque de interacción",
@@ -651,7 +679,6 @@
             "name": "Reiniciar posibilidades de los caballeros de la tormenta",
             "hint": "¿Cuántas posibilidades se repartirán a cada caballero de la tormenta?"
         },
-
         "cosmDecks": {
             "coreEarth": "Mazo de Cosmos de la Tierra Base",
             "aysle": "Mazo de Cosmos de Aysle",
@@ -662,7 +689,6 @@
             "panPacifica": "Mazo de Cosmos de Pan-Pacifica",
             "tharkold": "Mazo de Cosmos de Tharkold"         
         },
-
         "cardTypes": {
             "destiny": "Destino",
             "drama": "Drama",
@@ -674,7 +700,6 @@
             "destinyDiscard": "Pila de descartes de destino",
             "activeDrama": "Carta de drama activa"
         },
-
         "scenes": {
             "reality": "Realidad",
             "realityHint": "Seleccione la realizad de la zona en la que transcurre la escena",
@@ -683,7 +708,6 @@
             "HeaderVisionHint": "Configura la visión, la iluminación y la niebla de la guerra que se aplican a esta escena",
             "HeaderAmbienceHint": "Configura integraciones adicionales entre esta escena y las entradas del diario, las listas de reproducción de audio o los efectos climáticos"
         },
-
         "tokens": {
             "noDSR": "No RDH",
             "step": "Paso",
@@ -696,7 +720,6 @@
             "inPool": "En la reserva",
             "toogle": "Conmuntar en la reserva"
         },
-
         "monarch": {
             "play": "Jugar",
             "broadcast": "Mostrar a todos",
@@ -726,9 +749,7 @@
             "hideForeignCompendium": {
                 "name": "Ocultar compendios en otros idiomas",
                 "hint": "Si desea ocultar los compendios en idiomas distintos del que se usa en el sistema"
-
             },
-
             "deckSetting": {
                 "name": "Configuración de mazos de cartas por defecto",
                 "label": "Configuración de mazos de cartas por defecto",
@@ -745,6 +766,10 @@
             "autoDamages": {
                 "name": "Aplicar automáticamente el daño",
                 "hint": "Si está activado y se ha seleccionado un objetivo válido, tanto el shock como las heridas se aplicarán automáticamente"
+            },
+            "playerHandBottom": {
+                "name": "Mostrar mano del jugador abajo",
+                "hint": "Las manos de los jugadores se abrirán en la parte inferior derecha de la pantalla y las cartas aparecerán encima en la vista de la mano. Requiere reiniciar (F5) para que tenga efecto"
             }
         },
         "skillDialogs": {
@@ -779,9 +804,25 @@
         "packs": {
             "basicRules": "torgeternity.basic-rules",
             "decks": "torgeternity.core-card-set"
+        },
+        "speeds": {
+            "fast": "Rápido",
+            "veryFast": "Muy rápido",
+            "ultraFast": "Ultra rápido"
+        },
+        "vehicleTypes": {
+            "land": "Tierra",
+            "water": "Agua",
+            "air": "Aire"
+        },
+
+        "magnitudes": {
+            "ones": "-",              
+            "thousands": "m",
+            "millions": "M",
+            "billions": "B"
         }
     },
-
     "CARD":{
         "TypeCosm": "Cosmos",
         "TypeDestiny": "Destino",
