@@ -1,13 +1,15 @@
 {
   "title": "Translation: Spanish [Torg Eternity]",
   "description": "Traducción del sistema Torg Eternity (gmmatt/torgeternity) al español -  Torg Eternity spanish translation",
-  "version": "2.93.1",
-  "languages": [{
+  "version": "3.01.1",
+  "languages": [
+    {
       "lang": "es",
       "name": "Español",
       "path": "lang/es.json",
       "flags": {}
-    }, {
+    },
+    {
       "lang": "en",
       "name": "English",
       "path": "lang/en.json",
@@ -15,13 +17,14 @@
     }
   ],
   "styles": [
-    "./css/cosm-cards.css"
+    "css/cosm-cards.css"
   ],
   "url": "https://github.com/lozanoje/fvtt-module-torgeternity-es",
   "manifest": "https://raw.githubusercontent.com/lozanoje/fvtt-module-torgeternity-es/master/module.json",
   "download": "https://github.com/lozanoje/fvtt-module-torgeternity-es/archive/master.zip",
   "id": "fvtt-module-torgeternity-es",
-  "authors": [{
+  "authors": [
+    {
       "name": "@Viriato139ac#0342",
       "flags": {}
     }
@@ -30,49 +33,81 @@
     "torgeternity-es-register.js"
   ],
   "relationships": {
-    "systems": [{
+    "systems": [
+      {
         "id": "torgeternity",
         "type": "system",
-        "compatibility": "2.9.2"
+        "compatibility": {}
+      }
+    ],
+	"requires": [
+      {
+        "id": "foundryvtt-es",
+        "type": "module",
+        "compatibility": {}
       }
     ]
   },
   "compatibility": {
-    "minimum": 11,
-    "verified": "11.301"
+    "minimum": "10",
+    "verified": "11.307"
   },
-  "packs": [{
+	  "packFolders": [
+  {
+    "name": "Compendios en español",
+    "sorting": "a",
+    "color": "#b95050",
+    "packs": ["mazos-de-cartas", "tarjetas-de-amenaza", "macros", "mazos-de-amenaza"]
+  }
+  ],
+  "packs": [
+    {
       "label": "Mazos de cartas",
       "type": "Cards",
       "name": "mazos-de-cartas",
-      "path": "packs/mazos-de-cartas.db",
+      "path": "packs/mazos-de-cartas",
       "system": "torgeternity",
-      "package": "fvtt-module-torgeternity-es",
-      "private": false
-    }, {
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
       "label": "Tarjetas de amenaza",
       "type": "JournalEntry",
       "name": "tarjetas-de-amenaza",
-      "path": "packs/tarjetas-de-amenaza.db",
+      "path": "packs/tarjetas-de-amenaza",
       "system": "torgeternity",
-      "package": "fvtt-module-torgeternity-es",
-      "private": false
-    }, {
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
       "label": "Macros",
       "type": "Macro",
       "name": "macros",
-      "path": "packs/macros.db",
+      "path": "packs/macros",
       "system": "torgeternity",
-      "package": "world",
-      "private": false
-    }, {
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    },
+    {
       "label": "Mazos de amenaza",
       "type": "Cards",
       "name": "mazos-de-amenaza",
-      "path": "packs/mazos-de-amenaza.db",
+      "path": "packs/mazos-de-amenaza",
       "system": "torgeternity",
-      "package": "world",
-      "private": false
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
     }
   ]
 }
