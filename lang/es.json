@@ -266,6 +266,20 @@
             "powerSuit": "Traje de energía"
         },
         "sheetLabels": {
+            "applyDamage":"Aplicar daño",
+            "applyDamageTooltip": "Botón derecho para modificar el daño. Botón izquierdo para aplicar",
+            "soakDamage": "Absorver daño",
+            "soakDamageTooltip": "Hacer tirada de realidad para reducir el daño",
+            "explosionCancelled": "Está desfavorecido, el primer dado de bono se ha cancelado, aunque se ha quitado el estado de desfavorecido",
+            "modifyDamage": "Aquí puede modificar el daño",
+            "modifyWounds": "Nuevas heridas",
+            "modifyShocks": "Nuevo shock",
+            "chooseDamage": "Escoger qué daño infligir",
+            "favDis": "Favorecido y desfavorecido se cancelan",
+            "soakRoll": "Absorviendo con realidad",
+            "soakNull": "No absorves nada",
+            "soakValue": " heridas absorvidas, y todo el shock",
+            "soakAll": "Se absorven todas las heridas y el shock",
             "editableTooltip": "expanda la hoja de amenaza para mostrar los campos editables",
             "stormknight":"CaballeroTormenta",
             "stats": "Atributos",
@@ -549,6 +563,7 @@
             "bonusCard": "+3Carta",
             "bonusDamage": "Daño adicional",
             "up": "Aumento",
+            "favored": "Favorecido",
             "bonusDice": "DB",
             "actionTotal": "Total de acción",
             "skillTestLabel": "Valor de habilidad",
@@ -829,28 +844,5 @@
         "TypeDrama": "Drama",
         "discard": "Descartar",
         "display": "Mostrar a los jugadores"
-    },
-		
-	"scripts":{
-        "deckCreator": {
-            "title": "Importador de cartas",
-            "cardsDefinition": "Definición del mazo",
-            "facespath": "Directorio de anversos",
-            "facespathHint": "Directorio donde están almacenadas las imágenes que se usarán como anversos",
-            "backspath": "Directorio de reversos",
-            "backspathHint": "Directorio donde están almacenadas las imágenes que se usarán como reversos. Si en el directorio solo hay una imagen, se urará para todas las cartas, si hay tantas imágenes como en el directorio de caras, se asignarán en el mismo orden en el que apareen en ambos directorios. Si hay menos imágenes, se reciclarán (al llegar al final, se comenzará por la primera de nuevo). Si hay más, se descartarán las sobrantes",
-            "deckname": "Nombre del mazo",
-            "decknameHint": "El nombre del mazo en el que se importarán las cartas. Debe haber sido creado anteriormente",
-            "nameback": "Nombre del reverso",
-            "namebackHint": "Texto que se usa para dar nombre al reverso de la carta. Generalmente no se usa para nada",
-            "deckback": "Reverso del mazo",
-            "deckbackHint": "Imagen que se usará como reverso del mazo (sobrescribirá la actual)",
-            "namebackexample": "Reverso de la carta",
-            "apply": "Importar",
-            "cancel": "Cancelar",
-            "cardtype": "Tipo de carta",
-            "cardtypeHint": "Tipo de cartas del mazo",
-            "TypeBase": "Base"
-        }
     }
 }

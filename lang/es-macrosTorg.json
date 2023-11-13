@@ -1,0 +1,24 @@
+{
+	"scripts":{
+        "deckCreator": {
+            "title": "Importador de cartas",
+            "cardsDefinition": "Definición del mazo",
+            "facespath": "Directorio de anversos",
+            "facespathHint": "Directorio donde están almacenadas las imágenes que se usarán como anversos",
+            "backspath": "Directorio de reversos",
+            "backspathHint": "Directorio donde están almacenadas las imágenes que se usarán como reversos. Si en el directorio solo hay una imagen, se urará para todas las cartas, si hay tantas imágenes como en el directorio de caras, se asignarán en el mismo orden en el que apareen en ambos directorios. Si hay menos imágenes, se reciclarán (al llegar al final, se comenzará por la primera de nuevo). Si hay más, se descartarán las sobrantes",
+            "deckname": "Nombre del mazo",
+            "decknameHint": "El nombre del mazo en el que se importarán las cartas. Debe haber sido creado anteriormente",
+            "nameback": "Nombre del reverso",
+            "namebackHint": "Texto que se usa para dar nombre al reverso de la carta. Generalmente no se usa para nada",
+            "deckback": "Reverso del mazo",
+            "deckbackHint": "Imagen que se usará como reverso del mazo (sobrescribirá la actual)",
+            "namebackexample": "Reverso de la carta",
+            "apply": "Importar",
+            "cancel": "Cancelar",
+            "cardtype": "Tipo de carta",
+            "cardtypeHint": "Tipo de cartas del mazo",
+            "TypeBase": "Base"
+        }
+    }
+}
