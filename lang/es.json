@@ -433,7 +433,15 @@
             "gunner": "Artillero",
             "range": "Alcance",
             "damageAP": "Daño (PA)",
-            "addOns": "Añadidos"
+            "addOns": "Añadidos",
+            "customSkill": "Se pueden editar las habilidades personalizadas en la pestaña de Dones",
+            "possSpent": " Gastada posibilidad",
+            "noPoss": " sin posibilidad",
+            "lastPoss": " última posibilidad",
+            "lastPossMess": "<h3> Esta es su última posibilidad, ¿quiere confirmar?<br>¿Está seguro?</h3>",
+            "lastSpent": " gastó la última posibilidad",
+            "freePoss": " GM ha concedido una posibilidad",
+            "noPossFree": "¡Sin posibilidad!<br>¿Confirma que donas?"
             
 
         },
@@ -814,7 +822,9 @@
             "noScreenMessage": "No ha seleccionado ninguna pantalla de GM. Las pantallas están disponibles en los módulos siguientes: "
         },
         "partySheet": {
-            "noCharacter": "Este usuario no tiene permisos de propietario de ningún actor"
+            "noCharacter": "Este usuario no tiene permisos de propietario de ningún actor",
+            "openParty": "Elija la hoja de grupo",
+            "chooseParty":"<h3>Si elige SÍ, abrirá todos los personajes.<br>Si elige NO, abrirá solo los personajes activos</h3>"
         },
         "packs": {
             "basicRules": "torgeternity.basic-rules",
