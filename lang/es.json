@@ -226,7 +226,24 @@
             "tharkold": "Tharkold",
             "panPacifica": "Pan-Pacifica",
             "orrorsh": "Orrorsh",
+            "coreEarthPossLink": "Compendium.torgeternity.basic-rules.JournalEntry.EDI95jBrQruLzDXr.JournalEntryPage.Xp1tet83kHrezpIU",
+            "coreEarthPossLink2": "possibility-energy",
+            "livingLandPossLink": "Compendium.te004-living-land.living-land-journals.JournalEntry.uQWRKs5SphHFQtn0.JournalEntryPage.VB1wEM80BtkrkFBf",
+            "livingLandPossLink2": "living-land-possibility-energy",
+            "nileEmpirePossLink": "Compendium.te006-nile-empire.nile-empire-journals.JournalEntry.Y4KrTlZKQe6Q4CYN.JournalEntryPage.EvNuvKR90hr4cAqr",
+            "nileEmpirePossLink2": "nile-empire-possibility-energy",
+            "ayslePossLink": "Compendium.te008-aysle.aysle-journals.JournalEntry.PQRWfK8bsqZ10lY1.JournalEntryPage.acKaQTfdnskyvhwO",
+            "ayslePossLink2": "aysle-possibility-energy",
+            "cyberpapacyPossLink": "Compendium.te010-cyberpapacy.cyberpapacy-journals.JournalEntry.gKPw3ZmorGNfEREh.JournalEntryPage.DrF34rN6v12GIdzI",
+            "cyberpapacyPossLink2": "cyberpapacy-possibility-energy",
+            "tharkoldPossLink": "Compendium.te012-tharkold.tharkold-journals.JournalEntry.xeG8oT7JYzDkOGvp.JournalEntryPage.VB1wEM80BtkrkFBf",
+            "tharkoldPossLink2": "tharkold-possibility-energy",
+            "panPacificaPossLink": "Compendium.te016-pan-pacifica.pan-pacifica-journals.JournalEntry.djoNGjsSOk7CsnQh.JournalEntryPage.VB1wEM80BtkrkFBf",
+            "panPacificaPossLink2": "pan-pacifica-possibility-energy",
+            "orrorshPossLink": "Compendium.te014-orrorsh.orrorsh-journals.JournalEntry.pkSJbwMgFDaVLAYv.JournalEntryPage.VB1wEM80BtkrkFBf",
+            "orrorshPossLink2":"orrorsh-possibility-energy",
             "other": "Otro",
+            "otherPoss":"Consulta con tu GM",
             "pure": "puro",
             "mixed": "mixto",
             "dominant": "dominante"
@@ -263,7 +280,9 @@
             "hope": "Esperanza",
             "cursed": "Maldito",
             "biotech": "Biotecnología",
-            "powerSuit": "Traje de energía"
+            "powerSuit": "Traje de energía",
+            "invasion": "Invasión",
+            "stalenger": "Stalenger"
         },
         "sheetLabels": {
             "applyDamage":"Aplicar daño",
@@ -441,14 +460,15 @@
             "lastPossMess": "<h3> Esta es su última posibilidad, ¿quiere confirmar?<br>¿Está seguro?</h3>",
             "lastSpent": " gastó la última posibilidad",
             "freePoss": " GM ha concedido una posibilidad",
-            "noPossFree": "¡Sin posibilidad!<br>¿Confirma que donas?"
-            
+            "noPossFree": "¡Sin posibilidad!<br>¿Confirma que donas?",
+            "possibilityByCosm": "Posibilidades por cosmo"
 
         },
         "combat": {
             "nextKeep": "Siguiente asalto (misma carta)",
             "nextNew": "Siguiente asalto (nueva carta)",
-            "dramaBack": "modules/fvtt-module-torgeternity-es/images/cards/drama-back.jpg"
+            "dramaBack": "modules/fvtt-module-torgeternity-es/images/cards/drama-back.jpg",
+            "endMyTurn": "Terminar"
         },
         "itemSheetDescriptions": {
             "perk": "Dones",
@@ -813,7 +833,8 @@
             "dramaDeckEmpty": "El mazo de drama está vacío. Reinicie el mazo para continuar",
             "onlyReservedCard": "Por favor, juege una carta en la reserva cuando esté en una escena dramática",
             "noActiveEffectInOwnedItem": "Aún no es posible configurar efectos activos en un objeto que posea. Será añadido en posteriores actualizaciones",
-            "noTarget": "Icono objetivo no válido"
+            "noTarget": "Icono objetivo no válido",
+            "moduleNotActive": "Active el módulo para ver la descripción"
         },
         "gmScreen": {
             "title": "Pantalla de GM",
