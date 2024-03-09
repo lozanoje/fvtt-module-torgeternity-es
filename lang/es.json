@@ -834,7 +834,8 @@
       "possibilities": "Posibilidad",
       "shock": "Shock",
       "speedModifier": "Mod. velocidad del vehículo",
-      "wounds": "Heridas"
+      "wounds": "Heridas",
+      "axioms": "Axiomas"
     },
     "statusEffects": {
       "aiming": "Apuntando",
@@ -893,6 +894,14 @@
     "yesNo": {
       "false": "No",
       "true": "Sí"
+    },
+    "macros": {
+      "commonMacroNoTokensSelected": "No se han seleccionado iconos. La macro no puede realizar ningún cálculo.",
+      "commonMacroNoValue": "No se ha introducido ningún valor. La macro no puede realizar ningún cálculo.",
+      "commonMacroOnlyByGM": "¡Esta macro solo la puede ejecutar un GM!",
+      "bonusDieMacroTitle": "Macro para Dados de Bono",
+      "bonusDieMacroContent": "¿Cuántos dados de bono desea tirar?",
+      "bonusDieMacroErrorIntegerValue": "El valor introducido en el cuadro de diálogo no es un número ni un decimal. Introduzca un número."
     }
   }
 }
