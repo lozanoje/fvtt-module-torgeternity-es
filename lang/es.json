@@ -1,10 +1,14 @@
 {
   "CARD": {
     "discard": "Descartar",
-    "display": "Mostrar a los jugadores",
-    "TypeCosm": "Cosmos",
-    "TypeDestiny": "Destino",
-    "TypeDrama": "Drama"
+    "display": "Mostrar a los jugadores"
+  },
+  "TYPES": {
+    "Card": {
+      "destiny": "Destino",
+      "drama": "Drama",
+      "cosm": "Cosmos"
+    }
   },
   "torgeternity": {
     "attackTypes": {
@@ -46,6 +50,7 @@
       "check": {
         "cantUseSkillRecquired": " no puede utilizarse sin al menos una adición en la habilidad requerida",
         "cantUseUntrained": " no puede utilizarse si no ha sido aprendida (al menos 1 adición)",
+        "cantUseRealityWhileDisconnected": "No puede usar realidad mientras esté desconectado",
         "interactionNeedTarget": "Seleccione un objetivo para realizar un ataque de interacción",
         "modifier": {
           "aimedShot": "Apuntar (+4)",
@@ -213,6 +218,14 @@
       "itemDeletion": {
         "content": "¿Está seguro de que desea borrar? Se eliminará permanentemente de la ficha",
         "title": "Confirmar borrado"
+      },
+      "realityCheck": {
+        "title": "¿Reconectando?",
+        "content": "¿Está intentando reconectar?"
+      },
+      "buttons": {
+        "execute": "Ejecutar",
+        "ok": "OK"
       }
     },
     "dnTypes": {
@@ -723,7 +736,9 @@
       "weapons": "Armas",
       "wounds": "Heridas",
       "xp": "PX",
-      "xpOnlyGM": "solo editable por el GM"
+      "xpOnlyGM": "solo editable por el GM",
+      "toolTipClickToAdd": "Clic para añadir/quitar la habilidad de la lista de accesos"
+
     },
     "sizes": {
       "large": "Grande",
@@ -897,11 +912,40 @@
     },
     "macros": {
       "commonMacroNoTokensSelected": "No se han seleccionado iconos. La macro no puede realizar ningún cálculo.",
+      "commonMacroNoCharacter": "No se encuentra personaje con el que continuar.",
       "commonMacroNoValue": "No se ha introducido ningún valor. La macro no puede realizar ningún cálculo.",
       "commonMacroOnlyByGM": "¡Esta macro solo la puede ejecutar un GM!",
+      "commonMacroNoChatMessageFound": "No se ha encontrado tarjeta del chat. Abortando el cálculo.",
+      "fatigueMacroDealtDamage": "Daño aplicado a los siguientes personajes:",
+      "fatigueMacroCharKO": " está K.O.!",
+      "fatigueMacroCharAlreadyKO": " ya está K.O.! No se le puede añadir más shock.",
+      "reviveMacroChatHeadline": "¡Recuperación de shock!",
+      "reviveMacroWindowLabel1": "¿Cuánto shock quiere recuperar?",
+      "reviveMacroError1": "No se ha introducido ninguna cantidad y el cuadro no está marcado. ¿Qué debo hacer? Abortando.",
+      "reviveMacroFirst": "Los personajes siguientes se han recuperado del shock: ",
+      "reviveMacroAlreadyFull": " ya se ha recuperado y no tiene shock.",
+      "reviveMacroCharRevived": " recuperado completamente.",
+      "reviveMacroCharPartyRevived": " se ha curado lo siguiente: ",
+      "reviveMacroCharDeKOed": "Quitar estado de K.O. de ",
+      "reviveMacroWholeRevive": "¿Recuperar todo el shock?",
+      "clearStatusEffectsHeadline": "Quitando efectos de estado de los personajes siguientes:",
+      "clearStatusEffectsNothingFound": "No se han encontrado efectos de estado en los personajes seleccionados.",
+      "clearStatusEffectsliftetFrom": "De",
+      "clearStatusEffectsliftetStatusOf": "el estado de",
       "bonusDieMacroTitle": "Macro para Dados de Bono",
       "bonusDieMacroContent": "¿Cuántos dados de bono desea tirar?",
-      "bonusDieMacroErrorIntegerValue": "El valor introducido en el cuadro de diálogo no es un número ni un decimal. Introduzca un número."
+      "bonusDieMacroErrorIntegerValue": "El valor introducido en el cuadro de diálogo no es un número ni un decimal. Introduzca un número.",
+      "bonusDieMacroResult1": "Ha tirado",
+      "bonusDieMacroResult2": "con un resultado de",
+      "bonusDieMacroResult3": "El icono con el nombre",
+      "bonusDieMacroResult4": "recive el daño",
+      "bonusDieMacroResultNoDamage": "no recibe ningún daño",
+      "bonusDieMacroNoTokenTargeted": "No se han seleccionado iconos.",
+      "bonusDieMacroNoDiscon": "Este personaje no tiene el estado de desconectado.",
+      "reconnectMacroZoneModifier": "Modificador de zona",
+      "reconnectMacroZoneModifierNotDetectedTitle": "Sin modificador de zona",
+      "reconnectMacroZoneModifierNotDetected": "No se ha podido determinar modificador de zona debido a que la escena actual no tiene ningún Cosmos definido. Modifique a mano el modificador al resultado.",
+      "reconnectMacroStatusLiftet": "Quitado estado de desconexión tras pasar la tirada de reconexión."
     }
   }
 }
