@@ -120,7 +120,8 @@
       "unskilled": "Sin entrenar",
       "up": "Aumento",
       "value": "Valor",
-      "vehicleBase": "Prueba manejo vehículo"
+      "vehicleBase": "Prueba manejo vehículo",
+      "mayCauseContradiction": "Los Dones con este símbolo dependen de las leyes del cosmos y pueden causar Contradicciones fuera del Cosmos."
     },
     "clearances": {
       "alpha": "Alfa",
@@ -256,6 +257,7 @@
       "targetStrength": "Objetivo fuerza",
       "targetTaunt": "Objetivo provocar o carisma",
       "targetTrick": "Objetivo engañar o mente",
+      "targetFind": "Objetivo encontrar o mente",
       "targetUnarmedCombat": "Objetivo combate sin armas o destreza",
       "targetVehicleDefense": "Defensa del vehículo objetivo",
       "targetWaterVehicles": "Objetivo vehículos acuáticos o destreza",
@@ -402,7 +404,9 @@
       "cosm": "Cosmos",
       "description": "Descripción",
       "prerequisites": "Prerrequisitos",
-      "timestaken": "Nivel"
+      "timestaken": "Nivel",
+      "generalContradiction": "Contradicciones",
+      "generalContradictionTT": "Generan Contradicciones fuera de su Cosmos."
     },
     "perkTypes": {
       "abomination": "Abominación",
@@ -418,6 +422,7 @@
       "electricSamurai": "Samurai Eléctrico",
       "elf": "Elfo",
       "faith": "Fe",
+      "groundSloth": "Perezoso terrestre",
       "hacker": "Hacker",
       "hope": "Esperanza",
       "human": "Humano",
@@ -438,7 +443,8 @@
       "social": "Social",
       "spellcraft": "Conjuros",
       "stalenger": "Stalenger",
-      "theRace": "La Raza"
+      "theRace": "La Raza",
+      "special": "Especial/Personalizado"
     },
     "poolToggle": {
       "inPool": "En la reserva",
@@ -491,8 +497,9 @@
       "HeaderDetailsHint": "Configura los detalles básicos de esta escena y los permisos que controlan su visibilidad",
       "HeaderGridHint": "Configura las dimensiones de la rejilla que se utiliza para medir el movimiento de los iconos en esta escena",
       "HeaderVisionHint": "Configura la visión, la iluminación y la niebla de la guerra que se aplican a esta escena",
+      "main": "Escena principal",
       "reality": "Realidad",
-      "realityHint": "Seleccione la realizad de la zona en la que transcurre la escena"
+      "realityHint": "Seleccione la realidad"
     },
     "settingMenu": {
       "animatedChat": {
@@ -551,6 +558,10 @@
       "showCheckDetails": {
         "hint": "Si se habilita, se mostrarán siempre los detalles de las pruebas.",
         "name": "Mostrar detalles en las pruebas"
+      },
+      "uniqueDN": {
+        "hint": "Si se habilita, cuando se realiza una prueba contra múltiples objetivos, mantendrá el ND más alto entre todos los oponentes para determinar el resultado.",
+        "name": "ND único"
       }
     },
     "sheetLabels": {
@@ -562,6 +573,7 @@
       "adds": "Adición",
       "aimed": "Apuntado",
       "allOut": "Ataque total",
+      "alterAttributes": "Ahora puede cambiar los atributos",
       "applyDamage": "Aplicar daño",
       "applyDamageTooltip": "Botón derecho para modificar el daño. Botón izquierdo para aplicar",
       "applyStymied": "Aplicar impedido",
@@ -629,6 +641,8 @@
       "implants": "Implantes",
       "inactiveEffects": "Efecto inactivo",
       "inputExisting": "Añadir existente",
+      "inputExistingRdbTitle": "Cuando realice acciones múltiples, marque esta casilla para meter los bonos de pruebas anteriores.",
+      "inputExistingTitle": "Introduzca BONIFICACIÓN de prueba anterior, no el total del dado.",
       "interactionAttacks": "Ataques de interacción",
       "interactionSkills": "Interacción",
       "keep": "Misma",
@@ -729,6 +743,9 @@
       "unspent": "Sin gastar",
       "up": "Aumento",
       "update": "Actualizar",
+      "usePreviousBonusLegend": "Escoja si quiere (1) tirar por bonificación o (2) introducir un bono generado previamente al realizar una multiacción.",
+      "usePreviousBonustitle": "Cuando realice acciones múltiples, marque esta casilla para meter los bonos de pruebas anteriores.",
+      "usePreviousBonusText": "Introduzca BONIFICACIÓN de prueba anterior, no el total del dado.",
       "vehicle": "Vehículo",
       "vehicles": "Vehículos",
       "vitalArea": "Golpe vital",
@@ -737,8 +754,13 @@
       "wounds": "Heridas",
       "xp": "PX",
       "xpOnlyGM": "solo editable por el GM",
-      "toolTipClickToAdd": "Clic para añadir/quitar la habilidad de la lista de accesos"
-
+      "toolTipClickToAdd": "Clic para añadir/quitar la habilidad de la lista de accesos",
+      "backlash1": "Rechazo",
+      "backlash2": "Rechazo reducido",
+      "backlash3": "¡ Dolor de cabeza !",
+      "backlash1Tooltip": "Aplicar 2 shocks",
+      "backlash2Tooltip": "Aplicar 1 shock",
+      "backlash3Tooltip": "Aplicar Muy impedido"
     },
     "sizes": {
       "large": "Grande",
