@@ -91,7 +91,8 @@
           "resetDefense": "No se encuentra en defensa activa",
           "result": "resultado",
           "standartSuccess": "Éxito estándar",
-          "toughness": "Resistencia"
+          "toughness": "Resistencia",
+          "BDDamageSum": "Añadir daño de la tirada de BD"
         },
         "testUnsuccessfull": "La interacción no ha tenido éxito"
       },
@@ -760,7 +761,9 @@
       "backlash3": "¡ Dolor de cabeza !",
       "backlash1Tooltip": "Aplicar 2 shocks",
       "backlash2Tooltip": "Aplicar 1 shock",
-      "backlash3Tooltip": "Aplicar Muy impedido"
+      "backlash3Tooltip": "Aplicar Muy impedido",
+      "additionalDamage": "Preconfiguración de daño adicional",
+      "bonusDice": "Tirada de Dados de Bono previa"
     },
     "sizes": {
       "large": "Grande",
@@ -774,6 +777,7 @@
       "disfavored": "Desfavorecida",
       "disfavoredTip": "Marque si esta prueba es desfavorecida. El dado no explotará con un 10 o un 20",
       "favored": "Favorecida",
+      "favoredanddisfavored": "(Des-)Favorecida",
       "favoredTip": "Marque si esta prueba es favorecida por alguna razón inesperada"
     },
     "skills": {
