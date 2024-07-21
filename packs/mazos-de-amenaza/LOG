@@ -1,8 +1,15 @@
-2024/05/27-20:48:04.332983 e201d37ef040 Recovering log #32
-2024/05/27-20:48:04.340873 e201d37ef040 Delete type=3 #30
-2024/05/27-20:48:04.340922 e201d37ef040 Delete type=0 #32
-2024/05/27-20:48:22.416478 e201d2fdf040 Level-0 table #37: started
-2024/05/27-20:48:22.416587 e201d2fdf040 Level-0 table #37: 0 bytes OK
-2024/05/27-20:48:22.419198 e201d2fdf040 Delete type=0 #35
-2024/05/27-20:48:22.419329 e201d2fdf040 Manual compaction at level-0 from '!cards!FrlciZK6wsfNWg0Q' @ 72057594037927935 : 1 .. '!cards.cards!qGayqowa7n0wMefo.vxJaX9ZSF52PewaM' @ 0 : 0; will stop at (end)
-2024/05/27-20:48:22.419353 e201d2fdf040 Manual compaction at level-1 from '!cards!FrlciZK6wsfNWg0Q' @ 72057594037927935 : 1 .. '!cards.cards!qGayqowa7n0wMefo.vxJaX9ZSF52PewaM' @ 0 : 0; will stop at (end)
+2024/07/11-09:35:35.634292 eb90ddfbf040 Recovering log #36
+2024/07/11-09:35:35.641706 eb90ddfbf040 Delete type=3 #34
+2024/07/11-09:35:35.641752 eb90ddfbf040 Delete type=0 #36
+2024/07/11-09:36:07.408727 eb8ebffff040 Level-0 table #41: started
+2024/07/11-09:36:07.412071 eb8ebffff040 Level-0 table #41: 13002 bytes OK
+2024/07/11-09:36:07.414504 eb8ebffff040 Delete type=0 #39
+2024/07/11-09:36:07.428476 eb8ebffff040 Manual compaction at level-0 from '!cards!FrlciZK6wsfNWg0Q' @ 72057594037927935 : 1 .. '!cards.cards!qGayqowa7n0wMefo.vxJaX9ZSF52PewaM' @ 0 : 0; will stop at (end)
+2024/07/11-09:36:07.428543 eb8ebffff040 Manual compaction at level-1 from '!cards!FrlciZK6wsfNWg0Q' @ 72057594037927935 : 1 .. '!cards.cards!qGayqowa7n0wMefo.vxJaX9ZSF52PewaM' @ 0 : 0; will stop at '!cards.cards!qGayqowa7n0wMefo.vxJaX9ZSF52PewaM' @ 118 : 1
+2024/07/11-09:36:07.428547 eb8ebffff040 Compacting 1@1 + 1@2 files
+2024/07/11-09:36:07.432026 eb8ebffff040 Generated table #42@1: 62 keys, 13002 bytes
+2024/07/11-09:36:07.432053 eb8ebffff040 Compacted 1@1 + 1@2 files => 13002 bytes
+2024/07/11-09:36:07.434444 eb8ebffff040 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/07/11-09:36:07.434553 eb8ebffff040 Delete type=2 #5
+2024/07/11-09:36:07.434625 eb8ebffff040 Delete type=2 #41
+2024/07/11-09:36:07.456161 eb8ebffff040 Manual compaction at level-1 from '!cards.cards!qGayqowa7n0wMefo.vxJaX9ZSF52PewaM' @ 118 : 1 .. '!cards.cards!qGayqowa7n0wMefo.vxJaX9ZSF52PewaM' @ 0 : 0; will stop at (end)

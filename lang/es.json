@@ -377,6 +377,7 @@
       "defaultAction": "Acción por defecto, por ejemplo, equipo",
       "dramaDeckEmpty": "El mazo de drama está vacío. Reinicie el mazo para continuar",
       "macroTypeWarning": "Solo puede crear botones macro en objetos que posee o en atributos/habilidades",
+      "migrationRunning": "Migrando sistema Torg a la versión ",
       "moduleNotActive": "Active el módulo para ver la descripción",
       "noActiveEffectInOwnedItem": "Aún no es posible configurar efectos activos en un objeto que posea. Será añadido en posteriores actualizaciones",
       "noAttrNamed": "El actor controlado no tiene ningún atributo llamado ",
