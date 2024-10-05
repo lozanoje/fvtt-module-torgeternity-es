@@ -1,4 +1,6 @@
-# Torg Eternity para FoundryVTT
+# Translation: Spanish [Torg Eternity] para FoundryVTT
+
+Traducción del sistema Torg Eternity (github.com/gmmatt/torgeternity) al español -  Torg Eternity spanish translation
 
 ## Description - Descripción  
 

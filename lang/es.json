@@ -26,6 +26,18 @@
       "spirit": "Espíritu",
       "strength": "Fuerza"
     },
+    "axioms": {
+      "magic": "Mágico",
+      "social": "Social",
+      "spirit": "Espiritual",      
+      "tech": "Tecnológico"
+    },
+    "axioms": {
+      "magic": "Mágico",
+      "social": "Social",
+      "spirit": "Espiritual",      
+      "tech": "Tecnológico"
+    },
     "cardTypes": {
       "activeDrama": "Carta de drama activa",
       "cosm": "Cosmos",
@@ -107,6 +119,11 @@
       "heroCard": "Carta Héroe",
       "hideDetails": "Ocultar detalles",
       "modifiers": "Modificadores",
+      "noAmmo": "No puedes disparar, no tienes munición.",
+      "noAmmoPosessing": "No tienes munición en el inventario. Imposible proceder.",
+      "notSufficientAmmo": "No tienes suficiente munición en el arma para hacer una ráfaga, no se puede hacer la prueba.",
+      "reloaded": "Ha recargado su arma {a}.",
+      "ammoLabel": "Munición restante",
       "notes": "Notas",
       "passesCard1": "Da",
       "passesCard2": "a",
@@ -122,7 +139,8 @@
       "up": "Aumento",
       "value": "Valor",
       "vehicleBase": "Prueba manejo vehículo",
-      "mayCauseContradiction": "Los Dones con este símbolo dependen de las leyes del cosmos y pueden causar Contradicciones fuera del Cosmos."
+      "mayCauseContradiction": "Los Dones con este símbolo dependen de las leyes del cosmos y pueden causar Contradicciones fuera del Cosmos.",
+      "ammoFull": "El arma \"{a}\" ya está completamente cargada."
     },
     "clearances": {
       "alpha": "Alfa",
@@ -135,7 +153,10 @@
       "dramaBack": "modules/fvtt-module-torgeternity-es/images/cards/drama-back.jpg",
       "endMyTurn": "Terminar",
       "nextKeep": "Siguiente asalto (misma carta)",
-      "nextNew": "Siguiente asalto (nueva carta)"
+      "nextNew": "Siguiente asalto (nueva carta)",
+      "herosTooltip": "los héroes primero",
+      "vilainsTooltip": "los villanos primero",
+      "hasPlayedTooltip": "Marcar cuando el turno del jugador se ha completado"
     },
     "cosmDecks": {
       "aysle": "Mazo de Cosmos de Aysle",
@@ -228,6 +249,38 @@
       "buttons": {
         "execute": "Ejecutar",
         "ok": "OK"
+      },
+      "chooseAmmo": {
+        "maintext": "Elija que munición usar para recargar el arma.",
+        "windowTitle": "Elegir munición"
+      },
+      "dragDropDriver": {
+        "maintext": "¿Quiere que este personaje conduzca el vehículo?",
+        "windowTitle": "Escoja un conductor"
+      },
+      "showingDramaCards": {
+        "nbCards":"Cantidad de cartas",
+        "nbCardsValue":"Número de cartas a mostrar al jugador",
+        "recipient":"Elección de los destinatarios del susurro",
+        "whisper":"Susurrar a los jugadores activos seleccionados",
+        "apply":"Aplicar",
+        "show":"Próxima(s) carta(s)"
+      },
+      "cardRetour": {
+        "cardBack":"Devolver carta tras fallo al jugarla",
+        "cardOwner":"¿A quién se le devolverá la última carta jugada?"        
+      },
+      "buffMacro": {
+        "choice":"A su elección",
+        "choose":"¿Qué atributo quiere modificar?",
+        "allAttributes":"Todos los atributos",
+        "defenses":"Defensas",
+        "physicalDefenses" : "Defensas físicas",
+        "cancelEffects": "Cancelar efectos",
+        "bonusTitle":"Introduzca el valor bonificación/penalización",
+        "value":"Escoja el valor del bonificación",
+        "timeLabel":"Escoja la duración",
+        "time":"Escoja la duración en turno(s)"
       }
     },
     "dnTypes": {
@@ -283,7 +336,8 @@
       "perk": "Don"
     },
     "gear": {
-      "ammo": "Munición",
+      "ammo": "Mun.",
+      "ammunition": "Munición",
       "ap": "PA",
       "armor": "Armadura",
       "attackWith": "Ataca con",
@@ -332,7 +386,10 @@
       "miracleRoll": "Tirada de milagro",
       "openParty": "Abrir hoja de grupo",
       "psionicRoll": "Tirada de poder psiónico",
+      "reload": "Recargar arma",
       "resetPossibilities": "Reiniciar posibilidades de los caballeros de la tormenta",
+      "GMPoss": "Reserva de posibilidad del GM",
+      "SKPoss": "Posibilidades de los jugadores",
       "sendToChat": "Enviar al chat",
       "spellRoll": "Tirada de hechizo",
       "toggle": "Conmutar",
@@ -340,6 +397,7 @@
     },
     "itemSheetDescriptions": {
       "armor": "Armadura",
+      "ammunition": "Munición",
       "customAttack": "Ataque personalizado",
       "customSkill": "Habilidad personalizado",
       "enhancement": "Mejoras",
@@ -374,8 +432,9 @@
       "play": "Jugar"
     },
     "notifications": {
+      "beginningMigration": "Migrando el sistema Torg a la versión ",
       "defaultAction": "Acción por defecto, por ejemplo, equipo",
-      "dramaDeckEmpty": "El mazo de drama está vacío. Reinicie el mazo para continuar",
+      "dramaDeckEmpty": "El mazo de drama está vacío. Reinicie el mazo para continuar.",
       "macroTypeWarning": "Solo puede crear botones macro en objetos que posee o en atributos/habilidades",
       "migrationRunning": "Migrando sistema Torg a la versión ",
       "moduleNotActive": "Active el módulo para ver la descripción",
@@ -385,12 +444,17 @@
       "noItemNamed": "El actor controlado no tiene ningún objeto llamado ",
       "noSkillNamed": "El actor controlado no tiene ninguna habilidad llamada ",
       "noTarget": "Icono objetivo no válido",
+      "noVehicleOperator": "El vehículo objetivo {a} no tiene ningún operador. No se puede realizar la prueba.",
       "notImplemented": "Aún no implementado",
       "onlyReservedCard": "Por favor, juege una carta en la reserva cuando esté en una escena dramática",
       "openDiscord": "Se abrirá una ventana del navegador en una nueva página para acceder a nuestro servidor de discord",
       "openIssue": "Se abrirá una ventana del navegador en una nueva página para notificar un error",
       "openUlisses": "Se abrirá una nueva pestaña para acceder al sitio web de Ulisses",
-      "failureBDResolution": "El sistema falló al resolver la BD"
+      "failureBDResolution": "El sistema falló al resolver la BD",
+      "ammoValueExceedsMax": "El valor de munición actual del arma {a} excede el valor máximo. El valor será reducido al máximo.",
+      "noPossibility": "No queda posibilidad",
+      "noCapacity": "{a} no puede conducir este tipo de vehículo",
+      "noFight":"Sin combate activo, o aún no ha sido iniciado"
     },
     "packs": {
       "basicRules": "torgeternity.basic-rules",
@@ -446,6 +510,7 @@
       "spellcraft": "Conjuros",
       "stalenger": "Stalenger",
       "theRace": "La Raza",
+      "legend": "Leyenda",
       "special": "Especial/Personalizado"
     },
     "poolToggle": {
@@ -574,8 +639,12 @@
       "addOns": "Añadidos",
       "adds": "Adición",
       "aimed": "Apuntado",
+      "aimedTooltip": "Disparo apuntado (solo ataques a distancia)",
       "allOut": "Ataque total",
+      "allOutTooltip": "+4 Bono/muy vulnerable (solo desarmado y ataques cac)",
       "alterAttributes": "Ahora puede cambiar los atributos",
+      "ammunition": "Munición",
+      "APMod": "Modificador PA",
       "applyDamage": "Aplicar daño",
       "applyDamageTooltip": "Botón derecho para modificar el daño. Botón izquierdo para aplicar",
       "applyStymied": "Aplicar impedido",
@@ -594,8 +663,11 @@
       "backgroundDescription": "Trasfondo",
       "baseAttribute": "Atributo base",
       "baseRoll": "Tirar",
+      "blastRadius": "Radio explosión",
       "blindFire": "Fuego a ciegas",
+      "blindFireTooltip": "Localización del objetivo aproximada",
       "burst": "Fuego rápido",
+      "burstTooltip": "Solo armas automáticas",
       "calledShot": "Tiro preciso",
       "chase": "Persecución",
       "chooseDamage": "Escoger qué daño infligir",
@@ -605,9 +677,11 @@
       "concealment": "Ocultación",
       "cosm": "Cosmos",
       "coverBonus": "Bono de cobertura",
+      "coverBonusTooltip": "Se ha añadido bono a la resistencia debido a la cobertura",
       "customSkill": "Se pueden editar las habilidades personalizadas en la pestaña de Dones",
       "customSkills": "Habilidades personalizadas",
       "damageAP": "Daño (PA)",
+      "damageMod": "Mod. daño",
       "defense": "Defensa",
       "defenses": "Defensa",
       "defensesTip": "Haca clic para tirar/deshabilitar defensas activas",
@@ -624,14 +698,20 @@
       "end": "Fin",
       "enhancement": "Mejora",
       "enhancements": "Mejoras",
+      "enhancementTooltip": "Marcar si el Caballero de la Tormenta ha seleccionado una mejora",
+      "enhancementRemoveTooltip": "Quitar última mejora disponible",
+      "enhancementAddTooltip": "Añade mejora disponible al final de la lista",
       "equipment": "Equipo",
       "eternityShard": "Fragmento de eternidad",
       "explosionCancelled": "Está desfavorecido, el primer dado de bono se ha cancelado, aunque se ha quitado el estado de desfavorecido",
       "explosives": "Explosivos",
       "fatigue": "Fatiga",
+      "fatigueTooltip": "Clic para aplicar fatiga",
       "favDis": "Favorecido y desfavorecido se cancelan",
       "favored": "Preferente",
+      "favoredTitle": "Marcar si la habilidad es favorecida",
       "firearms": "Armas de fuego",
+      "firedamage": "Causa daño de fuego",
       "freePoss": " GM ha concedido una posibilidad",
       "gear": "Equipo",
       "generalGear": "Equipo",
@@ -643,6 +723,7 @@
       "implants": "Implantes",
       "inactiveEffects": "Efecto inactivo",
       "inputExisting": "Añadir existente",
+      "inputExistingTooltip": "Escoja si quiere (1) tirar por bono o (2) introducirlo de un bono generado anteriormente al realizar una multiacción.",
       "inputExistingRdbTitle": "Cuando realice acciones múltiples, marque esta casilla para meter los bonos de pruebas anteriores.",
       "inputExistingTitle": "Introduzca BONIFICACIÓN de prueba anterior, no el total del dado.",
       "interactionAttacks": "Ataques de interacción",
@@ -652,6 +733,8 @@
       "lastPossMess": "<h3> Esta es su última posibilidad, ¿quiere confirmar?<br>¿Está seguro?</h3>",
       "lastSpent": " gastó la última posibilidad",
       "limitations": "Limitaciones",
+      "limitationsAddTooltip": "Añadir limitación disponible al final de la lista",
+      "limitationsRemoveTooltip": "Quitar última limitación disponible",
       "longBurst": "Larga (+4)",
       "magic": "Magia",
       "melee": "Cuerpo a cuerpo",
@@ -687,16 +770,19 @@
       "possibilityByCosm": "Posibilidades por cosmo",
       "possibilitypotential": "Posibilidad (potencial)",
       "possSpent": " Gastada posibilidad",
+      "possGrant": "¡ Se te ha concedido una posibilidad !",
       "powers": "Poderes",
       "psionic": "Psiónica",
       "psionicPower": "Poder psiónico",
       "psionicPowers": "Poderes psiónicos",
+      "quantity": "Cantidad",
       "race": "Raza",
       "range": "Alcance",
       "return": "Devolver",
       "roll": "Tirar",
       "run": "Carrera",
       "running": "Corriendo (-2)",
+      "secondaryAxiom": "Axioma secundario",
       "secondaryCosm": "Cosmos secundario",
       "shield": "Escudo",
       "shields": "Escudos",
@@ -705,7 +791,7 @@
       "size": "Tamaño",
       "skill": "Habilidad",
       "skillAdds": "Añade",
-      "skillRollHint": "Mayús-clic para realizar una prueba mejorada de habilidad",
+      "skillRollHint": "Clic para prueba de habilidad",
       "skills": "Habilidades",
       "skillValue": "Valor habilidad",
       "soakAll": "Se absorven todas las heridas y el shock",
@@ -751,6 +837,7 @@
       "vehicle": "Vehículo",
       "vehicles": "Vehículos",
       "vitalArea": "Golpe vital",
+      "vitalAreaTooltip": "+4 daño",
       "walking": "Andando (None)",
       "weapons": "Armas",
       "wounds": "Heridas",
@@ -774,12 +861,28 @@
       "veryLarge": "Muy grande",
       "verySmall": "Muy pequeño"
     },
+    "blastRadi": {
+      "small": "Pequeño",
+      "medium": "Mediano",
+      "large": "Grande",
+      "veryLarge": "Muy grande",
+      "huge": "Enorme"
+    },
+    "levelDifferences": {
+      "1+": "Un nivel más",
+      "2+": "Dos niveles más",
+      "3+": "Tres niveles más",
+      "1-": "Un nivel menos",
+      "2-": "Dos niveles menos",
+      "3-": "Tres niveles menos"
+    },
     "skillDialogs": {
       "disfavored": "Desfavorecida",
       "disfavoredTip": "Marque si esta prueba es desfavorecida. El dado no explotará con un 10 o un 20",
       "favored": "Favorecida",
       "favoredanddisfavored": "(Des-)Favorecida",
-      "favoredTip": "Marque si esta prueba es favorecida por alguna razón inesperada"
+      "favoredTip": "Marque si esta prueba es favorecida por alguna razón inesperada",
+      "favoredChoice": "Favorecida o no"
     },
     "skills": {
       "airVehicles": "Vehículos aéreos",
@@ -902,6 +1005,11 @@
       "vulnerable": "Vulnerable",
       "waiting": "A la espera"
     },
+    "darknessModifiers": {
+      "dim": "Penumbra",
+      "dark": "Oscuridad",
+      "pitchBlack": "Como el carbón"
+    },
     "stymiedStates": {
       "none": "No impedido",
       "stymied": "Impedido",
@@ -972,7 +1080,11 @@
       "reconnectMacroZoneModifier": "Modificador de zona",
       "reconnectMacroZoneModifierNotDetectedTitle": "Sin modificador de zona",
       "reconnectMacroZoneModifierNotDetected": "No se ha podido determinar modificador de zona debido a que la escena actual no tiene ningún Cosmos definido. Modifique a mano el modificador al resultado.",
-      "reconnectMacroStatusLiftet": "Quitado estado de desconexión tras pasar la tirada de reconexión."
+      "reconnectMacroStatusLiftet": "Quitado estado de desconexión tras pasar la tirada de reconexión.",
+      "macroHub": {
+        "buttonTitle": "Repositorio de macros",
+        "title":"Repositorio de macros de Torg Eternity"
+      }
     }
   }
 }
