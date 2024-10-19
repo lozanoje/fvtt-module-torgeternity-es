@@ -1,7 +1,7 @@
 {
   "title": "Translation: Spanish [Torg Eternity]",
   "description": "Traducción del sistema Torg Eternity (gmmatt/torgeternity) al español -  Torg Eternity spanish translation",
-  "version": "12.28.1",
+  "version": "12.28.2",
   "languages": [
 	  {
       "lang": "es",
@@ -56,7 +56,7 @@
   },
 	  "packFolders": [
   {
-    "name": "Compendios en español",
+    "name": "TORG Eternity | español",
     "sorting": "a",
     "color": "#b95050",
     "packs": ["mazos-de-cartas", "tarjetas-de-amenaza", "macros", "mazos-de-amenaza"]

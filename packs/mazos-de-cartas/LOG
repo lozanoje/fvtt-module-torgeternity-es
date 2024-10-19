@@ -1,15 +1,8 @@
-2024/07/11-09:35:35.596250 eb90de7cf040 Recovering log #36
-2024/07/11-09:35:35.603664 eb90de7cf040 Delete type=3 #34
-2024/07/11-09:35:35.603702 eb90de7cf040 Delete type=0 #36
-2024/07/11-09:36:07.358906 eb8ebffff040 Level-0 table #41: started
-2024/07/11-09:36:07.362943 eb8ebffff040 Level-0 table #41: 34384 bytes OK
-2024/07/11-09:36:07.365382 eb8ebffff040 Delete type=0 #39
-2024/07/11-09:36:07.383354 eb8ebffff040 Manual compaction at level-0 from '!cards!6owvLGJAuZCj1chZ' @ 72057594037927935 : 1 .. '!cards.cards!zmg3SL4w1jIt2uuH.ZQwcfeRoSSWVZxeS' @ 0 : 0; will stop at (end)
-2024/07/11-09:36:07.383409 eb8ebffff040 Manual compaction at level-1 from '!cards!6owvLGJAuZCj1chZ' @ 72057594037927935 : 1 .. '!cards.cards!zmg3SL4w1jIt2uuH.ZQwcfeRoSSWVZxeS' @ 0 : 0; will stop at '!cards.cards!zmg3SL4w1jIt2uuH.ZQwcfeRoSSWVZxeS' @ 371 : 1
-2024/07/11-09:36:07.383412 eb8ebffff040 Compacting 1@1 + 1@2 files
-2024/07/11-09:36:07.387368 eb8ebffff040 Generated table #42@1: 190 keys, 34384 bytes
-2024/07/11-09:36:07.387395 eb8ebffff040 Compacted 1@1 + 1@2 files => 34384 bytes
-2024/07/11-09:36:07.389803 eb8ebffff040 compacted to: files[ 0 0 1 0 0 0 0 ]
-2024/07/11-09:36:07.389919 eb8ebffff040 Delete type=2 #5
-2024/07/11-09:36:07.390000 eb8ebffff040 Delete type=2 #41
-2024/07/11-09:36:07.402782 eb8ebffff040 Manual compaction at level-1 from '!cards.cards!zmg3SL4w1jIt2uuH.ZQwcfeRoSSWVZxeS' @ 371 : 1 .. '!cards.cards!zmg3SL4w1jIt2uuH.ZQwcfeRoSSWVZxeS' @ 0 : 0; will stop at (end)
+2024/10/15-20:41:37.251773 e4550be0f040 Recovering log #77
+2024/10/15-20:41:37.259315 e4550be0f040 Delete type=0 #77
+2024/10/15-20:41:37.259408 e4550be0f040 Delete type=3 #75
+2024/10/15-20:41:53.749343 e4550a60f040 Level-0 table #82: started
+2024/10/15-20:41:53.749364 e4550a60f040 Level-0 table #82: 0 bytes OK
+2024/10/15-20:41:53.751904 e4550a60f040 Delete type=0 #80
+2024/10/15-20:41:53.754752 e4550a60f040 Manual compaction at level-0 from '!cards!6owvLGJAuZCj1chZ' @ 72057594037927935 : 1 .. '!cards.cards!zmg3SL4w1jIt2uuH.ZQwcfeRoSSWVZxeS' @ 0 : 0; will stop at (end)
+2024/10/15-20:41:53.754781 e4550a60f040 Manual compaction at level-1 from '!cards!6owvLGJAuZCj1chZ' @ 72057594037927935 : 1 .. '!cards.cards!zmg3SL4w1jIt2uuH.ZQwcfeRoSSWVZxeS' @ 0 : 0; will stop at (end)
