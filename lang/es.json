@@ -32,12 +32,6 @@
       "spirit": "Espiritual",      
       "tech": "Tecnológico"
     },
-    "axioms": {
-      "magic": "Mágico",
-      "social": "Social",
-      "spirit": "Espiritual",      
-      "tech": "Tecnológico"
-    },
     "cardTypes": {
       "activeDrama": "Carta de drama activa",
       "cosm": "Cosmos",
@@ -158,6 +152,13 @@
       "vilainsTooltip": "los villanos primero",
       "hasPlayedTooltip": "Marcar cuando el turno del jugador se ha completado"
     },
+    "contextMenu": {
+      "characterInfo": {
+        "contextMenuTitle":"Mostrar información personaje",
+        "windowTitle": "Notas y trasfondo de {a}",
+        "createChatCard": "Crear tarjeta de chat"
+      }
+    },
     "cosmDecks": {
       "aysle": "Mazo de Cosmos de Aysle",
       "coreEarth": "Mazo de Cosmos de la Tierra Base",
@@ -242,6 +243,10 @@
         "content": "¿Está seguro de que desea borrar? Se eliminará permanentemente de la ficha",
         "title": "Confirmar borrado"
       },
+      "raceDeletion": {
+        "content":"¿Está seguro de que desea borrar? Se eliminará permanentemente de la hoja, al igual que todos los dones raciales",
+        "title":"Confirmar borrado"
+      },
       "realityCheck": {
         "title": "¿Reconectando?",
         "content": "¿Está intentando reconectar?"
@@ -281,6 +286,10 @@
         "value":"Escoja el valor del bonificación",
         "timeLabel":"Escoja la duración",
         "time":"Escoja la duración en turno(s)"
+      },
+      "raceDiminishAttribute": {
+        "maintext": "El valor del atributo {attribute} es mayor que el máximo racial. ¿Cambiar a máximo de raza?",
+        "title": "Atención, máximo del atributo"
       }
     },
     "dnTypes": {
@@ -393,7 +402,8 @@
       "sendToChat": "Enviar al chat",
       "spellRoll": "Tirada de hechizo",
       "toggle": "Conmutar",
-      "toggleEquip": "Conmutar equipado"
+      "toggleEquip": "Conmutar equipado",
+      "deleteRace": "Borrar raza"
     },
     "itemSheetDescriptions": {
       "armor": "Armadura",
@@ -413,6 +423,7 @@
       "other": "Equipo general",
       "perk": "Dones",
       "psionicpower": "Poder psiónico",
+      "race": "Raza",
       "shield": "Escudo",
       "specialability": "Habilidad especial",
       "specialabilityRollable": "Tabla de habilidades especiales",
@@ -442,8 +453,10 @@
       "noAttrNamed": "El actor controlado no tiene ningún atributo llamado ",
       "noHands": "¡No existe ninguna mano!",
       "noItemNamed": "El actor controlado no tiene ningún objeto llamado ",
+      "noRaceToDelete": "No hay raza que borrar.",
       "noSkillNamed": "El actor controlado no tiene ninguna habilidad llamada ",
       "noTarget": "Icono objetivo no válido",
+      "noTokenNorActor": "Ninguna ficha seleccionada ni personaje asignado, la macro no puede ejecutarse.",
       "noVehicleOperator": "El vehículo objetivo {a} no tiene ningún operador. No se puede realizar la prueba.",
       "notImplemented": "Aún no implementado",
       "onlyReservedCard": "Por favor, juege una carta en la reserva cuando esté en una escena dramática",
@@ -454,7 +467,12 @@
       "ammoValueExceedsMax": "El valor de munición actual del arma {a} excede el valor máximo. El valor será reducido al máximo.",
       "noPossibility": "No queda posibilidad",
       "noCapacity": "{a} no puede conducir este tipo de vehículo",
-      "noFight":"Sin combate activo, o aún no ha sido iniciado"
+      "noFight":"Sin combate activo, o aún no ha sido iniciado",
+      "raceExistent": "Ya ha elegido raza.",
+      "notAPerkItem": "Ha intentado asignar un don de la categoría {a} a esta raza, pero debe pertenecer a la categoría racial. Acción abortada.",
+      "addedRacePerkToActor": "Añadido {perkName}-don al actor.",
+      "reachedMaximumAttr": "Ha alcanzado el atributo máximo para su raza. No se puede aumentar más.",
+      "clipEmpty": "Munición vacía y no puede usarse para recargar."
     },
     "packs": {
       "basicRules": "torgeternity.basic-rules",
@@ -550,15 +568,6 @@
       "precognition": "Precognición",
       "telepathy": "Telepatía"
     },
-    "races": {
-      "aspirants": "Aspirantes",
-      "dwarf": "Enano",
-      "edeinos": "Edeino",
-      "elf": "Elfo",
-      "human": "Humano",
-      "other": "Otra",
-      "theRace": "La Raza"
-    },
     "scenes": {
       "HeaderAmbienceHint": "Configura integraciones adicionales entre esta escena y las entradas del diario, las listas de reproducción de audio o los efectos climáticos",
       "HeaderDetailsHint": "Configura los detalles básicos de esta escena y los permisos que controlan su visibilidad",
@@ -629,6 +638,14 @@
       "uniqueDN": {
         "hint": "Si se habilita, cuando se realiza una prueba contra múltiples objetivos, mantendrá el ND más alto entre todos los oponentes para determinar el resultado.",
         "name": "ND único"
+      },
+      "unTarget": {
+        "hint": "Se han reiniciado por defecto los objetivos tras un ataque. Desmarcar si quiere mantenerlos.",
+        "name": "Cancelar objetivo"
+      },
+      "useYear1PPTent": {
+        "hint": "Usar díptico de Pan-Pacifica tras el año 1.",
+        "name": "Díptico PP año 1 PP"
       }
     },
     "sheetLabels": {
@@ -656,7 +673,9 @@
       "attackOptions": "Opciones de ataque",
       "attacks": "Ataques y poderes",
       "attribute": "Atributo",
+      "attributeMaximum": "Atributo máximo",
       "attributes": "Atributos",
+      "max": "Máx.",
       "availableEnhancements": "Mejoras disponibles",
       "background": "Trasfondo",
       "backgroundAndNotes": "Trasfondo y notas",
@@ -680,6 +699,7 @@
       "coverBonusTooltip": "Se ha añadido bono a la resistencia debido a la cobertura",
       "customSkill": "Se pueden editar las habilidades personalizadas en la pestaña de Dones",
       "customSkills": "Habilidades personalizadas",
+      "customAttacks": "Ataques personalizados",
       "damageAP": "Daño (PA)",
       "damageMod": "Mod. daño",
       "defense": "Defensa",
@@ -717,6 +737,7 @@
       "generalGear": "Equipo",
       "goodResult": "Buen resultado",
       "gunner": "Artillero",
+      "hardcode": "Hardcode",
       "heavyBurst": "Continua (+6)",
       "heavyWeapons": "Armas pesadas",
       "implant": "Implante",
@@ -754,6 +775,7 @@
       "none": "Ninguno",
       "noPoss": " sin posibilidad",
       "noPossFree": "¡Sin posibilidad!<br>¿Confirma que donas?",
+      "noRace": "Sin raza añadida",
       "notes": "Notas",
       "number": "Número",
       "operator": "Operador",
@@ -764,6 +786,7 @@
       "outstandingResult": "Resultado espectacular",
       "passiveEffects": "Efecto pasivo",
       "perks": "Dones",
+      "noPerksAdded": "Sin dones añadidos",
       "perksAbilities": "Dones/habil.",
       "pool": "Reserva",
       "possibilities": "Posibilidades",
@@ -777,7 +800,9 @@
       "psionicPowers": "Poderes psiónicos",
       "quantity": "Cantidad",
       "race": "Raza",
+      "racialPerks": "Dones raciales",
       "range": "Alcance",
+      "darkvision": "Visión en la oscuridad",
       "return": "Devolver",
       "roll": "Tirar",
       "run": "Carrera",
