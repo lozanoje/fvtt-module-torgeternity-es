@@ -358,6 +358,7 @@
       "damageType": "Tipo de daño",
       "description": "Descripción",
       "gunner": "Artillero",
+      "implantType": "Tipo de implante",
       "maxDex": "DES máxima",
       "minStrength": "FUE min",
       "mr": "Maniobra",
