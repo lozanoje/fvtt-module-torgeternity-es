@@ -154,10 +154,13 @@
     },
     "contextMenu": {
       "characterInfo": {
-        "contextMenuTitle":"Mostrar información personaje",
+        "contextMenuTitle": "Mostrar información personaje",
         "windowTitle": "Notas y trasfondo de {a}",
         "createChatCard": "Crear tarjeta de chat"
       }
+    },
+    "core": {
+      "forceDarkModeHint": "TORG solo funciona con la aplicación en modo oscuro"
     },
     "cosmDecks": {
       "aysle": "Mazo de Cosmos de Aysle",
@@ -229,10 +232,10 @@
     },
     "dialogWindow": {
       "externalLinks": {
-        "bug": "<p>¿Error?</p>",
+        "bug": "¿Error?",
         "content": "<p>¿Necesita ayuda? ¿Quiere notificar un error? Aquí puede encontrar enlaces que le resultarán útiles</p>",
-        "publisher": "<p>Editor</p>",
-        "reference": "<p>Referencia</p>",
+        "publisher": "Editor",
+        "reference": "Referencia",
         "title": "Enlaces"
       },
       "hideForeignCompendium": {
@@ -244,8 +247,8 @@
         "title": "Confirmar borrado"
       },
       "raceDeletion": {
-        "content":"¿Está seguro de que desea borrar? Se eliminará permanentemente de la hoja, al igual que todos los dones raciales",
-        "title":"Confirmar borrado"
+        "content": "¿Está seguro de que desea borrar? Se eliminará permanentemente de la hoja, al igual que todos los dones raciales",
+        "title": "Confirmar borrado"
       },
       "realityCheck": {
         "title": "¿Reconectando?",
@@ -264,28 +267,29 @@
         "windowTitle": "Escoja un conductor"
       },
       "showingDramaCards": {
-        "nbCards":"Cantidad de cartas",
-        "nbCardsValue":"Número de cartas a mostrar al jugador",
-        "recipient":"Elección de los destinatarios del susurro",
-        "whisper":"Susurrar a los jugadores activos seleccionados",
-        "apply":"Aplicar",
-        "show":"Próxima(s) carta(s)"
+        "nbCards": "Cantidad de cartas",
+        "nbCardsValue": "Número de cartas a mostrar al jugador",
+        "recipient": "Elección de los destinatarios del susurro",
+        "whisper": "Susurrar a los jugadores activos seleccionados",
+        "apply": "Aplicar",
+        "show": "Próxima(s) carta(s)",
+        "noMoreCards": "No hay más cartas de drama disponibles"
       },
       "cardRetour": {
-        "cardBack":"Devolver carta tras fallo al jugarla",
-        "cardOwner":"¿A quién se le devolverá la última carta jugada?"        
+        "cardBack": "Devolver carta tras fallo al jugarla",
+        "cardOwner": "¿A quién se le devolverá la última carta jugada?"        
       },
       "buffMacro": {
-        "choice":"A su elección",
-        "choose":"¿Qué atributo quiere modificar?",
-        "allAttributes":"Todos los atributos",
-        "defenses":"Defensas",
+        "choice": "A su elección",
+        "choose": "¿Qué atributo quiere modificar?",
+        "allAttributes": "Todos los atributos",
+        "defenses": "Defensas",
         "physicalDefenses" : "Defensas físicas",
         "cancelEffects": "Cancelar efectos",
-        "bonusTitle":"Introduzca el valor bonificación/penalización",
-        "value":"Escoja el valor del bonificación",
-        "timeLabel":"Escoja la duración",
-        "time":"Escoja la duración en turno(s)"
+        "bonusTitle": "Introduzca el valor bonificación/penalización",
+        "value": "Escoja el valor del bonificación",
+        "timeLabel": "Escoja la duración",
+        "time": "Escoja la duración en turno(s)"
       },
       "raceDiminishAttribute": {
         "maintext": "El valor del atributo {attribute} es mayor que el máximo racial. ¿Cambiar a máximo de raza?",
@@ -468,7 +472,8 @@
       "ammoValueExceedsMax": "El valor de munición actual del arma {a} excede el valor máximo. El valor será reducido al máximo.",
       "noPossibility": "No queda posibilidad",
       "noCapacity": "{a} no puede conducir este tipo de vehículo",
-      "noFight":"Sin combate activo, o aún no ha sido iniciado",
+      "noFight": "Sin combate activo, o aún no ha sido iniciado",
+      "noPlayers": "Sin jugadores activos",
       "raceExistent": "Ya ha elegido raza.",
       "notAPerkItem": "Ha intentado asignar un don de la categoría {a} a esta raza, pero debe pertenecer a la categoría racial. Acción abortada.",
       "addedRacePerkToActor": "Añadido {perkName}-don al actor.",
@@ -480,9 +485,11 @@
       "decks": "torgeternity.core-card-set"
     },
     "partySheet": {
-      "chooseParty": "<h3>Si elige SÍ, abrirá todos los personajes.<br>Si elige NO, abrirá solo los personajes activos</h3>",
+      "chooseParty": "<h3>Elija si desea abrir TODOS los jugadores, o solo los activos</h3>",
       "noCharacter": "Este usuario no tiene permisos de propietario de ningún actor",
-      "openParty": "Elija la hoja de grupo"
+      "openParty": "Elija la hoja de grupo",
+      "allPlayers": "Todos los jugadores",
+      "activePlayers": "Jugadores activos"
     },
     "perks": {
       "category": "Categoria",
@@ -647,6 +654,14 @@
       "useYear1PPTent": {
         "hint": "Usar díptico de Pan-Pacifica tras el año 1.",
         "name": "Díptico PP año 1 PP"
+      },
+      "shuffleMessageSurpress": {
+        "hint": "Si se habilita, los mensajes del chat al barajar cartas se suprimirán.",
+        "name": "Suprimir mensajes de barajar"
+      },
+      "ignoreAmmo": {
+        "hint": "Si se habilita, se ignorarán las reglas y mecánicas de recargar munición.",
+        "name": "Ignorar munición"
       }
     },
     "sheetLabels": {
@@ -1107,9 +1122,15 @@
       "reconnectMacroZoneModifierNotDetectedTitle": "Sin modificador de zona",
       "reconnectMacroZoneModifierNotDetected": "No se ha podido determinar modificador de zona debido a que la escena actual no tiene ningún Cosmos definido. Modifique a mano el modificador al resultado.",
       "reconnectMacroStatusLiftet": "Quitado estado de desconexión tras pasar la tirada de reconexión.",
+      "periculumSourceName": "Fuentes de daños",
+      "periculumSourcePlaceHolder": "Describa el peligro",
+      "periculumDamageValue": "Daño base ",
+      "periculumBds": "Modificadores DBs ",
+      "periculumArmor": "¿Aplicar armadura? ",
+      "periculumAp": "Valor penetración armadura ",
       "macroHub": {
         "buttonTitle": "Repositorio de macros",
-        "title":"Repositorio de macros de Torg Eternity"
+        "title": "Repositorio de macros de Torg Eternity"
       }
     }
   }
