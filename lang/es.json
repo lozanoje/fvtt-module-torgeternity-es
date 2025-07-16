@@ -60,7 +60,7 @@
         "interactionNeedTarget": "Seleccione un objetivo para realizar un ataque de interacción",
         "modifier": {
           "aimedShot": "Apuntar (+4)",
-          "allOutAttack": "Ataque total",
+          "allOutAttack": "Ataque total (+4)",
           "blindFire": "Fuego a ciegas (-6)",
           "calledShot": "Tiro preciso",
           "darkness": "Oscuridad ",
@@ -211,6 +211,13 @@
       "mindPlus": "Mente +",
       "spiritPlus": "Espíritu +",
       "strengthPlus": "Fuerza +"
+    },
+    "defeat": {
+      "prompt": "{name} debe realizar una prueba de Derrota",
+      "outstanding": "<p><strong>{name} está Noqueado</strong></p>",
+      "good": "<p><strong>{name} está Noqueado</strong></p><p>Sufre una herida que durará hasta que se curen todas las heridas</p>",
+      "standard": "<p><strong>{name} está Noqueado</strong></p><p>Sufre una herida permanente</p>",
+      "failure": "¡<p><strong>{name} muere!</strong></p><p>Puede realizar una última acción dramática antes de espirar (ignorando penalizaciones por heridas)</p>"
     },
     "dialogPrompts": {
       "cardPooled": "Reserva",
@@ -655,6 +662,10 @@
         "hint": "Usar díptico de Pan-Pacifica tras el año 1.",
         "name": "Díptico PP año 1 PP"
       },
+      "cardChatNotify": {
+        "hint": "Oculta los mensajes de Foundry relacionados con las cartas y mantiene los propios de Torg Eternity.",
+        "name": "Suprimir mensajes de cartas del programa"
+      },
       "shuffleMessageSurpress": {
         "hint": "Si se habilita, los mensajes del chat al barajar cartas se suprimirán.",
         "name": "Suprimir mensajes de barajar"
@@ -662,6 +673,14 @@
       "ignoreAmmo": {
         "hint": "Si se habilita, se ignorarán las reglas y mecánicas de recargar munición.",
         "name": "Ignorar munición"
+      },
+      "autoShock": {
+        "name": "Aplicar KO automáticamente",
+        "hint": "Automáticamente aplica el estado de inconsciente cuando se escede el shock"
+      },
+      "autoWound": {
+        "name": "Aplicar heridas automáticamente",
+        "hint": "Automáticamente aplica el estado de muerto a una ficha de amenaza o vehículo cuando se superan sus heridas"
       }
     },
     "sheetLabels": {
