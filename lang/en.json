@@ -8,6 +8,11 @@
       "destiny": "Destiny",
       "drama": "Drama",
       "cosm": "Cosm"
+    },
+    "Actor": {
+      "stormknight": "Stormknight",
+      "threat": "Threat",
+      "vehicle": "Vehicle"
     }
   },
   "torgeternity": {
@@ -58,36 +63,39 @@
         "cantUseUntrained": " cannot be used unless it is learned (at least 1 skill add).",
         "cantUseRealityWhileDisconnected": "You cannot use the reality skill as long as you are disconnected",
         "interactionNeedTarget": "Cannot attempt interaction attack test without a target. Select a target and try again.",
+        "isApprovedAction": "Successful Approved Action",
+        "isApprovedDefend": "{name} successfully DEFENDed",
         "modifier": {
-          "aimedShot": "Aimed Shot (+4)",
-          "allOutAttack": "All out Attack (+4)",
-          "blindFire": "Blind Fire (-6)",
+          "aimedShot": "Aimed Shot",
+          "allOutAttack": "All out Attack",
+          "blindFire": "Blind Fire",
           "calledShot": "Called Shot",
-          "darkness": "Darkness ",
-          "heavyBurst": "Heavy Burst (+6)",
-          "longBurst": "Long Burst (+4)",
-          "multiAction": "Multi-action ",
-          "multiAttack": "Multi-attack ",
-          "multiTarget": "Multi-target ",
+          "darkness": "Darkness",
+          "heavyBurst": "Heavy Burst",
+          "longBurst": "Long Burst",
+          "multiAction": "Multi-action",
+          "multiAttack": "Multi-attack",
+          "multiTarget": "Multi-target",
           "powerModifier": "Modifier from Power",
-          "running": "Running (-2) ",
-          "shortBurst": "Short Burst (+2)",
-          "stymied": "Stymied (-2 )",
+          "running": "Running",
+          "shortBurst": "Short Burst",
+          "stymied": "Stymied",
           "targetConcealment": "Target Concealment",
           "targetSize": "Target Size",
-          "targetVeryVulnerable": "Target Very Vulnerable (+4)",
-          "targetVulnerable": "Target Vulnerable (+2)",
-          "veryStymied": "Very Stymied (-4)",
+          "targetVeryVulnerable": "Target Very Vulnerable",
+          "targetVulnerable": "Target Vulnerable",
+          "veryStymied": "Very Stymied",
           "wounds": "Wounds"
         },
         "needTarget": "Cannot attempt enhanced attack test without a target. Select a target and try again.",
         "noTracker": "Cannot use chase button unless there is an active combat in the combat tracker.",
         "result": {
           "actionTotal": "Action Total",
-          "diceTotal": "Dice sum",
           "attackMissed": "Attack Missed",
           "damage": "Damage",
+          "diceTotal": "Dice sum",
           "failure": "Failure",
+          "fragileBroken": "The fragile {itemName} breaks",
           "goodSuccess": "Good Success",
           "mishape": "Mishap",
           "new": "New Roll Total",
@@ -102,6 +110,21 @@
         },
         "testUnsuccessfull": "Test unsuccessful"
       },
+      "contradiction": {
+        "alreadyDisconnected": "is already disconnected",
+        "noContradiction": "has no contradiction",
+        "hasDisconnected": "has <strong>disconnected</strong>!!!",
+        "notDisconnected": "has not disconnected",
+        "possibleContradiction": "has a possible contradiction",
+        "contradictionCheck": "Contradiction Check",
+        "checkTooltip": "<strong>{name}</strong> rolls for contradiction"
+      },
+      "disconnection": {
+        "base": "{itemName} caused DISCONNECTION ({diceTotal}):",
+        "actorLabel": "{axiom}: {itemAxiom} > {actorType} {actorAxiom}",
+        "zoneLabel": "{axiom}: {itemAxiom} > Zone {zoneAxiom}",
+        "perk": "{itemName} was used outside its cosm"
+      },
       "damage": "Damage",
       "dieTotal": "Die Total",
       "discardsCard": "Discards",
@@ -112,6 +135,7 @@
       "hero": "Hero",
       "heroCard": "Hero Card",
       "hideDetails": "Hide Details",
+      "notPermittedDSR": "Next DSR step {step} not permitted by Drama Card",
       "modifiers": "Modifiers",
       "noAmmo": "Failed to fire your weapon, no bullets left.",
       "noAmmoPosessing": "You do not have any ammunitions in your inventory. Failed to proceed.",
@@ -122,7 +146,9 @@
       "passesCard1": "Passes",
       "passesCard2": "to",
       "playsCard": "Plays",
+      "possibleGlory": "!!! POSSIBLE GLORY !!!",
       "possibility": "Possibility",
+      "possibilityTooltip": "Hold SHIFT to roll Possibility without a minimum of 10",
       "possibleDisconnect": "Possible Disconnect",
       "rolled": "rolled",
       "showDetails": "Show Details",
@@ -134,6 +160,7 @@
       "value": "Value",
       "vehicleBase": "Vehicle Operation Test",
       "mayCauseContradiction": "Perks with this symbol are dependent on their cosm’s World Laws and can cause Contradictions outside that cosm.",
+      "changeAmmoType": "{weapon} switched ammunition to {ammo}",
       "ammoFull": "The weapon \"{a}\" is already fully loaded."
     },
     "clearances": {
@@ -145,9 +172,12 @@
     },
     "combat": {
       "dramaBack": "systems/torgeternity/images/cards/drama-back.webp",
+      "toggleDramatic": "Toggle between Standard and Dramatic Combat Resolution",
       "endMyTurn": "Done",
       "nextKeep": "Next Round (Keep Current Card)",
       "nextNew": "Next Round (Draw New Card)",
+      "heroes": "Heroes",
+      "villains": "Villains",
       "herosTooltip": "Heroes first",
       "vilainsTooltip": "Villains first",
       "hasPlayedTooltip": "Check when character's turn is complete"
@@ -214,10 +244,31 @@
     },
     "defeat": {
       "prompt": "{name} must make a Defeat Test",
-      "outstanding": "<p><strong>{name} is Knocked Out</strong></p>",
-      "good": "<p><strong>{name} is Knocked Out</strong></p><p>They suffer an Injury that lasts until all Wounds are healed</p>",
-      "standard": "<p><strong>{name} is Knocked Out</strong></p><p>They suffer a permanent Injury</p>",
-      "failure": "<p><strong>{name} dies!</strong></p><p>They get one final, dramatic action before expiring (ignoring wound penalties)</p>"
+      "chatTitle": "Defeat Test ({attribute})",
+      "chooseAttribute": "Choose an Attribute",
+      "tempInjury": "You suffer a temporary Injury. {attribute} is reduced by an effect (minus 1)",
+      "permInjury": "You suffer a permanent Injury. {attribute} has been reduced by 1",
+      "outstanding-success": {
+        "main": "Knocked Out",
+        "sub": ""
+      },
+      "good-success": {
+        "main": "Temporary Injury",
+        "sub": "You suffer an Injury that lasts until all Wounds are healed",
+        "effectName": "Temp. Injury"
+      },
+      "standard-success": {
+        "main": "Permanent Injury",
+        "sub": "You suffer a permanent Injury"
+      },
+      "failure": {
+        "main": "&#x1F480;&#x1F480;&#x1F480; DEATH &#x1F480;&#x1F480;&#x1F480;",
+        "sub": "You get one final, dramatic action before expiring (ignoring wound penalties)"
+      },
+      "mishap": {
+        "main": "&#x1F480;&#x1F480;&#x1F480; DEATH &#x1F480;&#x1F480;&#x1F480;",
+        "sub": "You get one final, dramatic action before expiring (ignoring wound penalties)"
+      }
     },
     "dialogPrompts": {
       "cardPooled": "In Pool?",
@@ -313,25 +364,45 @@
       "standard": "Standard (10)",
       "targetAirVehicles": "Target air vehicles or Dexterity",
       "targetAlteration": "Target Alteration",
+      "targetApportation": "Target Apportation",
+      "targetBeastRiding": "Target Beast Riding",
+      "targetComputers": "Target Computers",
       "targetCharisma": "Target Charisma",
       "targetConjuration": "Target Conjuration",
       "targetDexterity": "Target Dexterity",
       "targetDivination": "Target Divination",
       "targetDodge": "Target dodge or Dexterity",
+      "targetEnergyWeapons": "Target Energy Weapons",
+      "targetEvidenceAnalysis": "Target Evidence Analysis",
       "targetFaith": "Target faith or Spirit",
+      "targetFind": "Target find or Mind",
+      "targetFireCombat": "Target Fire Combat",
+      "targetFirstAid": "Target First Aid",
+      "targetHeavyWeapons": "Target Heavy Weapons",
       "targetIntimidation": "Target intimidation or Spirit",
       "targetKinesis": "Target Kinesis",
       "targetLandVehicles": "Target land vehicles or Dexterity",
+      "targetLanguage": "Target Language",
+      "targetLockpicking": "Target Lockpicking",
       "targetManeuver": "Target maneuver or Dexterity",
+      "targetMedicine": "Target Medicine",
       "targetMeleeWeapons": "Target melee weapons or Dexterity",
+      "targetMissileWeapons": "Target Missile Weapons",
       "targetMind": "Target Mind",
+      "targetPersuasion": "Target Persuasion",
       "targetPrecognition": "Target Precognition",
+      "targetProfession": "Target Profession",
+      "targetReality": "Target Reality",
+      "targetScholar": "Target Scholar",
       "targetSpirit": "Target Spirit",
       "targetStealth": "Target stealth or Dexterity",
+      "targetStreetwise": "Target Streetwise",
       "targetStrength": "Target Strength",
+      "targetSurvival": "Target Survival",
       "targetTaunt": "Target taunt or Charisma",
+      "targetTelepathy": "Target Telepathy",
+      "targetTracking": "Target Tracking",
       "targetTrick": "Target trick or Mind",
-      "targetFind": "Target find or Mind",
       "targetUnarmedCombat": "Target unarmed combat or Dexterity",
       "targetVehicleDefense": "Target Vehicle Defense",
       "targetWaterVehicles": "Target water vehicles or Dexterity",
@@ -350,10 +421,54 @@
       "veryEasy": "Very Easy (6)",
       "veryHard": "Very Hard (16)"
     },
+    "drama": {
+      "none": "---",
+      "flurry": "Flurry",
+      "inspiration": "Inspiration",
+      "up": "Up",
+      "confused": "Confused",
+      "fatigued": "Fatigued",
+      "setback": "Setback",
+      "stymied": "Stymied",
+      "surge": "Surge",
+      "flurryDesc": "FLURRY: {faction} get an extra turn this round",
+      "inspirationDesc": "INSPIRATION: All {faction} immediately recover 2 shock",
+      "upDesc": "UP: Add an additional roll to the first roll for {faction}",
+      "confusedDesc": "CONFUSED: Players are unable to play cards from their pool",
+      "fatiguedDesc": "FATIGUED: Two shock inflicted at the end of each {faction} turn",
+      "setbackDesc": "SETBACK: GM decides a suitable setback for {faction}",
+      "stymiedDesc": "STYMIED: All {faction} are stymied until the end of the their turn",
+      "surgeDesc": "SURGE: All {faction} must check for Contradications"
+    },
+    "dramaCard": {
+      "heroesFirst": "Heroes First?",
+      "heroesConflict": "H:",
+      "villainsConflict": "V:",
+      "dsrLine": "DSR",
+      "rule": "Rule",
+      "approvedActions": "Actions",
+      "standard": "Standard",
+      "dramatic": "Dramatic",
+      "attack": "Attack",
+      "defend": "Defend",
+      "multiAction": "Any Multi-Action",
+      "any": "Any",
+      "complication": "Complication",
+      "criticalProblem": "Critical Problem",
+      "possibleSetback": "Possible Setback",
+      "shuffleDeck": "Shuffle Drama Deck",
+      "getPreviousDrama": "Recall Previous Drama Card"
+    },
     "enhancements": {
       "description": "Description",
       "enhances": "Enhances",
       "perk": "Related Perk"
+    },
+    "fieldLabels": {
+      "itemTraits": {
+        "label": "Traits",
+        "hint": "The specific abilities of this item"
+      }
     },
     "gear": {
       "ammo": "Ammo",
@@ -401,13 +516,12 @@
     },
     "iconeTitles": {
       "attackRoll": "Attack Roll",
-      "bonusRoll": "Bonus Roll",
       "delete": "Delete",
       "edit": "Edit",
       "miracleRoll": "Miracle Roll",
       "openParty": "Open the party sheet",
       "psionicRoll": "Psionic Power Roll",
-      "reload": "Reload weapon",
+      "reload": "Reload weapon<p>(hold SHIFT for free reload)",
       "resetPossibilities": "Reset Storm Knight Possibilities",
       "GMPoss": "GM's possibility pool",
       "SKPoss": "character's possibilities",
@@ -440,6 +554,7 @@
       "specialability": "Special Ability",
       "specialabilityRollable": "Special Ability Rollable",
       "spell": "Spell",
+      "traits": "Traits",
       "vehicle": "Vehicle",
       "vehicleAddOn": "Vehicle Add-On"
     },
@@ -642,13 +757,13 @@
         "hint": "If checked, the system will re-set the decks and discard piles in the Card Stacks tab. You will need to refresh your browser before the changes are made.",
         "name": "Setup the Cards Directory"
       },
-      "welcome": {
-        "hint": "If checked, the welcome message will pop up after your world loads.",
-        "name": "Display the Welcome Message"
-      },
       "showCheckDetails": {
         "hint": "If checked, the details of checks will always be shown.",
         "name": "Show Details in checks"
+      },
+      "welcome": {
+        "hint": "If checked, the welcome message will pop up after your world loads.",
+        "name": "Display the Welcome Message"
       },
       "uniqueDN": {
         "hint": "If checked, when a multi-target test is done, will keep the highest DN from all targets to determine outcome, as RAW.",
@@ -674,6 +789,26 @@
         "hint": "If checked, rules and mechanics for reloading Ammo are totally ignored.",
         "name": "Ignore ammo mechanics"
       },
+      "hoverDistance": {
+        "hint": "If checked, hovering the mouse over a token will display the distance to that token from the user's controlled character",
+        "name": "Show Distance to Token"
+      },
+      "rulerGridWalk": {
+        "hint": "The tint colour for grid cells when a token has not reached its move distance (default: --color-level-success)",
+        "name": "Grid Highlight (Walk)"
+      },
+      "rulerGridRun": {
+        "hint": "The tint colour for grid cells when a token has exceeded its move, but not its max move (default: --color-level-info)",
+        "name": "Grid Highlight (Run)"
+      },
+      "rulerGridMax": {
+        "hint": "The tint colour for grid cells when a token has exceeded its max move (default: --color-level-error)",
+        "name": "Grid Highlight (> Run)"
+      },
+      "showMovementRuler": {
+        "hint": "Displays the movement history of tokens during a combat round (history is cleared on a new round)",
+        "name": "Show Token Movement History"
+      },
       "autoShock": {
         "name": "Automatically Apply KO",
         "hint": "Automatically set an actor to unconscious whenever their shock is exceeded"
@@ -681,6 +816,14 @@
       "autoWound": {
         "name": "Automatically Apply Wounds",
         "hint": "Automatically set a threat or vehicle token to Dead when its wounds are exceeded"
+      },
+      "autoDisconnect": {
+        "name": "Automatically Disconnect",
+        "hint": "On a Surge or Test check that causes Disconnection, the actor will automatically be set to disconnected"
+      },
+      "dramaCardUp": {
+        "name": "UP only from Drama Card",
+        "hint": "Hide the UP button in Test Check results if the current Drama Card doesn't have UP in the conflict line (default true)"
       }
     },
     "sheetLabels": {
@@ -732,6 +875,9 @@
       "cosm": "Cosm",
       "coverBonus": "Cover Bonus",
       "coverBonusTooltip": "Bonus added to target toughness as a result of cover",
+      "crewUnskilledOperator": "The operator of this vehicle is unskilled!",
+      "crewUnskilledWeapon": "This weapon is being used unskilled!",
+      "crewFavored": "This weapon has a favored gunner",
       "customSkill": "Custom skills can be edited in the Perks tab",
       "customSkills": "Custom Skills",
       "customAttacks": "Custom Attacks",
@@ -773,14 +919,13 @@
       "goodResult": "Good Result",
       "gunner": "Gunner",
       "hardcode": "Hardcode",
-      "heavyBurst": "Heavy (+6)",
+      "heavyBurst": "Heavy",
       "heavyWeapons": "Heavy Weapons",
       "implant": "Implant",
       "implants": "Implants",
       "inactiveEffects": "Inactive Effects",
       "inputExisting": "Input Existing",
-      "inputExistingTooltip": "Choose whether to (1) roll for a bonus number or (2) input a previously generated bonus when attempting a multi-action.",
-      "inputExistingRdbTitle": "When engaged in multi-actions, check this box to input the bonus number from a previous test.",
+      "inputExistingTooltip": "Optionally enter a previously generated bonus when attempting a multi-action.",
       "inputExistingTitle": "Input BONUS NUMBER from previous test, not die total.",
       "interactionAttacks": "Interaction Attacks",
       "interactionSkills": "Interaction",
@@ -791,7 +936,7 @@
       "limitations": "Limitations",
       "limitationsAddTooltip": "Add available limitation to end of list",
       "limitationsRemoveTooltip": "Remove last available limitation",
-      "longBurst": "Long (+4)",
+      "longBurst": "Long",
       "magic": "Magic",
       "melee": "Melee",
       "meleeWeapons": "Melee Weapons",
@@ -808,6 +953,7 @@
       "name": "Name",
       "new": "New",
       "none": "None",
+      "noMin10": " (Minimum of 10 not applied)",
       "noPoss": " No Possibility!",
       "noPossFree": "No possibility !<br>Do you confirm the gift ?",
       "noRace": "No race added",
@@ -838,16 +984,18 @@
       "racialPerks": "Racial perks",
       "range": "Range",
       "darkvision": "Darkvision",
+      "removeGunner": "Remove this gunner from this weapon",
+      "removeOperator": "Remove the operator from the vehicle",
       "return": "Return",
       "roll": "Roll",
       "run": "Run",
-      "running": "Running (-2)",
+      "running": "Running",
       "secondaryAxiom": "Secondary Axiom",
       "secondaryCosm": "Secondary Cosm",
       "shield": "Shield",
       "shields": "Shields",
       "shock": "Shock",
-      "shortBurst": "Short (+2)",
+      "shortBurst": "Short",
       "size": "Size",
       "skill": "Skill",
       "skillAdds": "Adds",
@@ -884,7 +1032,7 @@
       "total": "Total",
       "tough": "Tough",
       "toughness": "Toughness",
-      "trademark": "Trademark Weapon",
+      "trademark": "Trademark Wpn",
       "trademarkHint": "Trademark Weapon Perk for the used weapon",
       "type": "Type",
       "unarmed": "Unarmed",
@@ -898,7 +1046,7 @@
       "vehicles": "Vehicles",
       "vitalArea": "Vital Area",
       "vitalAreaTooltip": "+4 Damage",
-      "walking": "Walking (None)",
+      "walking": "Walking",
       "weapons": "Weapons",
       "wounds": "Wounds",
       "xp": "XP",
@@ -1090,6 +1238,60 @@
       "d": " D",
       "noDSR": "No DSR",
       "step": "Step"
+    },
+    "traits": {
+      "blackPowder": "Black Powder",
+      "bulky": "Bulky",
+      "carbine": "Carbine",
+      "dazing": "Dazing",
+      "fatigues": "Fatigues",
+      "fragile": "Fragile",
+      "fullBody": "Full Body",
+      "grapple": "Grapple",
+      "head": "Head",
+      "ignoresArmor": "Ignores Armor",
+      "lowestArmor": "Lowest Armor",
+      "nonLethal": "Non-Lethal",
+      "painful": "Painful",
+      "pistol": "Pistol",
+      "quick": "Quick",
+      "reload": "Reload",
+      "shotgun": "Shotgun",
+      "small": "Small",
+      "stagger": "Stagger",
+      "thrown": "Thrown",
+      "torso": "Torso",
+      "twoHanded": "Two-Handed",
+      "unwieldy": "Unwieldy",
+      "wounding": "Wounding",
+      "shortBurst": "Short Burst",
+      "mediumBlast": "Medium Blast",
+      "longBurst": "Long Burst",
+      "smallBlast": "Small Blast",
+      "heavyBurst": "Heavy Burst",
+      "largeBlast": "Large Blast",
+      "veryLargeBlast": "Very Large Blast",
+      "hugeBlast": "Huge Blast",
+      "energyDamage": "Energy Damage",
+      "fireDamage": "Fire Damage",
+      "forceDamage": "Force Damage",
+      "iceDamage": "Ice Damage",
+      "lightningDamage": "Lightning Damage",
+      "energyArmor": "Armor vs Energy",
+      "fireArmor": "Armor vs Fire",
+      "forceArmor": "Armor vs Force",
+      "iceArmor": "Armor vs Ice",
+      "lightningArmor": "Armor vs Lightning",
+      "energyDefense": "Defense vs Energy",
+      "fireDefense": "Defense vs Fire",
+      "forceDefense": "Defense vs Force",
+      "iceDefense": "Defense vs Ice",
+      "lightningDefense": "Defense vs Lightning"
+    },
+    "traitGroup": {
+      "defense": "Defense",
+      "melee": "Melee",
+      "ranged": "Ranged"
     },
     "vehicleTypes": {
       "air": "Air",
