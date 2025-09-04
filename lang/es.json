@@ -16,6 +16,16 @@
     }
   },
   "torgeternity": {
+    "activeEffect": {
+      "transferOnAttack": {
+        "label": "Aplicar efecto al ataque",
+        "hint": "Si se habilita, el efecto se aplicará al actor objetivo con el objeto precedente del efecto esté involucrado en el ataque (ya sea arma o munición)"
+      },
+      "testOutcome": {
+        "label": "Aplicar efecto al resultado",
+        "hint": "Aplica el efecto al icono(s) objetivo cuando la prueba que usa este objeto tenga un resultado en particular"
+      }
+    },
     "attackTypes": {
       "energyWeapons": "Arma de energía",
       "fireCombat": "Arma de fuego",
@@ -70,6 +80,7 @@
           "allOutAttack": "Ataque total",
           "blindFire": "Fuego a ciegas",
           "calledShot": "Tiro preciso",
+          "concentrating": "Concentrado",
           "darkness": "Oscuridad ",
           "heavyBurst": "Ráfaga continua",
           "longBurst": "Ráfaga larga",
@@ -85,6 +96,7 @@
           "targetVeryVulnerable": "Objetivo muy vulnerable",
           "targetVulnerable": "Objetivo vulnerable",
           "veryStymied": "Muy impedido",
+          "waiting": "Esperando",
           "wounds": "Heridas"
         },
         "needTarget": "Seleccione un objetivo para realizar la prueba mejorada de ataque",
@@ -109,6 +121,12 @@
           "BDDamageSum": "Añadir daño de la tirada de BD"
         },
         "testUnsuccessfull": "La interacción no ha tenido éxito"
+      },
+      "concentration": {
+        "makeCheck": "{actor} debe hacer una prueba de Concentración",
+        "AEname": "Concentrado: {item}",
+        "AEdescription": "{actor} se está concentrando en el objeto {itemType} '{itemName}'",
+        "broken": "{actor} ha perdido la concentración en:"
       },
       "contradiction": {
         "alreadyDisconnected": "ya está desconectado",
@@ -173,6 +191,8 @@
     "combat": {
       "dramaBack": "modules/fvtt-module-torgeternity-es/images/cards/drama-back.jpg",
       "toggleDramatic": "Conmutar entre resolución de combate normal y dramática",
+      "toggleWaiting": "Conmutar estado Esperando de este contendiente",
+      "waitingCombatants": "Esperando contendientes",
       "endMyTurn": "Terminar",
       "nextKeep": "Siguiente asalto (misma carta)",
       "nextNew": "Siguiente asalto (nueva carta)",
@@ -248,16 +268,16 @@
       "chooseAttribute": "Elige el atributo",
       "tempInjury": "Sufres una herida temporal. {attribute} se reduce un efecto (menos 1)",
       "permInjury": "Sufres una herida temporal. {attribute} se reduce en 1",
-      "outstanding-success": {
+      "outstanding": {
         "main": "Noqueado",
         "sub": ""
       },
-      "good-success": {
+      "good": {
         "main": "Herida temporal",
         "sub": "Sufres una herida que dura hasta que te cures todo el daño",
         "effectName": "Herida temp."
       },
-      "standard-success": {
+      "standard": {
         "main": "Herida permanente",
         "sub": "Sufres una herida permanente"
       },
@@ -589,6 +609,7 @@
       "onlyReservedCard": "Por favor, juege una carta en la reserva cuando esté en una escena dramática",
       "openDiscord": "Se abrirá una ventana del navegador en una nueva página para acceder a nuestro servidor de discord",
       "openIssue": "Se abrirá una ventana del navegador en una nueva página para notificar un error",
+      "openReference": "Se abrirá una ventana del navegador a la web de Referencia de Torg",
       "openUlisses": "Se abrirá una nueva pestaña para acceder al sitio web de Ulisses",
       "failureBDResolution": "El sistema falló al resolver la BD",
       "ammoValueExceedsMax": "El valor de munición actual del arma {a} excede el valor máximo. El valor será reducido al máximo.",
@@ -685,6 +706,7 @@
       "modifier": "Modificador",
       "outstanding": "Resultado espectacular",
       "range": "Alcance",
+      "requiresConcentration": "Requiere concentración",
       "skill": "Habilidad",
       "skilllevel": "Valor min."
     },
@@ -841,7 +863,11 @@
       "ammunition": "Munición",
       "APMod": "Modificador PA",
       "applyDamage": "Aplicar daño",
-      "applyDamageTooltip": "Botón derecho para modificar el daño. Botón izquierdo para aplicar",
+      "applyEffects": "Aplicar efectos",
+      "applyDamageTooltip": "Clic+Mayús para modificar el daño. Clic normal para aplicar",
+      "applyEffectsTooltip": "Aplica los efectos activos relevantes al objetivo(s)",
+      "applySoak": "Aplicar Absorción",
+      "applySoakTooltip": "Aplicar reduciones por absorción al ataque.",
       "applyStymied": "Aplicar impedido",
       "applyStymiedTooltip": "Clic para aplicar impedido. O muy impedido y ya está impedido",
       "applyVulnerable": "Aplicar vulnerable",
@@ -872,6 +898,7 @@
       "collision": "Colisión",
       "combatSkills": "Combate",
       "concealment": "Ocultación",
+      "conditions": "Condiciones",
       "cosm": "Cosmos",
       "coverBonus": "Bono de cobertura",
       "coverBonusTooltip": "Se ha añadido bono a la resistencia debido a la cobertura",
@@ -1134,48 +1161,6 @@
       "waterVehicles": "Vehículos acuáticos",
       "willpower": "Fuerza de voluntad"
     },
-    "skills-nocap": {
-      "airVehicles": "vehículos aéreos",
-      "alteration": "alteración",
-      "apportation": "aportación",
-      "beastRiding": "montar bestias",
-      "computers": "informática",
-      "conjuration": "conjuración",
-      "divination": "adivinación",
-      "dodge": "esquivar",
-      "energyWeapons": "armas de energía",
-      "evidenceAnalysis": "análisis de pruebas",
-      "faith": "fe",
-      "find": "encontrar",
-      "fireCombat": "armas fuego",
-      "firstAid": "primeros auxilios",
-      "heavyWeapons": "armas pesadas",
-      "intimidation": "intimidación",
-      "kinesis": "kinesis",
-      "landVehicles": "vehículos terrestres",
-      "language": "idiomas",
-      "lockpicking": "forzar cerraduras",
-      "maneuver": "maniobrar",
-      "medicine": "medicina",
-      "meleeWeapons": "armas cac",
-      "missileWeapons": "armas de proyectiles",
-      "persuasion": "persuasión",
-      "precognition": "precognición",
-      "profession": "profesión",
-      "reality": "realidad",
-      "scholar": "erudición",
-      "science": "ciencia",
-      "stealth": "sigilo",
-      "streetwise": "callejeo",
-      "survival": "supervivencia",
-      "taunt": "provocar",
-      "telepathy": "telepatía",
-      "tracking": "rastrear",
-      "trick": "engañar",
-      "unarmedCombat": "combate sin armas",
-      "waterVehicles": "vehículos acuáticos",
-      "willpower": "fuerza voluntad"
-    },
     "speeds": {
       "fast": "Rápido",
       "ultraFast": "Ultra rápido",
@@ -1250,6 +1235,8 @@
       "grapple": "Pelea",
       "head": "Cabeza",
       "ignoresArmor": "Ignora armadura",
+      "ignoreShock": "Ignora shock",
+      "ignoreWounds": "Ignora heridas",
       "lowestArmor": "Armadura menor",
       "nonLethal": "No Letal",
       "painful": "Dolorosa",
