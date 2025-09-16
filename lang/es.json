@@ -843,6 +843,10 @@
         "name": "Desconexión automática",
         "hint": "En una sobrecarga o prueba que cause desconexión, el actor se le aplicará el efecto de desconectado"
       },
+      "showPiety": {
+        "name": "Mostrar puntuación de Piedad",
+        "hint": "Muestra la puntuación actual de Piedad de un Caballero de la Tormenta en la hoja de actor"
+      },
       "dramaCardUp": {
         "name": "Aumento solo para carta de drama",
         "hint": "Oculta el botón de Aumento en los resultados de las pruebas si la carta de drama actual no tiene Aumento en la linea de conflicto (por defecto activo)"
@@ -996,6 +1000,7 @@
       "perks": "Dones",
       "noPerksAdded": "Sin dones añadidos",
       "perksAbilities": "Dones/habil.",
+      "piety": "Piedad",
       "pool": "Reserva",
       "possibilities": "Posibilidades",
       "possibilityByCosm": "Posibilidades por cosmo",
@@ -1246,6 +1251,7 @@
       "shotgun": "Escopeta",
       "small": "Pequeña",
       "stagger": "Desequilibrante",
+      "supernaturalEvil": "Mal sobrenatural",
       "thrown": "Arrojadiza",
       "torso": "Torso",
       "twoHanded": "Dos Manos",
@@ -1278,6 +1284,7 @@
     "traitGroup": {
       "defense": "Defensa",
       "melee": "Cuerpo a cuerpo",
+      "other": "Otra",
       "ranged": "A distancia"
     },
     "vehicleTypes": {
