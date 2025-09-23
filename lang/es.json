@@ -17,13 +17,23 @@
   },
   "torgeternity": {
     "activeEffect": {
-      "transferOnAttack": {
+      "FIELDS": {
+        "transferOnAttack": {
         "label": "Aplicar efecto al ataque",
         "hint": "Si se habilita, el efecto se aplicará al actor objetivo con el objeto precedente del efecto esté involucrado en el ataque (ya sea arma o munición)"
       },
-      "testOutcome": {
+        "transferOnOutcome": {
         "label": "Aplicar efecto al resultado",
         "hint": "Aplica el efecto al icono(s) objetivo cuando la prueba que usa este objeto tenga un resultado en particular"
+        },
+        "applyIfAttackTrait": {
+          "label": "Aplicar en rasgos de ataque",
+          "hint": "Aplica el efecto solo si el icono atacante tiene uno de estos rasgos"
+        },
+        "applyIfDefendTrait": {
+          "label": "Aplicar en rasgos de defensa",
+          "hint": "Aplica el efecto solo si el icono atacado (objetivo) tiene uno de estos rasgos"
+        }
       }
     },
     "attackTypes": {
@@ -484,8 +494,8 @@
       "enhances": "Mejora",
       "perk": "Don"
     },
-    "fieldLabels": {
-      "itemTraits": {
+    "FIELDS": {
+      "traits": {
         "label": "Rasgos",
         "hint": "Características específicas de este objeto"
       }
