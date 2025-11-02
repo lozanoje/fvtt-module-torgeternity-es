@@ -3,6 +3,11 @@
     "discard": "Descartar",
     "display": "Mostrar a los jugadores"
   },
+  "EFFECT": {
+    "TABS": {
+      "torg": "Torg Eternity"
+    }
+  },
   "TYPES": {
     "Card": {
       "destiny": "Destino",
@@ -76,6 +81,7 @@
       "bonus": "Bonus",
       "bonusCard": "+3Carta",
       "bonusDamage": "Daño adicional",
+      "bdTooltip": "Mantén MAYÚS para tirar el DB dos veces y quedarse con el mejor resultado",
       "bonusDice": "DB",
       "chase": "Prueba persecución",
       "check": {
@@ -126,7 +132,7 @@
           "previous": "Total de la tirada previo",
           "resetDefense": "No se encuentra en defensa activa",
           "result": "resultado",
-          "standartSuccess": "Éxito estándar",
+          "standardSuccess": "Éxito estándar",
           "toughness": "Resistencia",
           "BDDamageSum": "Añadir daño de la tirada de BD"
         },
@@ -163,6 +169,7 @@
       "hero": "Héroe",
       "heroCard": "Carta Héroe",
       "hideDetails": "Ocultar detalles",
+      "itemPurchase": "{item} comprado por {price} {currency}",
       "notPermittedDSR": "La Carta de Drama no permite realizar el próximo paso de la RDH {step}",
       "modifiers": "Modificadores",
       "noAmmo": "No puedes disparar, no tienes munición.",
@@ -564,6 +571,7 @@
     "itemSheetDescriptions": {
       "armor": "Armadura",
       "ammunition": "Munición",
+      "currency": "Moneda",
       "customAttack": "Ataque personalizado",
       "customSkill": "Habilidad personalizado",
       "enhancement": "Mejoras",
@@ -603,6 +611,7 @@
       "beginningMigration": "Migrando el sistema Torg a la versión ",
       "defaultAction": "Acción por defecto, por ejemplo, equipo",
       "dramaDeckEmpty": "El mazo de drama está vacío. Reinicie el mazo para continuar.",
+      "insufficientFunds": "No tiene suficientes {currency} ({quantity}) para comprar {item} ({price})",
       "macroTypeWarning": "Solo puede crear botones macro en objetos que posee o en atributos/habilidades",
       "migrationRunning": "Migrando sistema Torg a la versión ",
       "moduleNotActive": "Active el módulo para ver la descripción",
@@ -853,13 +862,13 @@
         "name": "Desconexión automática",
         "hint": "En una sobrecarga o prueba que cause desconexión, el actor se le aplicará el efecto de desconectado"
       },
+      "itemPurchaseCosm": {
+        "name": "Los objetos tienen su coste",
+        "hint": "Cuando se suelte un objeto en una hoja de personaje, si tiene un precio establecido, este se decudirá de la moneda del cosmos (mantenga MAYÚS antes de soltar para no pagar el objeto)"
+      },
       "showPiety": {
         "name": "Mostrar puntuación de Piedad",
         "hint": "Muestra la puntuación actual de Piedad de un Caballero de la Tormenta en la hoja de actor"
-      },
-      "dramaCardUp": {
-        "name": "Aumento solo para carta de drama",
-        "hint": "Oculta el botón de Aumento en los resultados de las pruebas si la carta de drama actual no tiene Aumento en la linea de conflicto (por defecto activo)"
       }
     },
     "sheetLabels": {
@@ -919,6 +928,7 @@
       "crewUnskilledOperator": "¡El operador del vehículo tiene la habilidad sin entrenar!",
       "crewUnskilledWeapon": "¡Esta arma se está usando con habilidad sin entrenar!",
       "crewFavored": "El artillero de esta arma está favorecido",
+      "currencies": "Monedas",
       "customSkill": "Se pueden editar las habilidades personalizadas en la pestaña de Dones",
       "customSkills": "Habilidades personalizadas",
       "customAttacks": "Ataques personalizados",
@@ -1290,6 +1300,18 @@
       "forceDefense": "Defensa vs fuerza",
       "iceDefense": "Defensa vs hielo",
       "lightningDefense": "Defensa vs rayo"
+    },
+    "itemPurchase": {
+      "free": "Sin coste",
+      "activeScene": "Escena activa",
+      "playerCosm": "Cosmos del jugador",
+      "itemCosm": "Cosmos del objeto",
+      "askPlayer": "Preguntar al jugador",
+      "choice": {
+        "title": "Comprar objeto",
+        "free": "Gratis",
+        "select": "Usar moneda"
+      }
     },
     "traitGroup": {
       "defense": "Defensa",
