@@ -85,7 +85,6 @@
       "bonusDice": "DB",
       "chase": "Prueba persecución",
       "check": {
-        "cantUseSkillRecquired": " no puede utilizarse sin al menos una adición en la habilidad requerida",
         "cantUseUntrained": " no puede utilizarse si no ha sido aprendida (al menos 1 adición)",
         "cantUseRealityWhileDisconnected": "No puede usar realidad mientras esté desconectado",
         "interactionNeedTarget": "Seleccione un objetivo para realizar un ataque de interacción",
@@ -394,6 +393,7 @@
     "dnTypes": {
       "challenging": "Desafiante (12)",
       "easy": "Fácil (8)",
+      "fixedNumber": "Ajustar dificultad",
       "hard": "Difícil (14)",
       "heroic": "Heroica (18)",
       "highestSpeed": "Participante más rápido en el asistente de combate",
@@ -445,16 +445,6 @@
       "targetWaterVehicles": "Objetivo Vehículos acuáticos o Destreza",
       "targetWillpower": "Objetivo Fuerza de voluntad o Espíritu",
       "targetWillpowerMind": "Objetivo Fuerza de voluntad o Mente",
-      "veryEasy": "Muy fácil (6)",
-      "veryHard": "Muy difícil (16)"
-    },
-    "dnTypesBasic": {
-      "challenging": "Desafiante (12)",
-      "easy": "Fácil (8)",
-      "hard": "Difícil (14)",
-      "heroic": "Heroica (18)",
-      "nearImpossible": "Casi imposible (20)",
-      "standard": "Estándar (10)",
       "veryEasy": "Muy fácil (6)",
       "veryHard": "Muy difícil (16)"
     },
@@ -769,6 +759,10 @@
         "hint": "Ajuste los nombres qde los mazos y los decartas que usará.",
         "label": "Configuración de mazos de cartas por defecto",
         "name": "Configuración de mazos de cartas por defecto"
+      },
+      "disableDynamicRingOnImport": {
+        "hint": "Deshabilita un anillo de ficha dinámico configurado cuando se importe un actor de un compendio",
+        "name": "Deshabilitar anillo de ficha dinámico al importar"
       },
       "defaultUserHand": {
         "hint": "Nombre de la mano para este jugador.",
