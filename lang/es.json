@@ -75,6 +75,7 @@
     },
     "chatText": {
       "actionTotal": "Total de acción",
+      "applyEffect": "Aplicar efecto: {name}",
       "attack": "Ataca",
       "attributeTestLabel": "Atributo",
       "baseDamage": "Daño base",
@@ -792,13 +793,21 @@
         "hint": "Si se habilita, el sistema reinicializará las barajas y las pilas de descarte de la pestaña de cartas. Necesitará recargar el navegador para que los cambios tengan efecto.",
         "name": "Configurar directorio de cartas"
       },
-      "welcome": {
-        "hint": "Si se desea mostrar el mensaje de bienvenida al cargar el mundo.",
-        "name": "Mostrar mensaje de bienvenida"
-      },
       "showCheckDetails": {
         "hint": "Si se habilita, se mostrarán siempre los detalles de las pruebas.",
         "name": "Mostrar detalles en las pruebas"
+      },
+      "showEffectsPanel": {
+        "hint": "Si se habilita, muestra una lista de los efectos de la ficha seleccionada.",
+        "name": "Mostrar panel de efectos"
+      },
+      "effectsPanelOnlyTemporary": {
+        "hint": "Si se habilita, el panel de efectos solo mostrará efectos temporales (no se mostrarán efectos pasivos).",
+        "name": "Mostrar solo efectos temporales"
+      },
+      "welcome": {
+        "hint": "Si se desea mostrar el mensaje de bienvenida al cargar el mundo.",
+        "name": "Mostrar mensaje de bienvenida"
       },
       "uniqueDN": {
         "hint": "Si se habilita, cuando se realiza una prueba contra múltiples objetivos, mantendrá el ND más alto entre todos los oponentes para determinar el resultado.",
@@ -988,6 +997,7 @@
       "miracle": "Milagro",
       "miracles": "Milagros",
       "missileWeapons": "Armas de proyectil",
+      "mod": "Mod",
       "modifyDamage": "Aquí puede modificar el daño",
       "modifyShocks": "Nuevo shock",
       "modifyWounds": "Nuevas heridas",
