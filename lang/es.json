@@ -744,6 +744,10 @@
         "hint": "Si se desean activar las animaciones de las cartas en el chat. Si se cambia este ajuste, se recargará la aplicación.",
         "name": "Animación de las cartas del chat"
       },
+      "autoDarknessPenalty": {
+        "hint": "Si se activa, se aplicarán automáticamente penalizadores a las fichas dependiendo del nivel de oscuridad de la escena, la regiones con ajustes del nivel de oscuridad y las fuentes de luz y oscuridad.",
+        "name": "Penalizadores automáticos por oscuridad"
+      },
       "useColorBlindnessColors": {
         "hint": "Si se activa, se usarn rojos y verdes para daltónicos.",
         "name": "Usar colores para daltónicos"
@@ -1384,5 +1388,28 @@
         "title": "Repositorio de macros de Torg Eternity"
       }
     }
+  },
+  "SCENE.FIELDS": {
+    "flags.torgeternity": {
+      "dimLightThreshold": {
+        "name": "Umbral penumbra",
+        "hint": "Umbral de oscuridad entre 0.05 y 0.9. Cuando el nivel del oscuridad de la escena supere este umbral de iluminación global se considerará que se está al menos en Penumbra a la hora de dererminar las penalizaciones por oscuridad."
+      },
+      "darkThreshold": {
+        "name": "Umbral oscuridad",
+        "hint": "Umbral de oscuridad entre 0.1 y 0.95. Cuando el nivel del oscuridad de la escena supere este umbral de iluminación global se considerará que se está al menos en Oscuridad a la hora de dererminar las penalizaciones por oscuridad."
+      }
+    },
+    "environment": {
+      "globalLight": {
+        "darkness.max": {
+          "label": "Umbral oscuridad total",
+          "hint": "Umbral de oscuridad entre 0.15 y 1. Cuando el nivel del oscuridad de la escena supere este umbral de iluminación global se considerará que se está al menos en Oscuridad Total a la hora de dererminar las penalizaciones por oscuridad."
+        }
+      }
+    }
+  },
+  "CARD.FIELDS": {
+    "number.label": "Número"
   }
 }
