@@ -64,12 +64,16 @@
     },
     "cardTypes": {
       "activeDrama": "Carta de drama activa",
+      "dramaActive": "Carta de drama activa",
       "cosm": "Cosmos",
+      "cosmDeck": "Mazo de cosmos",
       "cosmDiscard": "Pila de descartes de cosmos",
       "destiny": "Destino",
+      "destinyDeck": "Mazo de destino",
       "destinyDiscard": "Pila de descartes de destino",
       "discardPile": "Pila de descartes",
       "drama": "Drama",
+      "dramaDeck": "Mazo de drama",
       "dramaDiscard": "Pila de descartes de drama",
       "hand": "Mano"
     },
@@ -173,8 +177,8 @@
       "notPermittedDSR": "La Carta de Drama no permite realizar el próximo paso de la RDH {step}",
       "modifiers": "Modificadores",
       "noAmmo": "No puedes disparar, no tienes munición.",
-      "noAmmoPosessing": "No tienes munición en el inventario. Imposible proceder.",
-      "notSufficientAmmo": "No tienes suficiente munición en el arma para hacer una ráfaga, no se puede hacer la prueba.",
+      "noSpareAmmo": "No tienes munición en el inventario. Imposible proceder.",
+      "notSufficientAmmo": "No tienes suficiente munición en el arma para disgarar una ráfaga a este número de objetivos, no se puede realizar la prueba.",
       "reloaded": "Ha recargado su arma {a}.",
       "ammoLabel": "Munición restante",
       "notes": "Notas",
@@ -311,7 +315,7 @@
       "cardPooled": "Reserva",
       "cosmDeckDialogLabel": "Extraer",
       "cosmDialogTitle": "Extraer carta de Cosmos",
-      "discardCard": "Descartar",
+      "discardCard": "Descartar (mantener MAYÚS para volver al mazo original)",
       "drawCosm": "Extraer Cosmos",
       "drawDestiny": "Extraer Destino",
       "lifelike": "Modo de visualización avanzado",
@@ -323,6 +327,7 @@
       "playerPassTo": "Pasar a",
       "return": "Devuelve las cartas a sus respectivos mazos. No baraja automáticamente los mazos",
       "selectCosmDeck": "Seleccionar Mazo de Cosmos",
+      "showDeckOfCard": "Clic para abrir el mazo",
       "showToPlayers": "mostrar a jugadores"
     },
     "dialogWindow": {
@@ -1398,18 +1403,19 @@
       "darkThreshold": {
         "name": "Umbral oscuridad",
         "hint": "Umbral de oscuridad entre 0.1 y 0.95. Cuando el nivel del oscuridad de la escena supere este umbral de iluminación global se considerará que se está al menos en Oscuridad a la hora de dererminar las penalizaciones por oscuridad."
-      }
-    },
-    "environment": {
-      "globalLight": {
-        "darkness.max": {
-          "label": "Umbral oscuridad total",
-          "hint": "Umbral de oscuridad entre 0.15 y 1. Cuando el nivel del oscuridad de la escena supere este umbral de iluminación global se considerará que se está al menos en Oscuridad Total a la hora de dererminar las penalizaciones por oscuridad."
-        }
+      },
+      "pitchBlackThreshold": {
+        "label": "Umbral oscuridad total",
+        "hint": "Umbral de oscuridad entre 0.15 y 1. Cuando el nivel del oscuridad de la escena supere este umbral de iluminación global se considerará que se está al menos en Oscuridad Total a la hora de dererminar las penalizaciones por oscuridad."
       }
     }
   },
   "CARD.FIELDS": {
     "number.label": "Número"
+  },
+  "CONTROLS": {
+    "LightDim": "Transición a penumbra",
+    "LightDark": "Transición a oscuridad",
+    "LightNight": "Transición a oscuridad total"
   }
 }
