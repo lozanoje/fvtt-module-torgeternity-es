@@ -125,7 +125,7 @@
           "actionTotal": "Total de la acción",
           "attackMissed": "El ataque falló",
           "damage": "Daño",
-          "diceTotal": "Suma de dados",
+          "diceTotal": "Total de dados",
           "failure": "Fallo",
           "fragileBroken": "El objeto frágil {itemName} se ha roto",
           "goodSuccess": "Éxito bueno",
@@ -138,11 +138,12 @@
           "result": "resultado",
           "standardSuccess": "Éxito estándar",
           "toughness": "Resistencia",
-          "BDDamageSum": "Añadir daño de la tirada de BD"
+          "BDDamageSum": "Suma del daño al tirar {count} DB = {total}"
         },
         "testUnsuccessfull": "La interacción no ha tenido éxito"
       },
       "concentration": {
+        "start": "Se comenzó la concentración de {itemName}",
         "makeCheck": "{actor} debe hacer una prueba de Concentración",
         "AEname": "Concentrado: {item}",
         "AEdescription": "{actor} se está concentrando en el objeto {itemType} '{itemName}'",
@@ -164,7 +165,7 @@
         "perk": "{itemName} ha sido utilizada fuera de su Cosmos"
       },
       "damage": "Daño",
-      "dieTotal": "Total dado",
+      "dieTotal": "Total dados:",
       "discardsCard": "Descarta",
       "drama": "Drama",
       "dramaCard": "Carta Drama",
@@ -184,6 +185,7 @@
       "notes": "Notas",
       "passesCard1": "Da",
       "passesCard2": "a",
+      "pingToken": "Apuntar ficha",
       "playsCard": "Juega",
       "possibleGlory": "!!! POSIBLE GLORIA !!!",
       "possibility": "Posibilidad",
@@ -768,6 +770,14 @@
         "hint": "Si se activa, se mostrarán dados tipo Torg en las tarjetas del chat. En caso contrario, serán los habituales grises de Foundry.",
         "name": "Mostrar dados Torg en las tarjetas del chat"
       },
+      "autoRollBD": {
+        "hint": "Tirar automáticamente los DB(s) cuando se produzca un éxito BUENO o ESPECTACULAR en un ataque",
+        "name": "Tirar automáticamente DB"
+      },
+      "showManualRolls": {
+        "hint": "Mostrar los dados que han sido tirados manualmente en las tarjetas del chat (con el sufijo M)",
+        "name": "Nostrar tiradas manuales de dados"
+      },
       "autoDamages": {
         "hint": "Si está activado y se ha seleccionado un objetivo válido, tanto el shock como las heridas se aplicarán automáticamente.",
         "name": "Aplicar automáticamente el daño"
@@ -888,6 +898,12 @@
       "showPiety": {
         "name": "Mostrar puntuación de Piedad",
         "hint": "Muestra la puntuación actual de Piedad de un Caballero de la Tormenta en la hoja de actor"
+      },
+      "tokenActionHud": {
+        "showUnskilled": {
+          "name": "TAH: Mostrar habilidades sin entrenar en el HUD",
+          "hint": "Habilita el que se muestren las habilidades sin entrenar en el Token Action HUD"
+        }
       }
     },
     "sheetLabels": {
@@ -904,15 +920,15 @@
       "alterAttributes": "Ahora puede cambiar los atributos",
       "ammunition": "Munición",
       "APMod": "Modificador PA",
-      "applyDamage": "Aplicar daño",
-      "applyEffects": "Aplicar efectos",
+      "applyDamage": "Daño",
+      "applyEffects": "Efectos",
       "applyDamageTooltip": "Clic+Mayús para modificar el daño. Clic normal para aplicar",
       "applyEffectsTooltip": "Aplica los efectos activos relevantes al objetivo(s)",
       "applySoak": "Aplicar Absorción",
       "applySoakTooltip": "Aplicar reduciones por absorción al ataque.",
-      "applyStymied": "Aplicar impedido",
+      "applyStymied": "Impedido",
       "applyStymiedTooltip": "Clic para aplicar impedido. O muy impedido y ya está impedido",
-      "applyVulnerable": "Aplicar vulnerable",
+      "applyVulnerable": "Vulnerable",
       "applyVulnerableTooltip": "Clic para aplicar vulnerable. O muy vulnerable y ya está vulnerable",
       "armor": "Armadura",
       "armorAndShields": "Armadura y escudo",
@@ -1055,6 +1071,8 @@
       "race": "Raza",
       "racialPerks": "Dones raciales",
       "range": "Alcance",
+      "reconnect": "Reconectar",
+      "reconnectTooltip": "Quitar condición de desconectado",
       "darkvision": "Visión en la oscuridad",
       "removeGunner": "Quitar artillero de este arma",
       "removeOperator": "Quitar operador de este vehículo",
@@ -1075,7 +1093,7 @@
       "skills": "Habilidades",
       "skillValue": "Valor habilidad",
       "soakAll": "Se absorven todas las heridas y el shock",
-      "soakDamage": "Absorber daño",
+      "soakDamage": "Absorber",
       "soakDamageTooltip": "Hacer tirada de realidad para reducir el daño",
       "soakNull": "No absorves nada",
       "soakRoll": "Absorviendo con realidad",
@@ -1111,9 +1129,6 @@
       "unspent": "Sin gastar",
       "up": "Aumento",
       "update": "Actualizar",
-      "usePreviousBonusLegend": "Escoja si quiere (1) tirar por bonificación o (2) introducir un bono generado previamente al realizar una multiacción.",
-      "usePreviousBonustitle": "Cuando realice acciones múltiples, marque esta casilla para meter los bonos de pruebas anteriores.",
-      "usePreviousBonusText": "Introduzca BONIFICACIÓN de prueba anterior, no el total del dado.",
       "vehicle": "Vehículo",
       "vehicles": "Vehículos",
       "vitalArea": "Golpe vital",
@@ -1379,7 +1394,7 @@
       "reconnectMacroZoneModifierNotDetectedTitle": "Sin modificador de zona",
       "reconnectMacroZoneModifierNotDetected": "No se ha podido determinar modificador de zona debido a que la escena actual no tiene ningún Cosmos definido. Modifique a mano el modificador al resultado.",
       "reconnectMacroStatusLiftet": "Quitado estado de desconexión tras pasar la tirada de reconexión.",
-      "periculumSourceName": "Fuentes de daños",
+      "periculumSourceName": "Fuentes de daño",
       "periculumSourcePlaceHolder": "Describa el peligro",
       "periculumDamageValue": "Daño base ",
       "periculumBds": "Modificadores DBs ",
