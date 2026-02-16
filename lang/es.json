@@ -561,6 +561,7 @@
       "miracleRoll": "Tirada de milagro",
       "openParty": "Abrir hoja de grupo",
       "psionicRoll": "Tirada de poder psiónico",
+      "reduceShock": "En combate, quita 2 shocks.<br>Fuera de combate, quita <em>todo</em> el shock.",
       "reload": "Recargar arma<p>(mantén MAYÚS para recargar gratis)",
       "resetPoss": "Reiniciar Posibilidades (mantén MAYÚS para incluir Losas de Eternidad)",
       "resetPossibilities": "Reiniciar Posibilidades de los caballeros de la tormenta",
@@ -837,7 +838,7 @@
       },
       "uniqueDN": {
         "hint": "Si se habilita, cuando se realiza una prueba contra múltiples objetivos, mantendrá el ND más alto entre todos los oponentes para determinar el resultado.",
-        "name": "ND único"
+        "name": "ND más alto"
       },
       "unTarget": {
         "hint": "Se han reiniciado por defecto los objetivos tras un ataque. Desmarcar si quiere mantenerlos.",
@@ -927,9 +928,9 @@
       "applySoak": "Aplicar Absorción",
       "applySoakTooltip": "Aplicar reduciones por absorción al ataque.",
       "applyStymied": "Impedido",
-      "applyStymiedTooltip": "Clic para aplicar impedido. O muy impedido y ya está impedido",
+      "applyStymiedTooltip": "Clic para aplicar impedido. O muy impedido y ya está impedido. <hr>MAYÚS clic para aplicar inmediatamente muy impedido",
       "applyVulnerable": "Vulnerable",
-      "applyVulnerableTooltip": "Clic para aplicar vulnerable. O muy vulnerable y ya está vulnerable",
+      "applyVulnerableTooltip": "Clic para aplicar vulnerable. O muy vulnerable si ya está vulnerable. <hr>MAYÚS clic para aplicar inmediatamente muy vulnerable",
       "armor": "Armadura",
       "armorAndShields": "Armadura y escudo",
       "attackOptions": "Opciones de ataque",
@@ -1256,7 +1257,18 @@
       "veryStymied": "Muy impedido",
       "veryVulnerable": "Muy vulnerable",
       "vulnerable": "Vulnerable",
-      "waiting": "A la espera"
+      "waiting": "A la espera",
+      "description": {
+        "disconnected": "No puedes causar Contradicciones, y no puedes hacer acciones o ganar beneficio de herramientas que violen los axiomas del reino en el que estás",
+        "stymied": "-2 a todas tus acciones",
+        "veryStymied": "-4 a todas tus acciones",
+        "vulnerable": "+2 a todas las acciones contra ti",
+        "veryVulnerable": "+4 a todas las acciones contra ti",
+        "aiming": "+4 al total de ataque a distancia. Puedes hacer acciones simples y caminar, pero no puedes correr o hacer acciones normales",
+        "dim": "-2 a los ataques contra ti",
+        "dark": "-4 a los ataques contra ti",
+        "pitchBlack": "-6 a los ataques contra ti"
+      }
     },
     "darknessModifiers": {
       "dim": "Penumbra",
