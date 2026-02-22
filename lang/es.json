@@ -31,6 +31,10 @@
         "label": "Aplicar efecto al resultado",
         "hint": "Aplica el efecto al icono(s) objetivo cuando la prueba que usa este objeto tenga un resultado en particular"
         },
+        "combatToggle": {
+          "label": "Mostrar como conmutador del combate",
+          "hint": "Mostrar este efecto en la sección de ataques y poderes de la hoja de actor para poder conmutar rápidamente su estado"
+        },
         "applyIfAttackTrait": {
           "label": "Aplicar en rasgos de ataque",
           "hint": "Aplica el efecto solo si el icono atacante tiene uno de estos rasgos"
@@ -100,6 +104,7 @@
           "allOutAttack": "Ataque total",
           "blindFire": "Fuego a ciegas",
           "calledShot": "Tiro preciso",
+          "combinedAction": "Acción combinada",
           "concentrating": "Concentrado",
           "darkness": "Oscuridad ",
           "heavyBurst": "Ráfaga continua",
@@ -956,6 +961,13 @@
       "clearance": "Nivel de autorización",
       "collision": "Colisión",
       "combatSkills": "Combate",
+      "combinedAction": {
+        "title": "Acción combinada",
+        "participants": "Participantes",
+        "participantsHint": "Introduce el número de participantes, y el valor bono Torg que se añadirá a la tirada de habilidad",
+        "damage": "+daño",
+        "damageHint": "Además aplicar el valor de bono Torg al daño infligido por este ataque"
+      },
       "concealment": "Ocultación",
       "conditions": "Condiciones",
       "cosm": "Cosmos",
