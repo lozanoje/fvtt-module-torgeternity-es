@@ -21,6 +21,11 @@
     }
   },
   "torgeternity": {
+    "testInspector": {
+      "title": "Inspector de pruebas",
+      "field": "Nombre del campo",
+      "value": "Valor del campo"
+    },
     "activeEffect": {
       "FIELDS": {
         "transferOnAttack": {
@@ -576,7 +581,7 @@
       "spellRoll": "Tirada de hechizo",
       "tappingRoll": "Tirada de golpe",
       "toggle": "Conmutar",
-      "toggleEquip": "Conmutar equipado",
+      "changeCarryType": "Campiar tipo de portado",
       "deleteRace": "Borrar raza"
     },
     "itemSheetDescriptions": {
@@ -906,6 +911,10 @@
         "hint": "Muestra la puntuación actual de Piedad de un Caballero de la Tormenta en la hoja de actor"
       },
       "tokenActionHud": {
+        "showAllEffects": {
+          "name": "TAH: Mostrar todos los efectos",
+          "hint": "Si no se habilita, solo se muestran en el HUD los eventos con el 'Conmutador de combate'"
+        },
         "showUnskilled": {
           "name": "TAH: Mostrar habilidades sin entrenar en el HUD",
           "hint": "Habilita el que se muestren las habilidades sin entrenar en el Token Action HUD"
@@ -961,6 +970,7 @@
       "clearance": "Nivel de autorización",
       "collision": "Colisión",
       "combatSkills": "Combate",
+      "combatToggles": "Conmutadores de combate",
       "combinedAction": {
         "title": "Acción combinada",
         "participants": "Participantes",
@@ -1381,6 +1391,13 @@
     "yesNo": {
       "false": "No",
       "true": "Sí"
+    },
+    "carryType": {
+      "held1": "Blandido 1M",
+      "held2": "Blandido 2M",
+      "worn": "Puesto",
+      "stowed": "Portado",
+      "dropped": "Soltado"
     },
     "macros": {
       "commonMacroNoTokensSelected": "No se han seleccionado iconos. La macro no puede realizar ningún cálculo.",
