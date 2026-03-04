@@ -507,6 +507,7 @@
       "criticalProblem": "Problema crítico",
       "possibleSetback": "Posible contratiempo",
       "shuffleDeck": "Bajarar mazo de Drama",
+      "replaceDrama": "Reemplazar Carta de Drama",
       "getPreviousDrama": "Recuperar carta de drama anterior"
     },
     "enhancements": {
@@ -1445,6 +1446,15 @@
         "buttonTitle": "Repositorio de macros",
         "title": "Repositorio de macros de Torg Eternity"
       }
+    },
+    "CombatantGroup": {
+      "whichGroup": "¿Qué grupo?",
+      "reallyDelete": "Quiere borrar el grupo '{group}'?",
+      "addToGroup": "Añadir al grupo",
+      "addAllToGroup": "Añadir al grupo a todos los del mismo tipo",
+      "removeFromGroup": "Quitar del grupo",
+      "newGroup": "Crear nuevo grupo de combate",
+      "noValidGroup": "Contendiente sin grupo válido"
     }
   },
   "SCENE.FIELDS": {
