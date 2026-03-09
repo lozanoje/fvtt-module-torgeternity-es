@@ -27,18 +27,22 @@
       "value": "Valor del campo"
     },
     "activeEffect": {
-      "FIELDS": {
-        "transferOnAttack": {
-        "label": "Aplicar efecto al ataque",
-        "hint": "Si se habilita, el efecto se aplicará al actor objetivo con el objeto precedente del efecto esté involucrado en el ataque (ya sea arma o munición)"
+      "transferTo": {
+        "actor": "Actor",
+        "target": "Objetivo"
       },
-        "transferOnOutcome": {
-        "label": "Aplicar efecto al resultado",
-        "hint": "Aplica el efecto al icono(s) objetivo cuando la prueba que usa este objeto tenga un resultado en particular"
-        },
+      "FIELDS": {
         "combatToggle": {
           "label": "Mostrar como conmutador del combate",
           "hint": "Mostrar este efecto en la sección de ataques y poderes de la hoja de actor para poder conmutar rápidamente su estado"
+        },
+        "transferOnOutcome": {
+          "label": "Aplicar efecto al resultado",
+          "hint": "Aplica el efecto al icono(s) objetivo cuando la prueba que usa este objeto tenga un resultado en particular"
+        },
+        "transferTo": {
+          "label": "Transferir a",
+          "hint": "Determina si el efecto se transfiere al objetivo, o al actor que realiza la prueba"
         },
         "applyIfAttackTrait": {
           "label": "Aplicar en rasgos de ataque",
@@ -47,6 +51,10 @@
         "applyIfDefendTrait": {
           "label": "Aplicar en rasgos de defensa",
           "hint": "Aplica el efecto solo si el icono atacado (objetivo) tiene uno de estos rasgos"
+        },
+        "defendAgainstTrait": {
+          "label": "Defender contra rasgo",
+          "hint": "Aplicar este efecto a la prueba cuando el propietario es el OBJETIVO y el atacante tiene uno de estos rasgos"
         }
       }
     },
@@ -133,13 +141,15 @@
         "noTracker": "No se puede usar el botón de persecuciones si no hay un combate activo",
         "result": {
           "actionTotal": "Total de la acción",
+          "anyFailure": "Cualquier fallo",
+          "anySuccess": "Cualquier éxito",
           "attackMissed": "El ataque falló",
           "damage": "Daño",
           "diceTotal": "Total de dados",
           "failure": "Fallo",
           "fragileBroken": "El objeto frágil {itemName} se ha roto",
           "goodSuccess": "Éxito bueno",
-          "mishape": "Percance",
+          "mishap": "Percance",
           "new": "Nuevo total de la tirada",
           "noDamage": "Ileso",
           "outstandingSuccess": "Éxito espectacular",
@@ -969,7 +979,8 @@
       "applyDamage": "Daño",
       "applyEffects": "Efectos",
       "applyDamageTooltip": "Clic+Mayús para modificar el daño. Clic normal para aplicar",
-      "applyEffectsTooltip": "Aplica los efectos activos relevantes al objetivo(s)",
+      "applyEffectsActorTooltip": "Aplica los efectos activos relevantes al actor",
+      "applyEffectsTargetTooltip": "Aplica los efectos activos relevantes al objetivo(s)",
       "applySoak": "Aplicar Absorción",
       "applySoakTooltip": "Aplicar reduciones por absorción al ataque.",
       "applyStymied": "Impedido",
