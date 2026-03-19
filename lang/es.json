@@ -21,6 +21,19 @@
     }
   },
   "torgeternity": {
+    "handsManager": {
+      "title": "Gestión de cartas",
+      "button": {
+        "exchange": "Intercambiar cartas",
+        "offerTrade": "Ofrecer intercambio"
+      },
+      "trade": {
+        "title": "¿Aceptar intercambio de cartas?",
+        "from": "De: {actor}",
+        "yourCard": "Tu carta",
+        "theirCard": "Su carta"
+      }
+    },
     "testInspector": {
       "title": "Inspector de pruebas",
       "field": "Nombre del campo",
@@ -31,14 +44,26 @@
         "actor": "Actor",
         "target": "Objetivo"
       },
+      "match": {
+        "and": "TODOS",
+        "or": "ALGUNO"
+      },
       "FIELDS": {
+        "activeIfTrait": {
+          "label": "Activar solo si",
+          "hint": "Esto efecto activo se activará solo si el actor tiene uno de estos rasgos, ya sea como una condición en el actor o un rasgo en un objeto (equipado)"
+        },
         "combatToggle": {
           "label": "Mostrar como conmutador del combate",
           "hint": "Mostrar este efecto en la sección de ataques y poderes de la hoja de actor para poder conmutar rápidamente su estado"
         },
+        "applyOnOutcome": {
+          "label": "Aplicar con un resultado",
+          "hint": "Aplicar estos cambios el resultado cuando una prueba que use este objeto tiene un resultado particular (e.g. test.damage or test.weaponAP)"
+        },
         "transferOnOutcome": {
-          "label": "Aplicar efecto al resultado",
-          "hint": "Aplica el efecto al icono(s) objetivo cuando la prueba que usa este objeto tenga un resultado en particular"
+          "label": "Transferir con un resultado",
+          "hint": "Transferir el efecto al icono(s) objetivo cuando la prueba que usa este objeto tenga un resultado en particular"
         },
         "transferTo": {
           "label": "Transferir a",
@@ -46,15 +71,15 @@
         },
         "applyIfAttackTrait": {
           "label": "Aplicar en rasgos de ataque",
-          "hint": "Aplica el efecto solo si el icono atacante tiene uno de estos rasgos"
+          "hint": "Aplica el efecto a una prueba que use este objeto SOLO si el actor ATACANTE tiene ALGUNO o TODOS estos rasgos"
         },
         "applyIfDefendTrait": {
           "label": "Aplicar en rasgos de defensa",
-          "hint": "Aplica el efecto solo si el icono atacado (objetivo) tiene uno de estos rasgos"
+          "hint": "Aplica el efecto a una prueba que use este objeto SOLO si el actor OBJETIVO tiene ALGUNO O TODOS estos rasgos"
         },
         "defendAgainstTrait": {
           "label": "Defender contra rasgo",
-          "hint": "Aplicar este efecto a la prueba cuando el propietario es el OBJETIVO y el atacante tiene uno de estos rasgos"
+          "hint": "Aplicar este efecto a la prueba cuando el propietario es el OBJETIVO y el atacante tiene ALGUNO O TODOS estos rasgos"
         }
       }
     },
@@ -237,6 +262,7 @@
       "omega": "Omega"
     },
     "combat": {
+      "cantStart": "Existe otro encuentro en curso",
       "dramaBack": "modules/fvtt-module-torgeternity-es/images/cards/drama-back.jpg",
       "toggleDramatic": "Conmutar entre resolución de combate normal y dramática",
       "toggleWaiting": "Conmutar estado Esperando de este contendiente",
@@ -896,8 +922,8 @@
         "name": "Cancelar objetivo"
       },
       "useYear1PPTent": {
-        "hint": "Usar díptico de Pan-Pacifica tras el año 1.",
-        "name": "Díptico PP año 1 PP"
+        "hint": "Usar los axiomas Pan-Pacifica tras día 172.",
+        "name": "Axiomas Pan-Pacifica año 1"
       },
       "cardChatNotify": {
         "hint": "Oculta los mensajes de Foundry relacionados con las cartas y mantiene los propios de Torg Eternity.",
@@ -1046,6 +1072,7 @@
       "editableTooltip": "expanda la hoja de amenaza para mostrar los campos editables",
       "effect": "Efecto",
       "effectCreate": "Crear efecto",
+      "effectTestOptions": "Para pruebas",
       "effects": "Efectos",
       "end": "Fin",
       "enhancement": "Mejora",
@@ -1400,7 +1427,8 @@
       "fireDamage": "Daño de fuego",
       "forceDamage": "Daño de fuerza",
       "iceDamage": "Daño de hielo",
-      "lightningDamage": "Daño de rayo"
+      "lightningDamage": "Daño de rayo",
+      "psychicDamage": "Daño psíquico"
     },
     "itemPurchase": {
       "free": "Sin coste",

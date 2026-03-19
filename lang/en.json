@@ -21,6 +21,19 @@
     }
   },
   "torgeternity": {
+    "handsManager": {
+      "title": "Card Management",
+      "button": {
+        "exchange": "Exchange Cards",
+        "offerTrade": "Offer Trade"
+      },
+      "trade": {
+        "title": "Accept Card Trade?",
+        "from": "From: {actor}",
+        "yourCard": "Your Card",
+        "theirCard": "Their Card"
+      }
+    },
     "testInspector": {
       "title": "Test Inspector",
       "field": "Field Name",
@@ -31,14 +44,26 @@
         "actor": "Actor",
         "target": "Target"
       },
+      "match": {
+        "and": "ALL",
+        "or": "ANY"
+      },
       "FIELDS": {
+        "activeIfTrait": {
+          "label": "Active only If",
+          "hint": "This active effect will only be active if the actor has one of these traits, either a condition on the actor or a trait on an (equipped) item"
+        },
         "combatToggle": {
           "label": "Display as Combat Toggle",
           "hint": "Display this effect in the Attacks and Powers section of the Actor sheet for quicker access to toggling its active state"
         },
+        "applyOnOutcome": {
+          "label": "Apply on Outcome",
+          "hint": "Apply these changes immediately to the test result when a test using this Item has this particular outcome (e.g. test.damage or test.weaponAP)"
+        },
         "transferOnOutcome": {
           "label": "Transfer on Outcome",
-          "hint": "Transfer this effect to the target Actor(s) with a test using this Item has this particular outcome"
+          "hint": "Transfer this effect to the target Actor(s) when a test using this Item has this particular outcome"
         },
         "transferTo": {
           "label": "Transfer To",
@@ -46,15 +71,15 @@
         },
         "applyIfAttackTrait": {
           "label": "Apply If Attack Trait",
-          "hint": "Apply this effect to a test using this Item ONLY if the ATTACKING Actor has one of these traits"
+          "hint": "Apply this effect to a test using this Item ONLY if the ATTACKING Actor has ANY or ALL of these traits"
         },
         "applyIfDefendTrait": {
           "label": "Apply If Defend Trait",
-          "hint": "Apply this effect to a test using this Item ONLY if the TARGET Actor has one of these traits"
+          "hint": "Apply this effect to a test using this Item ONLY if the TARGET Actor has ANY or ALL of these traits"
         },
         "defendAgainstTrait": {
           "label": "Defend Against Trait",
-          "hint": "Apply this effect to a test when the owner is a TARGET and the attacker has one of these traits"
+          "hint": "Apply this effect to a test when the owner is a TARGET and the attacker has ANY or ALL of these traits"
         }
       }
     },
@@ -237,6 +262,7 @@
       "omega": "Omega"
     },
     "combat": {
+      "cantStart": "Another Encounter is already in progress",
       "dramaBack": "systems/torgeternity/images/cards/drama-back.webp",
       "toggleDramatic": "Toggle between Standard and Dramatic Combat Resolution",
       "toggleWaiting": "Toggle the Waiting state of this combatant",
@@ -896,8 +922,8 @@
         "name": "Cancel targeting"
       },
       "useYear1PPTent": {
-        "hint": "Use the Pan-Pacifica tabletent after year 1.",
-        "name": "Year-1 PP TT"
+        "hint": "Use the Pan-Pacifica Axioms after day 172.",
+        "name": "Year-1 Pan-Pacifica Axioms"
       },
       "cardChatNotify": {
         "hint": "Hides core Foundry card messages where Torg Eternity supplies its own message",
@@ -1046,6 +1072,7 @@
       "editableTooltip": "expand the threat sheet to display editable fields",
       "effect": "Effect",
       "effectCreate": "Create Effect",
+      "effectTestOptions": "For Tests",
       "effects": "Effects",
       "end": "End",
       "enhancement": "Enhancement",
@@ -1400,7 +1427,8 @@
       "fireDamage": "Fire Damage",
       "forceDamage": "Force Damage",
       "iceDamage": "Ice Damage",
-      "lightningDamage": "Lightning Damage"
+      "lightningDamage": "Lightning Damage",
+      "psychicDamage": "Psychic Damage"
     },
     "itemPurchase": {
       "free": "No Cost",
