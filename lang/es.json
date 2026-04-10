@@ -20,7 +20,8 @@
       "cosm": "Cosmos"
     },
     "RegionBehavior": {
-      "replaceAxioms": "Reemplazar zonas de Axiomas"
+      "replaceAxioms": "Reemplazar zonas de Axiomas",
+      "torgApplyEffect": "Aplicar efectos activos (Torg)"
     }
   },
   "torgeternity": {
@@ -88,6 +89,20 @@
         "defendAgainstTrait": {
           "label": "Defender contra rasgo",
           "hint": "Aplicar este efecto a la prueba cuando el propietario es el OBJETIVO y el atacante tiene ALGUNO O TODOS estos rasgos"
+        },
+        "emanation": {
+          "radius": {
+            "label": "Radio de emanación",
+            "hint": "Radio de la emanación (en metros). Deja en blanco para no tener emanación"
+          },
+          "color": {
+            "label": "Color de emanación",
+            "hint": "Color base de la emanación en torno a la ficha"
+          },
+          "disposition": {
+            "label": "Disposición del objetivo",
+            "hint": "La disposición de las fichas a las que afecta la emanación"
+          }
         }
       }
     },
@@ -526,14 +541,14 @@
       "setback": "Contratiempo",
       "stymied": "Impedidos",
       "surge": "Sobrecarga",
-      "flurryDesc": "Ráfaga: {faction} obtienen un turno extra en este asalto",
-      "inspirationDesc": "Inspiración: Todos los personajes del bando {faction} recuperan inmediatamente 2 Shocks",
-      "upDesc": "Aumento: da a cada personaje del bando {faction} una tirada adicional. Añádela a la primera tirada",
-      "confusedDesc": "Confusos: Los jugadores no pueden usarcartas de sus reservas",
-      "fatiguedDesc": "Fatigados: La fatiga inﬂige dos puntos de Shock a cada personaje del bando {faction} al ﬁnal de su turno",
-      "setbackDesc": "Contratiempo: El Director de Juego debería idear un desafortunado giro de los acontecimientos que pueda ocurrir a los {faction}",
-      "stymiedDesc": "Impedidos: Todos los miembros del bando {faction} están Impedidos hasta el ﬁnal de su siguiente turno",
-      "surgeDesc": "Sobrecarga: Todos los miembros del bando {faction} deben tirar por Contradicciones"
+      "flurryDesc": "RÁFAGA: Da un turno extra en este asalto a {faction}",
+      "inspirationDesc": "INSPIRACIÓN: Todos los personajes del bando {faction} recuperan inmediatamente 2 Shocks",
+      "upDesc": "AUMENTO: Da a cada personaje del bando {faction} una tirada adicional. Añádela a la primera tirada",
+      "confusedDesc": "CONFUSOS: Los jugadores no pueden usarcartas de sus reservas",
+      "fatiguedDesc": "FATIGADOS: La fatiga inﬂige dos puntos de Shock a cada personaje del bando {faction} al ﬁnal de su turno",
+      "setbackDesc": "CONTRATIEMPO: El Director de Juego debería idear un desafortunado giro de los acontecimientos que pueda ocurrir a los {faction}",
+      "stymiedDesc": "IMPEDIDOS: Todos los miembros del bando {faction} están Impedidos hasta el ﬁnal de su siguiente turno",
+      "surgeDesc": "SOBRECARGA: Todos los miembros del bando {faction} deben tirar por Contradicciones"
     },
     "destinyCard": {
       "bd": "+1 BD",
@@ -809,13 +824,14 @@
       "dn": "ND",
       "dnType": "Tipo ND",
       "duration": "Duración",
-      "good": "Buen resultado",
+      "good": "Bueno",
       "modifier": "Modificador",
-      "outstanding": "Resultado espectacular",
+      "outstanding": "Espectacular",
       "range": "Alcance",
       "requiresConcentration": "Requiere concentración",
       "skill": "Habilidad",
-      "skilllevel": "Valor min."
+      "skilllevel": "Valor min.",
+      "standard": "Estándar"
     },
     "powerSkills": {
       "alteration": "Alteración",
@@ -1083,6 +1099,7 @@
       "editableTooltip": "expanda la hoja de amenaza para mostrar los campos editables",
       "effect": "Efecto",
       "effectCreate": "Crear efecto",
+      "effectEmanation": "Emanación en torno a la ficha",
       "effectTestOptions": "Para pruebas",
       "effects": "Efectos",
       "end": "Fin",
@@ -1105,7 +1122,7 @@
       "freePoss": " GM ha concedido una Posibilidad",
       "gear": "Equipo",
       "generalGear": "Equipo",
-      "goodResult": "Buen resultado",
+      "goodResult": "Éxito bueno",
       "gunner": "Artillero",
       "hardcode": "Hardcode",
       "heavyBurst": "Continua",
@@ -1155,7 +1172,7 @@
       "otherAttacks": "Otro",
       "otherModifiers": "Otros modificadores",
       "otherSkills": "Otro",
-      "outstandingResult": "Resultado espectacular",
+      "outstandingResult": "Éxito espectacular",
       "passiveEffects": "Efecto pasivo",
       "perks": "Dones",
       "noPerksAdded": "Sin dones añadidos",
@@ -1216,6 +1233,7 @@
       "spell": "Conjuro",
       "spells": "Conjuros",
       "spirit": "Espíritu",
+      "standardResult": "Éxito estándar",
       "stats": "Atributos",
       "statusEffects": "Efectos de estado",
       "stormknight": "CaballeroTormenta",
@@ -1429,6 +1447,7 @@
       "reload": "Recarga",
       "shotgun": "Escopeta",
       "small": "Pequeña",
+      "softArmor": "Armadura ligera",
       "stagger": "Desequilibrante",
       "supernaturalEvil": "Mal sobrenatural",
       "thrown": "Arrojadiza",
@@ -1571,5 +1590,13 @@
     "LightDim": "Transición a penumbra",
     "LightDark": "Transición a oscuridad",
     "LightNight": "Transición a oscuridad total"
+  },
+  "BEHAVIOR.TYPES.torgActiveEffect.FIELDS": {
+    "disposition": {
+      "label": "Disposición de la ficha"
+    },
+    "effects": {
+      "label": "Efectos"
+    }
   }
 }
