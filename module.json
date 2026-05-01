@@ -1,11 +1,10 @@
 {
   "title": "Translation: Spanish [Torg Eternity]",
   "description": "Traducción del sistema Torg Eternity (gmmatt/torgeternity) al español -  Torg Eternity spanish translation",
-  "version": "13.342.1",
+  "version": "14.002.1",
   "compatibility": {
-    "minimum": "13",
-    "verified": "13.351",
-    "maximum": "14"
+      "minimum": 14,
+      "verified": 14
   },
   "languages": [
 	  {
@@ -43,7 +42,7 @@
       {
         "id": "torgeternity",
         "type": "system",
-        "compatibility": "13.34.2"
+        "compatibility": "14.0.2"
       }
     ],
 	"requires": [

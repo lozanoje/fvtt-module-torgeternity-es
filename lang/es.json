@@ -655,6 +655,7 @@
       "attackRoll": "Tirada de ataque",
       "delete": "Borrar",
       "edit": "Editar",
+      "itemAttune": "Conmutar estado Sintonizado",
       "miracleRoll": "Tirada de milagro",
       "openParty": "Abrir hoja de grupo",
       "psionicRoll": "Tirada de poder psiónico",
@@ -733,6 +734,7 @@
       "openIssue": "Se abrirá una ventana del navegador en una nueva página para notificar un error",
       "openReference": "Se abrirá una ventana del navegador a la web de Referencia de Torg",
       "openUlisses": "Se abrirá una nueva pestaña para acceder al sitio web de Ulisses",
+      "openWiki": "Se abrirá en el navegador la página de la Wiki de Torg Eternity",
       "failureBDResolution": "El sistema falló al resolver la BD",
       "ammoValueExceedsMax": "El valor de munición actual del arma {a} excede el valor máximo. El valor será reducido al máximo.",
       "noPossibility": "No queda Posibilidad",
@@ -865,6 +867,10 @@
         "hint": "Si se activa, se aplicarán automáticamente penalizadores a las fichas dependiendo del nivel de oscuridad de la escena, la regiones con ajustes del nivel de oscuridad y las fuentes de luz y oscuridad.",
         "name": "Penalizadores automáticos por oscuridad"
       },
+      "customTraits": {
+        "hint": "Define rasgos adicionales que estén disponibles para Objetos y Efectos Activos",
+        "name": "Rasgos de objeto personalizados"
+      },
       "useColorBlindnessColors": {
         "hint": "Si se activa, se usarn rojos y verdes para daltónicos.",
         "name": "Usar colores para daltónicos"
@@ -929,10 +935,6 @@
       "showEffectsPanel": {
         "hint": "Si se habilita, muestra una lista de los efectos de la ficha seleccionada.",
         "name": "Mostrar panel de efectos"
-      },
-      "effectsPanelOnlyTemporary": {
-        "hint": "Si se habilita, el panel de efectos solo mostrará efectos temporales (no se mostrarán efectos pasivos).",
-        "name": "Mostrar solo efectos temporales"
       },
       "welcome": {
         "hint": "Si se desea mostrar el mensaje de bienvenida al cargar el mundo.",
@@ -1435,6 +1437,14 @@
       "fullBody": " Cuerpo entero",
       "grapple": "Pelea",
       "head": "Cabeza",
+      "arcane": "Arcano",
+      "holy": "Bendito",
+      "enchanted": "Encantado",
+      "sacred": "Sagrado",
+      "artifact": "Artefacto",
+      "implement": "Herramienta",
+      "attunable": "Sintonizable",
+      "consumable": "Consumible",
       "ignoresArmor": "Ignora armadura",
       "ignoreShock": "Ignora shock",
       "ignoreWounds": "Ignora heridas",
