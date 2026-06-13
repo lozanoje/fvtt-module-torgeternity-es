@@ -178,6 +178,7 @@
           "shortBurst": "Ráfaga corta",
           "stymied": "Impedido",
           "targetConcealment": "Cobertura",
+          "targetRange": "Alcande del objetivo",
           "targetSize": "Tamaño del objetivo",
           "targetVeryVulnerable": "Objetivo muy vulnerable",
           "targetVulnerable": "Objetivo vulnerable",
@@ -1194,6 +1195,12 @@
       "race": "Raza",
       "racialPerks": "Dones raciales",
       "range": "Alcance",
+      "ranges": {
+        "short": "Corto",
+        "medium": "Medio",
+        "long": "Largo",
+        "extreme": "Extremo"
+      },
       "realitySurge": "Sobrecarga de Realidad",
       "reconnect": "Reconectar",
       "reconnectTooltip": "Quitar condición de desconectado",
@@ -1460,6 +1467,7 @@
       "softArmor": "Armadura ligera",
       "stagger": "Desequilibrante",
       "supernaturalEvil": "Mal sobrenatural",
+      "unarmored": "Sin armadura",
       "thrown": "Arrojadiza",
       "torso": "Torso",
       "twoHanded": "Dos Manos",
