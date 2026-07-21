@@ -753,6 +753,7 @@
       "decks": "torgeternity.core-card-set"
     },
     "partySheet": {
+      "title": "Hoja de grupo",
       "chooseParty": "<h3>Elija si desea abrir TODOS los jugadores, o solo los activos</h3>",
       "noCharacter": "Este usuario no tiene permisos de propietario de ningún actor",
       "openParty": "Elija la hoja de grupo",
@@ -1535,7 +1536,7 @@
       "commonMacroNoChatMessageFound": "No se ha encontrado tarjeta del chat. Abortando el cálculo.",
       "fatigueMacroDealtDamage": "Daño aplicado a los siguientes personajes:",
       "fatigueMacroCharKO": " está K.O.!",
-      "fatigueMacroCharAlreadyKO": " ya está K.O.! No se le puede añadir más shock.",
+      "fatigueMacroCharAlreadyKO": " ya está K.O.!",
       "reviveMacroChatHeadline": "¡Recuperación de shock!",
       "reviveMacroWindowLabel1": "¿Cuánto shock quiere recuperar?",
       "reviveMacroError1": "No se ha introducido ninguna cantidad y el cuadro no está marcado. ¿Qué debo hacer? Abortando.",

@@ -753,6 +753,7 @@
       "decks": "torgeternity.core-card-set"
     },
     "partySheet": {
+      "title": "Party Sheet",
       "chooseParty": "<h3>Choose whether you want to see ALL players, or only the ACTIVE players</h3>",
       "noCharacter": "This user doesn't own any actor",
       "openParty": "Choose the party sheet",
@@ -1535,7 +1536,7 @@
       "commonMacroNoChatMessageFound": "No chatmessage-card found. Abort computing.",
       "fatigueMacroDealtDamage": "Dealt damage to the following characters:",
       "fatigueMacroCharKO": " is therefore K.O.!",
-      "fatigueMacroCharAlreadyKO": " is already K.O.! There is no more shock to add.",
+      "fatigueMacroCharAlreadyKO": " is already K.O.!",
       "reviveMacroChatHeadline": "Shock recovery!",
       "reviveMacroWindowLabel1": "How much shock should be recovered?",
       "reviveMacroError1": "There was no input in the amount-field and also the checkbox wasn't checked. What should I do? Aborting.",
